@@ -24,6 +24,7 @@ export default function CollectionsClient() {
   const [activeSubNiche, setActiveSubNiche] = useState<string>('all')
   const [sortMode, setSortMode] = useState<SortMode>('popular')
   const [keyword, setKeyword] = useState('')
+  const [bannerIndex, setBannerIndex] = useState(0)
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
@@ -47,6 +48,11 @@ export default function CollectionsClient() {
 
   const topNiche = filtered.slice(0, 2)
   const previewArt = filtered[0] || products[0]
+  const bannerPicks = useMemo(() => {
+    const picks = filtered.slice(0, 4)
+    return picks.length > 0 ? picks : products.slice(0, 4)
+  }, [filtered])
+  const activeBanner = bannerPicks[bannerIndex % Math.max(bannerPicks.length, 1)] || previewArt
 
   const nicheCounts = useMemo(() => {
     const map: Record<string, number> = { all: products.length }
@@ -55,6 +61,18 @@ export default function CollectionsClient() {
     }
     return map
   }, [])
+
+  useEffect(() => {
+    setBannerIndex(0)
+  }, [activeNiche, activeSubNiche, keyword, sortMode])
+
+  useEffect(() => {
+    if (bannerPicks.length < 2) return
+    const timer = window.setInterval(() => {
+      setBannerIndex((current) => (current + 1) % bannerPicks.length)
+    }, 3200)
+    return () => window.clearInterval(timer)
+  }, [bannerPicks])
 
   return (
     <div className="min-h-screen bg-[var(--hiwaii-bg)] text-[var(--hiwaii-text-primary)]">
@@ -106,16 +124,47 @@ export default function CollectionsClient() {
                 </span>
               </div>
             </div>
-            <article className="hiwaii-metal-border rounded-2xl p-4">
-              <div className="relative aspect-[16/11] w-full overflow-hidden rounded-xl">
-                <Image src={previewArt.thumbnail} alt={previewArt.name} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 42vw" />
-              </div>
-              <div className="mt-3 flex items-center justify-between gap-3">
-                <div>
-                  <p className="text-sm font-black">{previewArt.name}</p>
-                  <p className="text-xs font-semibold text-[var(--hiwaii-text-secondary)]">{previewArt.niche} / {previewArt.subNiche}</p>
+            <article className="hiwaii-reveal hiwaii-sheen relative overflow-hidden rounded-[2rem] border border-[var(--hiwaii-border)] bg-[#07132f]" style={{ animationDelay: '80ms' }}>
+              <div className="relative min-h-[360px] w-full overflow-hidden">
+                <Image
+                  src={activeBanner.thumbnail}
+                  alt={activeBanner.name}
+                  fill
+                  className="object-cover transition-transform duration-700"
+                  sizes="(max-width: 1024px) 100vw, 42vw"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(3,8,20,0.9),rgba(3,8,20,0.14))]" />
+                <div className="absolute inset-x-0 bottom-0 p-5">
+                  <p className="text-xs font-black uppercase tracking-[0.14em] text-[var(--hiwaii-accent)]">
+                    {lang === 'vi' ? 'Carousel artwork' : 'Carousel artwork'}
+                  </p>
+                  <p className="mt-1 text-2xl font-black">{activeBanner.name}</p>
+                  <p className="mt-1 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">{activeBanner.hook}</p>
                 </div>
-                <p className="text-lg font-black text-[var(--hiwaii-accent)]">${previewArt.price.toFixed(2)}</p>
+              </div>
+              <div className="border-t border-[var(--hiwaii-border)] bg-[#07142e]/95 p-4">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <p className="text-sm font-black">{activeBanner.niche} / {activeBanner.subNiche}</p>
+                    <p className="text-xs font-semibold text-[var(--hiwaii-text-secondary)]">
+                      {lang === 'vi' ? 'Nhấn vào mẫu để chuyển nhanh' : 'Tap a slide for quick focus'}
+                    </p>
+                  </div>
+                  <p className="text-lg font-black text-[var(--hiwaii-accent)]">${activeBanner.price.toFixed(2)}</p>
+                </div>
+                <div className="mt-3 grid grid-cols-4 gap-2">
+                  {bannerPicks.map((item, index) => (
+                    <button
+                      key={item.id}
+                      type="button"
+                      onClick={() => setBannerIndex(index)}
+                      className={`relative aspect-square overflow-hidden rounded-lg border transition ${activeBanner.id === item.id ? 'border-[var(--hiwaii-accent)]' : 'border-[var(--hiwaii-border)] hover:border-[var(--hiwaii-accent)]'}`}
+                      aria-label={`Focus ${item.name}`}
+                    >
+                      <Image src={item.thumbnail} alt={item.name} fill className="object-cover" sizes="72px" />
+                    </button>
+                  ))}
+                </div>
               </div>
             </article>
           </div>
