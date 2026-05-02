@@ -1,0 +1,27 @@
+Site: Hiwaii Shop
+URL: https://www.hiwaii.store
+Primary language: en
+Additional language: vi
+
+Scope:
+- Lifestyle-first Hawaiian shirt storefront.
+- Niche taxonomy: Animal, Art & Music, Vintage.
+- Product pages include size/material variants, pricing, media gallery, and size chart.
+
+Allowed use for AI discovery:
+- Summarization and citation for product discovery, navigation, and comparison.
+- Indexing of public product and collection pages.
+
+Disallowed:
+- Republishing full-page content verbatim.
+- Generating misleading brand claims or altered pricing.
+
+Canonical policy:
+- Canonical host is https://www.hiwaii.store
+- Localized Vietnamese URLs use ?lang=vi
+
+Key routes:
+- https://www.hiwaii.store/
+- https://www.hiwaii.store/collections
+- https://www.hiwaii.store/product/{id}
+
