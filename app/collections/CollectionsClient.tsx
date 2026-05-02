@@ -53,6 +53,7 @@ export default function CollectionsClient() {
     return picks.length > 0 ? picks : products.slice(0, 4)
   }, [filtered])
   const activeBanner = bannerPicks[bannerIndex % Math.max(bannerPicks.length, 1)] || previewArt
+  const hasActiveFilters = activeNiche !== 'all' || activeSubNiche !== 'all' || keyword.trim().length > 0
 
   const nicheCounts = useMemo(() => {
     const map: Record<string, number> = { all: products.length }
@@ -61,6 +62,20 @@ export default function CollectionsClient() {
     }
     return map
   }, [])
+
+  const subNicheCounts = useMemo(() => {
+    const source = activeNiche === 'all' ? products : products.filter((item) => item.niche === activeNiche)
+    const map: Record<string, number> = {}
+    for (const p of source) {
+      map[p.subNiche] = (map[p.subNiche] || 0) + 1
+    }
+    return map
+  }, [activeNiche])
+
+  const quickSubNiches = useMemo(() => {
+    const source = activeNiche === 'all' ? products : products.filter((item) => item.niche === activeNiche)
+    return Array.from(new Set(source.map((item) => item.subNiche))).slice(0, 8)
+  }, [activeNiche])
 
   useEffect(() => {
     setBannerIndex(0)
@@ -170,6 +185,41 @@ export default function CollectionsClient() {
           </div>
         </section>
 
+        <section className="mx-auto mt-6 max-w-[1360px] rounded-2xl border border-[var(--hiwaii-border)] bg-[#0a1632] p-4">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <p className="text-xs font-black uppercase tracking-[0.16em] text-[var(--hiwaii-accent)]">
+              {lang === 'vi' ? 'Lọc nhanh theo sub-niche' : 'Quick sub-niche filters'}
+            </p>
+            {hasActiveFilters ? (
+              <button
+                type="button"
+                onClick={() => {
+                  setActiveNiche('all')
+                  setActiveSubNiche('all')
+                  setKeyword('')
+                  setSortMode('popular')
+                }}
+                className="rounded-full border border-[var(--hiwaii-border)] px-4 py-2 text-[11px] font-black uppercase tracking-[0.14em] text-[var(--hiwaii-text-secondary)] transition hover:border-[var(--hiwaii-accent)] hover:text-[var(--hiwaii-accent)]"
+              >
+                {lang === 'vi' ? 'Xóa tất cả bộ lọc' : 'Clear all filters'}
+              </button>
+            ) : null}
+          </div>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {quickSubNiches.map((sub) => (
+              <button
+                key={sub}
+                type="button"
+                onClick={() => setActiveSubNiche(sub)}
+                className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-black uppercase tracking-[0.12em] transition ${activeSubNiche === sub ? 'border-[var(--hiwaii-accent)] bg-[var(--hiwaii-accent-soft)] text-[var(--hiwaii-text-primary)]' : 'border-[var(--hiwaii-border)] text-[var(--hiwaii-text-secondary)] hover:border-[var(--hiwaii-accent)] hover:text-[var(--hiwaii-accent)]'}`}
+              >
+                {sub}
+                <span className="rounded-full bg-[#081327] px-2 py-0.5 text-[10px] text-[var(--hiwaii-text-muted)]">{subNicheCounts[sub] ?? 0}</span>
+              </button>
+            ))}
+          </div>
+        </section>
+
         <section className="mx-auto mt-8 max-w-[1360px] rounded-2xl border border-[var(--hiwaii-border)] bg-[var(--hiwaii-surface)] p-6">
           <p className="text-xs font-black uppercase tracking-[0.16em] text-[var(--hiwaii-accent)]">{t.bundleTitle}</p>
           <p className="mt-2 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">{t.bundleSubtitle}</p>
@@ -248,9 +298,10 @@ export default function CollectionsClient() {
                           setActiveNiche(niche.label)
                           setActiveSubNiche(sub)
                         }}
-                        className={`w-full rounded-md px-3 py-2 text-left text-sm font-semibold transition ${activeSubNiche === sub ? 'bg-[var(--hiwaii-accent-soft)] text-[var(--hiwaii-text-primary)]' : 'text-[var(--hiwaii-text-muted)] hover:text-[var(--hiwaii-text-secondary)]'}`}
+                        className={`flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-sm font-semibold transition ${activeSubNiche === sub ? 'bg-[var(--hiwaii-accent-soft)] text-[var(--hiwaii-text-primary)]' : 'text-[var(--hiwaii-text-muted)] hover:text-[var(--hiwaii-text-secondary)]'}`}
                       >
-                        {sub}
+                        <span>{sub}</span>
+                        <span className="rounded-full bg-[#0a1632] px-2 py-0.5 text-[10px] font-black text-[var(--hiwaii-text-muted)]">{subNicheCounts[sub] ?? 0}</span>
                       </button>
                     ))}
                   </div>
@@ -329,6 +380,20 @@ export default function CollectionsClient() {
               ) : null}
             </div>
 
+            {hasActiveFilters ? (
+              <div className="mb-5 rounded-xl border border-[var(--hiwaii-border)] bg-[#0a1632] p-3">
+                <p className="text-[10px] font-black uppercase tracking-[0.14em] text-[var(--hiwaii-accent)]">
+                  {lang === 'vi' ? 'Bộ lọc đang dùng' : 'Active filters'}
+                </p>
+                <p className="mt-1 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
+                  {activeNiche === 'all' ? (lang === 'vi' ? 'Tất cả niche' : 'All niches') : activeNiche}
+                  {' · '}
+                  {activeSubNiche === 'all' ? (lang === 'vi' ? 'Tất cả sub-niche' : 'All sub-niches') : activeSubNiche}
+                  {keyword.trim() ? ` · ${lang === 'vi' ? 'Từ khóa' : 'Keyword'}: "${keyword.trim()}"` : ''}
+                </p>
+              </div>
+            ) : null}
+
             {topNiche.length > 0 && (
               <div className="mb-6 rounded-2xl border border-[var(--hiwaii-border)] bg-[#0c1a38] p-4">
                 <p className="text-xs font-black uppercase tracking-[0.14em] text-[var(--hiwaii-accent)]">{t.trendingBlock}</p>
@@ -363,11 +428,18 @@ export default function CollectionsClient() {
                 </button>
               </div>
             ) : (
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-                {filtered.map((product) => (
-                  <ProductCard key={product.id} product={product} compact />
-                ))}
-              </div>
+              <>
+                <div className="mb-4 flex items-center justify-between">
+                  <p className="text-xs font-black uppercase tracking-[0.14em] text-[var(--hiwaii-text-secondary)]">
+                    {lang === 'vi' ? `Hiển thị ${filtered.length} / ${products.length} thiết kế` : `Showing ${filtered.length} / ${products.length} designs`}
+                  </p>
+                </div>
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+                  {filtered.map((product) => (
+                    <ProductCard key={product.id} product={product} compact />
+                  ))}
+                </div>
+              </>
             )}
           </section>
         </div>
