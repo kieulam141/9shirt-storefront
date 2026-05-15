@@ -1,10 +1,10 @@
 'use client'
 
 import React from 'react'
-import { ProductSpec } from '@/lib/products'
+import { ProductSpecification } from '@/lib/products'
 
 interface ProductSpecsProps {
-  specifications: ProductSpec[]
+  specifications: ProductSpecification[]
   fitGuide: string
   careInstructions: string
 }

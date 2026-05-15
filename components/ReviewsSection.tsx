@@ -1,9 +1,18 @@
 'use client'
 
 import { useState } from 'react'
-import { Review } from '@/lib/products'
 import { ReviewCard } from './ReviewCard'
 import { StarRating } from './StarRating'
+
+interface Review {
+  id: string
+  customerName: string
+  rating: number
+  title: string
+  text: string
+  date: string
+  verified: boolean
+}
 
 interface ReviewsSectionProps {
   reviews: Review[]
@@ -65,7 +74,7 @@ export function ReviewsSection({ reviews, averageRating }: ReviewsSectionProps) 
         <h3 className="text-xl font-semibold text-white">Customer Reviews</h3>
         <select
           value={sortBy}
-          onChange={(e) => setSortBy(e.target.value as any)}
+          onChange={(e) => setSortBy(e.target.value as 'recent' | 'helpful' | 'rating')}
           className="bg-slate-700 text-white text-sm rounded-lg px-4 py-2 border border-slate-600 hover:border-slate-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
         >
           <option value="recent">Most Recent</option>
