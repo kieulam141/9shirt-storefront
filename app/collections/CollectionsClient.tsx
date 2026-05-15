@@ -147,6 +147,8 @@ export default function CollectionsClient() {
                   fill
                   className="object-cover transition-transform duration-700"
                   sizes="(max-width: 1024px) 100vw, 42vw"
+                  quality={72}
+                  priority
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(3,8,20,0.9),rgba(3,8,20,0.14))]" />
                 <div className="absolute inset-x-0 bottom-0 p-5">
@@ -176,7 +178,7 @@ export default function CollectionsClient() {
                       className={`relative aspect-square overflow-hidden rounded-lg border transition ${activeBanner.id === item.id ? 'border-[var(--hiwaii-accent)]' : 'border-[var(--hiwaii-border)] hover:border-[var(--hiwaii-accent)]'}`}
                       aria-label={`Focus ${item.name}`}
                     >
-                      <Image src={item.thumbnail} alt={item.name} fill className="object-cover" sizes="72px" />
+                      <Image src={item.thumbnail} alt={item.name} fill className="object-cover" sizes="72px" quality={52} />
                     </button>
                   ))}
                 </div>
@@ -401,7 +403,7 @@ export default function CollectionsClient() {
                   {topNiche.map((item) => (
                     <Link key={item.id} href={withLang(`/product/${item.id}`, lang)} className="group flex items-center gap-3 rounded-xl border border-[var(--hiwaii-border)] bg-[#0a1530] p-3 transition hover:border-[var(--hiwaii-accent)]">
                       <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg">
-                        <Image src={item.thumbnail} alt={item.name} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="56px" />
+                        <Image src={item.thumbnail} alt={item.name} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="56px" quality={52} />
                       </div>
                       <div className="min-w-0">
                         <p className="truncate text-sm font-black text-[var(--hiwaii-text-primary)]">{item.name}</p>

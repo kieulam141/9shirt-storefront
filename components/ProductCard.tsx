@@ -29,6 +29,8 @@ export function ProductCard({ product, compact = false }: ProductCardProps) {
             alt={product.name}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes={compact ? '(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw' : '(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw'}
+            quality={64}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#020713]/85 via-transparent to-transparent" />
           <div className="absolute left-4 top-4 rounded-full border border-lime-300/45 bg-lime-300/10 px-3 py-1 text-[10px] font-black uppercase tracking-[0.12em] text-lime-200">
