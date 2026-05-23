@@ -1,16 +1,6 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0D2047" />
-      <stop offset="1" stop-color="#06142F" />
-    </linearGradient>
-    <linearGradient id="shine" x1="20" y1="14" x2="49" y2="50" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#D1FF4A" />
-      <stop offset="1" stop-color="#9CEB2B" />
-    </linearGradient>
-  </defs>
-  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)" />
-  <path d="M20 16H27V28H37V16H44V48H37V34H27V48H20V16Z" fill="url(#shine)" />
-  <circle cx="49" cy="16" r="4" fill="#D1FF4A" fill-opacity="0.9" />
-  <path d="M49 10L50.2 13.8L54 15L50.2 16.2L49 20L47.8 16.2L44 15L47.8 13.8L49 10Z" fill="#E7FF95" />
+  <rect width="64" height="64" rx="32" fill="#080808"/>
+  <circle cx="32" cy="32" r="29" stroke="#F7E9C7" stroke-width="3"/>
+  <path d="M25.5 17.5H38.5C43.2 17.5 47 21.3 47 26V39.5H37.6V29.1C37.6 27.9 36.7 27 35.5 27H30.4C29.2 27 28.3 27.9 28.3 29.1V35.4C28.3 36.6 29.2 37.5 30.4 37.5H36.2C35.1 41.8 31.2 45 26.5 45C20.9 45 16.4 40.5 16.4 34.9C16.4 30.5 19.2 26.7 23.1 25.3V34.9C23.1 36.8 24.6 38.3 26.5 38.3C28.4 38.3 29.9 36.8 29.9 34.9V26.2H25.5V17.5Z" fill="#F7E9C7"/>
+  <path d="M15.5 18.1H23.5M15.5 25.5H23.5M15.5 32.9H22.5M41.5 18.1H48.5M41.5 44.9H48.5M15.5 44.9H27.5" stroke="#F7E9C7" stroke-width="1" opacity="0.7"/>
 </svg>
