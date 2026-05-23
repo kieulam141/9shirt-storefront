@@ -5,10 +5,24 @@ export const PRIMARY_ORIGIN = `https://${PRIMARY_HOST}`
 
 type SearchParams = Record<string, string | string[] | undefined>
 
-export function getLangFromSearchParams(searchParams?: SearchParams): Lang {
+export function normalizeHost(host?: string | null): string {
+  return (host || '').toLowerCase().split(':')[0].replace(/\.$/, '')
+}
+
+export function isVietnameseDefaultHost(host?: string | null): boolean {
+  const normalized = normalizeHost(host)
+  return normalized.startsWith('9shirt.') || normalized.startsWith('www.9shirt.')
+}
+
+export function getDefaultLangForHost(host?: string | null): Lang {
+  return isVietnameseDefaultHost(host) ? 'vi' : 'en'
+}
+
+export function getLangFromSearchParams(searchParams?: SearchParams, host?: string | null): Lang {
   const raw = searchParams?.lang
   const value = Array.isArray(raw) ? raw[0] : raw
-  return resolveLang(value)
+  if (value === 'en' || value === 'vi') return resolveLang(value)
+  return getDefaultLangForHost(host)
 }
 
 export function toCanonical(path: string, lang: Lang): string {
@@ -25,4 +39,3 @@ export function languageAlternates(path: string) {
     'x-default': toCanonical(path, 'en'),
   }
 }
-

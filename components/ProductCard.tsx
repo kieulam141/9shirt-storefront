@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Product } from '@/lib/products'
 import { i18n, withLang } from '@/lib/i18n'
+import { formatPrice } from '@/lib/pricing'
 import { useLang } from '@/hooks/use-lang'
 
 interface ProductCardProps {
@@ -47,8 +48,8 @@ export function ProductCard({ product, compact = false }: ProductCardProps) {
           </p>
           <div className="mb-5 flex items-end justify-between">
             <div>
-              <span className="text-4xl font-black text-lime-300">${product.price.toFixed(2)}</span>
-              {product.compareAtPrice ? <span className="ml-2 text-sm font-bold text-blue-100/55 line-through">${product.compareAtPrice.toFixed(2)}</span> : null}
+              <span className="text-4xl font-black text-lime-300">{formatPrice(product.price)}</span>
+              {product.compareAtPrice ? <span className="ml-2 text-sm font-bold text-blue-100/55 line-through">{formatPrice(product.compareAtPrice)}</span> : null}
             </div>
             <span className="text-sm font-bold text-blue-100/70">{product.sizes.length} {common.sizes}</span>
           </div>

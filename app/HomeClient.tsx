@@ -226,6 +226,7 @@ export default function HomeClient() {
             <h4 className="text-sm font-black uppercase tracking-[0.16em] text-[var(--hiwaii-text-primary)]">{lang === 'vi' ? 'Mua sắm' : 'Shop'}</h4>
             <ul className="mt-3 space-y-2 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
               <li><Link href={withLang('/collections', lang)}>{lang === 'vi' ? 'Tất cả sản phẩm' : 'All shirts'}</Link></li>
+              <li><Link href={withLang('/collections?niche=Sports', lang)}>Sports</Link></li>
               <li><Link href={withLang('/collections?niche=Animal', lang)}>Animal</Link></li>
               <li><Link href={withLang('/collections?niche=Art%20%26%20Music', lang)}>Art & Music</Link></li>
               <li><Link href={withLang('/collections?niche=Vintage', lang)}>Vintage</Link></li>
@@ -250,4 +251,3 @@ export default function HomeClient() {
     </div>
   )
 }
-

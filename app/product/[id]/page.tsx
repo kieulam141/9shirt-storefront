@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
+import { headers } from 'next/headers'
 import ProductClient from './ProductClient'
 import { getProductById } from '@/lib/products'
+import { structuredPrice } from '@/lib/pricing'
 import { getLangFromSearchParams, languageAlternates, PRIMARY_ORIGIN, toCanonical } from '@/lib/seo'
 
 export async function generateMetadata({
@@ -12,7 +14,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { id } = await params
   const query = await searchParams
-  const lang = getLangFromSearchParams(query)
+  const lang = getLangFromSearchParams(query, (await headers()).get('host'))
   const product = getProductById(id)
 
   if (!product) {
@@ -49,6 +51,7 @@ export async function generateMetadata({
 export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const product = getProductById(id)
+  const offerPrice = product ? structuredPrice(product.price) : null
 
   const productJsonLd = product
     ? {
@@ -61,8 +64,8 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
         brand: { '@type': 'Brand', name: 'Hiwaii' },
         offers: {
           '@type': 'Offer',
-          priceCurrency: 'USD',
-          price: product.price.toFixed(2),
+          priceCurrency: offerPrice?.priceCurrency,
+          price: offerPrice?.price,
           availability: 'https://schema.org/InStock',
           url: `${PRIMARY_ORIGIN}/product/${product.id}`,
         },

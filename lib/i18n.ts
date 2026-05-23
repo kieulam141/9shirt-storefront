@@ -23,7 +23,7 @@ export const i18n = {
     home: {
       eyebrow: 'Hiwaii summer 2026',
       title: 'Wear your obsession.',
-      subtitle: 'From animal chaos to vintage nostalgia, discover Hawaiian shirts built to stand out.',
+      subtitle: 'From football energy to vintage nostalgia, discover Hawaiian shirts built to stand out.',
       ctaPrimary: 'Shop Best Sellers',
       ctaSecondary: 'Browse Collections',
       value1: 'From $19.9 • Premium upgrade available',
@@ -32,7 +32,7 @@ export const i18n = {
       sectionFeatured: 'Featured styles',
       sectionFeaturedTitle: 'Shop customer favorites first',
       sectionLifestyle: 'Shop by lifestyle',
-      sectionLifestyleTitle: 'Three style worlds, one storefront',
+      sectionLifestyleTitle: 'Four style worlds, one storefront',
       trust: [
         ['Fast US shipping', '3-5 day delivery window'],
         ['Easy returns', 'Simple support and return handling'],
@@ -122,7 +122,7 @@ export const i18n = {
     home: {
       eyebrow: 'Hiwaii hè 2026',
       title: 'Mặc đúng cá tính của bạn.',
-      subtitle: 'Từ Animal đến Vintage, khám phá áo Hawaii được thiết kế để nổi bật ngay từ cái nhìn đầu tiên.',
+      subtitle: 'Từ Sports đến Vintage, khám phá áo Hawaii được thiết kế để nổi bật ngay từ cái nhìn đầu tiên.',
       ctaPrimary: 'Mua mẫu bán chạy',
       ctaSecondary: 'Xem bộ sưu tập',
       value1: 'Từ $19.9 • Có nâng cấp Premium',
@@ -131,7 +131,7 @@ export const i18n = {
       sectionFeatured: 'Mẫu nổi bật',
       sectionFeaturedTitle: 'Bắt đầu với các mẫu khách mua nhiều nhất',
       sectionLifestyle: 'Mua theo phong cách',
-      sectionLifestyleTitle: '3 thế giới style, 1 storefront',
+      sectionLifestyleTitle: '4 thế giới style, 1 storefront',
       trust: [
         ['Giao nhanh từ US', 'Khung giao 3-5 ngày'],
         ['Đổi trả dễ', 'Hỗ trợ và xử lý đổi trả nhanh'],

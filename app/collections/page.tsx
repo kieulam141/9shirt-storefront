@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { headers } from 'next/headers'
 import CollectionsClient from './CollectionsClient'
 import { getLangFromSearchParams, languageAlternates, toCanonical } from '@/lib/seo'
 import { products } from '@/lib/products'
@@ -9,7 +10,7 @@ export async function generateMetadata({
   searchParams: Promise<Record<string, string | string[] | undefined>>
 }): Promise<Metadata> {
   const params = await searchParams
-  const lang = getLangFromSearchParams(params)
+  const lang = getLangFromSearchParams(params, (await headers()).get('host'))
 
   const title =
     lang === 'vi'
@@ -17,8 +18,8 @@ export async function generateMetadata({
       : 'Hiwaii Lifestyle | Unique Hawaiian Shirts Curated by Style'
   const description =
     lang === 'vi'
-      ? 'Lọc theo niche Animal, Art & Music, Vintage để tìm mẫu áo Hawaii phù hợp phong cách của bạn.'
-      : 'Explore Hiwaii lifestyle collections across Animal, Art & Music, and Vintage niches.'
+      ? 'Lọc theo niche Sports, Animal, Art & Music, Vintage để tìm mẫu áo Hawaii phù hợp phong cách của bạn.'
+      : 'Explore Hiwaii lifestyle collections across Sports, Animal, Art & Music, and Vintage niches.'
 
   return {
     title,

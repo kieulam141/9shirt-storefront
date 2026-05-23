@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { useCart } from '@/context/CartContext'
 import { i18n, withLang } from '@/lib/i18n'
+import { formatPrice, formatPriceDelta, priceUnitFor } from '@/lib/pricing'
 import { getProductById, products, type MaterialCode, type ProductVariant } from '@/lib/products'
 import { useLang } from '@/hooks/use-lang'
 
@@ -67,6 +68,7 @@ function getStoryTone(subNiche: string, lang: 'en' | 'vi'): string {
     if (subNiche === 'Dog') return 'Thiết kế tôn năng lượng mạnh, thân thiện và nổi bật trong đám đông.'
     if (subNiche === 'Tiger' || subNiche === 'Lion') return 'Màu sắc cường độ cao, tạo hiệu ứng thị giác mạnh khi di chuyển.'
     if (subNiche === 'Piano' || subNiche === 'Photography') return 'Artwork theo cảm hứng nghệ thuật, thiên về bố cục và cảm xúc.'
+    if (subNiche === 'Football') return 'Thiết kế lấy cảm hứng bóng đá, tập trung vào năng lượng cổ vũ và tinh thần sưu tầm.'
     return 'Thiết kế gợi cảm giác hoài niệm, mang tinh thần sưu tầm và du lịch.'
   }
 
@@ -74,6 +76,7 @@ function getStoryTone(subNiche: string, lang: 'en' | 'vi'): string {
   if (subNiche === 'Dog') return 'A bold dog-themed artwork with crowd-catching character and depth.'
   if (subNiche === 'Tiger' || subNiche === 'Lion') return 'High-energy palettes and strong contrast engineered for standout movement.'
   if (subNiche === 'Piano' || subNiche === 'Photography') return 'An art-forward composition inspired by visual rhythm and creative identity.'
+  if (subNiche === 'Football') return 'A football-inspired composition built around fan energy, collector cues, and matchday styling.'
   return 'A nostalgia-led visual language with archival travel and collector cues.'
 }
 
@@ -132,7 +135,13 @@ export default function ProductClient({ id }: { id: string }) {
     [selectedShirtKind],
   )
 
+  const selectedMaterialData = useMemo(
+    () => product?.materials.find((material) => material.code === selectedMaterial) || product?.materials[0],
+    [product, selectedMaterial],
+  )
+
   const basePrice = currentVariant?.price ?? product?.price ?? 0
+  const priceUnit = priceUnitFor(basePrice)
   const price = basePrice + selectedShirtKindData.uplift
   const canAddToCart = Boolean(currentVariant?.available && currentVariant?.stockStatus !== 'out_of_stock')
 
@@ -175,7 +184,7 @@ export default function ProductClient({ id }: { id: string }) {
     const selectedLabel = lang === 'vi' ? selectedShirtKindData.viLabel : selectedShirtKindData.label
     addItem({
       id: `${product.id}-${selectedArtProduct?.id}-${selectedMaterial}-${selectedShirtKind}`,
-      name: `${selectedArtProduct?.name || product.name} - ${selectedLabel} - ${selectedMaterial === 'premium_silk' ? 'Premium Silk Blend' : 'Standard Poly'}`,
+      name: `${selectedArtProduct?.name || product.name} - ${selectedLabel} - ${selectedMaterialData?.label || selectedMaterial}`,
       size: selectedSize,
       quantity: 1,
       price,
@@ -203,7 +212,7 @@ export default function ProductClient({ id }: { id: string }) {
                   <video className="aspect-[4/5] w-full object-cover" src={selectedArtProduct.media[activeMedia].url} controls autoPlay muted loop playsInline preload="metadata" />
                 ) : (
                   <div className="relative aspect-[4/5] w-full">
-                    <Image src={selectedArtProduct?.media[activeMedia]?.url || selectedArtProduct?.thumbnail || product.thumbnail} alt={selectedArtProduct?.name || product.name} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+                    <Image src={selectedArtProduct?.media[activeMedia]?.url || selectedArtProduct?.thumbnail || product.thumbnail} alt={selectedArtProduct?.name || product.name} fill className="object-contain" sizes="(max-width: 1024px) 100vw, 50vw" priority />
                   </div>
                 )}
               </div>
@@ -241,7 +250,7 @@ export default function ProductClient({ id }: { id: string }) {
                 <p className="text-xs font-black uppercase tracking-[0.16em] text-[var(--hiwaii-accent)]">{t.selectedCombo}</p>
                 <p className="mt-2 text-xl font-black text-[var(--hiwaii-text-primary)]">{selectedArtProduct?.name}</p>
                 <p className="mt-1 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
-                  {lang === 'vi' ? selectedShirtKindData.viLabel : selectedShirtKindData.label} • {selectedSize} • {selectedMaterial === 'premium_silk' ? 'Premium Silk Blend' : 'Standard Poly'}
+                  {lang === 'vi' ? selectedShirtKindData.viLabel : selectedShirtKindData.label} • {selectedSize} • {selectedMaterialData?.label || selectedMaterial}
                 </p>
               </div>
 
@@ -276,7 +285,7 @@ export default function ProductClient({ id }: { id: string }) {
                     >
                       <p className="text-xl font-black text-[var(--hiwaii-text-primary)]">{lang === 'vi' ? kind.viLabel : kind.label}</p>
                       <p className="mt-1 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">{lang === 'vi' ? kind.viDescription : kind.description}</p>
-                      <p className="mt-2 text-sm font-black text-[var(--hiwaii-accent)]">{kind.uplift === 0 ? (lang === 'vi' ? 'Không phụ thu' : 'No extra fee') : `+ $${kind.uplift.toFixed(2)}`}</p>
+                      <p className="mt-2 text-sm font-black text-[var(--hiwaii-accent)]">{kind.uplift === 0 ? (lang === 'vi' ? 'Không phụ thu' : 'No extra fee') : formatPriceDelta(kind.uplift, priceUnit)}</p>
                     </button>
                   ))}
                 </div>
@@ -317,7 +326,7 @@ export default function ProductClient({ id }: { id: string }) {
                       {material.badge ? <span className="inline-flex rounded-full border border-[var(--hiwaii-accent)] px-2 py-1 text-[10px] font-black uppercase tracking-[0.12em] text-[var(--hiwaii-accent)]">{material.badge}</span> : null}
                       <p className="mt-2 text-2xl font-black">{material.label}</p>
                       <p className="mt-1 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">{material.benefit}</p>
-                      <p className="mt-2 text-lg font-black text-[var(--hiwaii-accent)]">{material.uplift === 0 ? `$${basePrice.toFixed(2)}` : `+ $${material.uplift.toFixed(2)}`}</p>
+                      <p className="mt-2 text-lg font-black text-[var(--hiwaii-accent)]">{material.uplift === 0 ? formatPrice(basePrice, priceUnit) : formatPriceDelta(material.uplift, priceUnit)}</p>
                     </button>
                   ))}
                 </div>
@@ -327,13 +336,13 @@ export default function ProductClient({ id }: { id: string }) {
               </div>
 
               <div className="mt-5 flex flex-wrap items-end gap-3">
-                <span className="text-5xl font-black text-[var(--hiwaii-accent)]">${price.toFixed(2)}</span>
-                {product.compareAtPrice ? <span className="text-2xl font-bold text-[var(--hiwaii-text-muted)] line-through">${product.compareAtPrice.toFixed(2)}</span> : null}
+                <span className="text-5xl font-black text-[var(--hiwaii-accent)]">{formatPrice(price, priceUnit)}</span>
+                {product.compareAtPrice ? <span className="text-2xl font-bold text-[var(--hiwaii-text-muted)] line-through">{formatPrice(product.compareAtPrice)}</span> : null}
               </div>
               <p className="mt-3 text-xl font-semibold text-[var(--hiwaii-text-secondary)]">{selectedArtProduct?.hook || product.hook}</p>
 
               <button type="button" disabled={!canAddToCart} onClick={addToCart} className={`mt-8 inline-flex min-h-12 w-full items-center justify-center rounded-full px-6 text-base font-black uppercase tracking-[0.12em] transition ${canAddToCart ? 'bg-[var(--hiwaii-accent)] text-[#061227] hover:brightness-105' : 'cursor-not-allowed bg-[#2a3556] text-[#95a4c8]'}`}>
-                {t.addToCart} • ${price.toFixed(2)}
+                {t.addToCart} • {formatPrice(price, priceUnit)}
               </button>
               <button type="button" className="mt-3 inline-flex min-h-11 w-full items-center justify-center rounded-full border border-[var(--hiwaii-border)] px-6 text-sm font-black uppercase tracking-[0.12em] text-[var(--hiwaii-text-primary)] transition hover:border-[var(--hiwaii-accent)] hover:text-[var(--hiwaii-accent)]">
                 {t.buyNow}
@@ -441,7 +450,7 @@ export default function ProductClient({ id }: { id: string }) {
                       {lang === 'vi' ? 'Preset đang chạy' : 'Current preset'}
                     </p>
                     <p className="mt-1 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
-                      {(lang === 'vi' ? selectedShirtKindData.viLabel : selectedShirtKindData.label)} • {selectedMaterial === 'premium_silk' ? 'Premium Silk Blend' : 'Standard Poly'}
+                      {(lang === 'vi' ? selectedShirtKindData.viLabel : selectedShirtKindData.label)} • {selectedMaterialData?.label || selectedMaterial}
                     </p>
                     <p className="mt-2 text-xs font-semibold text-[var(--hiwaii-text-muted)]">
                       {tryOnUrl
@@ -514,7 +523,7 @@ export default function ProductClient({ id }: { id: string }) {
                     <Image src={item.thumbnail} alt={item.name} fill className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
                   </div>
                   <p className="mt-3 text-sm font-black">{item.name}</p>
-                  <p className="text-sm font-semibold text-[var(--hiwaii-text-secondary)]">${item.price.toFixed(2)}</p>
+                  <p className="text-sm font-semibold text-[var(--hiwaii-text-secondary)]">{formatPrice(item.price)}</p>
                 </Link>
               ))}
             </div>

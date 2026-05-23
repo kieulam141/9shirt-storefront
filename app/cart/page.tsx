@@ -5,12 +5,14 @@ import { Header } from '@/components/Header'
 import { CartItem } from '@/components/CartItem'
 import { useCart } from '@/context/CartContext'
 import { i18n, withLang } from '@/lib/i18n'
+import { formatPrice, priceUnitFor } from '@/lib/pricing'
 import { useLang } from '@/hooks/use-lang'
 
 export default function CartPage() {
   const { items, total, clearCart } = useCart()
   const lang = useLang()
   const t = i18n[lang].cart
+  const unit = priceUnitFor(total)
 
   if (items.length === 0) {
     return (
@@ -109,7 +111,7 @@ export default function CartPage() {
               <div className="mb-6 space-y-4 border-b border-[var(--hiwaii-border)] pb-6">
                 <div className="flex justify-between text-[var(--hiwaii-text-secondary)]">
                   <span>{t.subtotal}</span>
-                  <span>${total.toFixed(2)}</span>
+                  <span>{formatPrice(total, unit)}</span>
                 </div>
                 <div className="flex justify-between text-[var(--hiwaii-text-secondary)]">
                   <span>{t.shipping}</span>
@@ -117,14 +119,14 @@ export default function CartPage() {
                 </div>
                 <div className="flex justify-between text-[var(--hiwaii-text-secondary)]">
                   <span>{t.tax}</span>
-                  <span>${(total * 0.1).toFixed(2)}</span>
+                  <span>{formatPrice(total * 0.1, unit)}</span>
                 </div>
               </div>
 
               <div className="flex justify-between mb-8">
                 <span className="text-xl font-black">{t.total}</span>
                 <span className="text-3xl font-black text-[var(--hiwaii-accent)]">
-                  ${(total * 1.1).toFixed(2)}
+                  {formatPrice(total * 1.1, unit)}
                 </span>
               </div>
 

@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { CartItem as CartItemType, useCart } from '@/context/CartContext'
+import { formatPrice, priceUnitFor } from '@/lib/pricing'
 
 interface CartItemProps {
   item: CartItemType
@@ -9,6 +10,7 @@ interface CartItemProps {
 
 export function CartItem({ item }: CartItemProps) {
   const { updateQuantity, removeItem } = useCart()
+  const unit = priceUnitFor(item.price)
 
   return (
     <div className="group flex items-start gap-5 rounded-2xl border border-[var(--hiwaii-border)] bg-[var(--hiwaii-surface)] p-5 transition-all hover:border-[var(--hiwaii-accent)]/50 hover:bg-[#0d1d3f]">
@@ -65,8 +67,8 @@ export function CartItem({ item }: CartItemProps) {
           </div>
 
           <div className="text-right">
-            <p className="text-xs font-semibold text-[var(--hiwaii-text-muted)]">${item.price.toFixed(2)} each</p>
-            <p className="text-xl font-black text-[var(--hiwaii-accent)]">${(item.price * item.quantity).toFixed(2)}</p>
+            <p className="text-xs font-semibold text-[var(--hiwaii-text-muted)]">{formatPrice(item.price, unit)} each</p>
+            <p className="text-xl font-black text-[var(--hiwaii-accent)]">{formatPrice(item.price * item.quantity, unit)}</p>
           </div>
         </div>
       </div>

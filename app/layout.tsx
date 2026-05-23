@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { headers } from 'next/headers'
 import { Antonio, Be_Vietnam_Pro, Lexend, Manrope } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { CartProvider } from '@/context/CartContext'
-import { PRIMARY_ORIGIN } from '@/lib/seo'
+import { LangProvider } from '@/hooks/use-lang'
+import { getDefaultLangForHost, PRIMARY_ORIGIN } from '@/lib/seo'
 import './globals.css'
 
 const bodyFont = Manrope({
@@ -34,17 +36,17 @@ export const metadata: Metadata = {
     default: 'Hiwaii Shop | Statement Hawaiian Shirts',
     template: '%s | Hiwaii Shop',
   },
-  description: 'Discover unique Hawaiian shirts categorized by your lifestyle. Shop niche prints for Animal lovers, Music fans, and Vintage enthusiasts.',
+  description: 'Discover unique Hawaiian shirts categorized by your lifestyle. Shop niche prints for Sports fans, Animal lovers, Music fans, and Vintage enthusiasts.',
   openGraph: {
     title: 'Hiwaii Shop | Statement Hawaiian Shirts',
-    description: 'Discover unique Hawaiian shirts categorized by your lifestyle. Shop niche prints for Animal lovers, Music fans, and Vintage enthusiasts.',
+    description: 'Discover unique Hawaiian shirts categorized by your lifestyle. Shop niche prints for Sports fans, Animal lovers, Music fans, and Vintage enthusiasts.',
     type: 'website',
     siteName: 'Hiwaii Shop',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Hiwaii Shop | Statement Hawaiian Shirts',
-    description: 'Discover unique Hawaiian shirts categorized by your lifestyle. Shop niche prints for Animal lovers, Music fans, and Vintage enthusiasts.',
+    description: 'Discover unique Hawaiian shirts categorized by your lifestyle. Shop niche prints for Sports fans, Animal lovers, Music fans, and Vintage enthusiasts.',
   },
   icons: {
     icon: [
@@ -66,11 +68,16 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const requestHeaders = await headers()
+  const headerLang = requestHeaders.get('x-hiwaii-lang')
+  const defaultLang = headerLang === 'en' || headerLang === 'vi'
+    ? headerLang
+    : getDefaultLangForHost(requestHeaders.get('host'))
   const organizationJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -93,13 +100,15 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="en" className={`${bodyFont.variable} ${displayFont.variable} ${viBodyFont.variable} ${viDisplayFont.variable} bg-slate-900`}>
+    <html lang={defaultLang} className={`${bodyFont.variable} ${displayFont.variable} ${viBodyFont.variable} ${viDisplayFont.variable} bg-slate-900`}>
       <body className="font-sans antialiased bg-gradient-to-b from-slate-900 to-slate-950">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
-        <CartProvider>
-          {children}
-        </CartProvider>
+        <LangProvider initialLang={defaultLang}>
+          <CartProvider>
+            {children}
+          </CartProvider>
+        </LangProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

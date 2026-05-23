@@ -7,11 +7,13 @@ import { Header } from '@/components/Header'
 import { ProductCard } from '@/components/ProductCard'
 import { i18n, withLang } from '@/lib/i18n'
 import { bundleOffers, bundleTypeGroups, niches, products } from '@/lib/products'
+import { formatPrice } from '@/lib/pricing'
 import { useLang } from '@/hooks/use-lang'
 
 type SortMode = 'popular' | 'price_low' | 'price_high'
 
 const NICHE_ICONS: Record<string, string> = {
+  Sports: '⚽',
   Animal: '🐾',
   'Art & Music': '🎵',
   Vintage: '🕰️',
@@ -167,7 +169,7 @@ export default function CollectionsClient() {
                       {lang === 'vi' ? 'Nhấn vào mẫu để chuyển nhanh' : 'Tap a slide for quick focus'}
                     </p>
                   </div>
-                  <p className="text-lg font-black text-[var(--hiwaii-accent)]">${activeBanner.price.toFixed(2)}</p>
+                  <p className="text-lg font-black text-[var(--hiwaii-accent)]">{formatPrice(activeBanner.price)}</p>
                 </div>
                 <div className="mt-3 grid grid-cols-4 gap-2">
                   {bannerPicks.map((item, index) => (
@@ -230,7 +232,7 @@ export default function CollectionsClient() {
               <article key={group.type} className="rounded-xl border border-[var(--hiwaii-border)] bg-[#0b1736] p-4">
                 <h3 className="text-lg font-black text-[var(--hiwaii-text-primary)]">{group.label}</h3>
                 <p className="mt-1 min-h-10 text-xs font-semibold text-[var(--hiwaii-text-secondary)]">{group.description}</p>
-                <p className="mt-2 text-sm font-black text-[var(--hiwaii-accent)]">{lang === 'vi' ? 'Từ' : 'From'} ${group.fromPrice.toFixed(2)}</p>
+                <p className="mt-2 text-sm font-black text-[var(--hiwaii-accent)]">{lang === 'vi' ? 'Từ' : 'From'} {formatPrice(group.fromPrice)}</p>
                 <p className="mt-2 text-xs font-semibold text-[var(--hiwaii-text-muted)]">{group.bundleHint}</p>
               </article>
             ))}
@@ -248,11 +250,11 @@ export default function CollectionsClient() {
                     <h4 className="text-sm font-black text-[var(--hiwaii-text-primary)]">{offer.title}</h4>
                     <p className="mt-1 text-xs font-semibold text-[var(--hiwaii-text-secondary)]">{offer.types.join(' + ')}</p>
                     <div className="mt-3 flex items-end gap-2">
-                      <span className="text-2xl font-black text-[var(--hiwaii-accent)]">${offer.bundlePrice.toFixed(2)}</span>
-                      <span className="text-xs font-semibold text-[var(--hiwaii-text-muted)] line-through">${offer.compareAtPrice.toFixed(2)}</span>
+                      <span className="text-2xl font-black text-[var(--hiwaii-accent)]">{formatPrice(offer.bundlePrice)}</span>
+                      <span className="text-xs font-semibold text-[var(--hiwaii-text-muted)] line-through">{formatPrice(offer.compareAtPrice)}</span>
                     </div>
                     <Link
-                      href={withLang('/collections?niche=Animal', lang)}
+                      href={withLang('/collections?niche=Sports', lang)}
                       className="mt-3 inline-flex min-h-11 items-center rounded-full border border-[var(--hiwaii-border)] px-4 text-xs font-black uppercase tracking-[0.14em] text-[var(--hiwaii-text-primary)] transition hover:border-[var(--hiwaii-accent)] hover:text-[var(--hiwaii-accent)]"
                     >
                       {t.bundleCta}
@@ -449,4 +451,3 @@ export default function CollectionsClient() {
     </div>
   )
 }
-

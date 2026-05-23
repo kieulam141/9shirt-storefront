@@ -1,5 +1,5 @@
-export type Niche = 'Animal' | 'Art & Music' | 'Vintage'
-export type SubNiche = 'Cat' | 'Dog' | 'Lion' | 'Tiger' | 'Piano' | 'Photography' | 'Train'
+export type Niche = 'Sports' | 'Animal' | 'Art & Music' | 'Vintage'
+export type SubNiche = 'Football' | 'Cat' | 'Dog' | 'Lion' | 'Tiger' | 'Piano' | 'Photography' | 'Train'
 export type ProductType = 'Hawaiian Shirt' | 'Polo Shirt' | 'T-Shirt' | 'Baseball Cap' | 'Shorts'
 export type MaterialCode = 'standard_poly' | 'premium_silk'
 export type StockStatus = 'in_stock' | 'low_stock' | 'out_of_stock'
@@ -62,6 +62,17 @@ export interface BundleOffer {
 }
 
 const SIZE_ORDER = ['S', 'M', 'L', 'XL', '2XL', '3XL'] as const
+const LATIN_SILK_SIZE_ORDER = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL'] as const
+const LATIN_SILK_PRICES: Record<(typeof LATIN_SILK_SIZE_ORDER)[number], number> = {
+  S: 350,
+  M: 350,
+  L: 350,
+  XL: 350,
+  '2XL': 395,
+  '3XL': 395,
+  '4XL': 445,
+  '5XL': 445,
+}
 const R2_PUBLIC_BASE = 'https://cdn.9tech.cloud'
 
 function r2(path: string): string {
@@ -90,7 +101,240 @@ function generateVariants(basePrice: number, lowStockSizes: string[] = [], soldO
   return variants
 }
 
+function generateLatinSilkVariants(): ProductVariant[] {
+  return LATIN_SILK_SIZE_ORDER.map((size) => ({
+    size,
+    material: 'standard_poly',
+    available: true,
+    stockStatus: 'in_stock',
+    price: LATIN_SILK_PRICES[size],
+  }))
+}
+
+const latinSilkMaterials: Product['materials'] = [
+  { code: 'standard_poly', label: 'Chất lụa latin', uplift: 0, benefit: 'Mềm rũ • mát nhẹ • lên màu sắc nét' },
+]
+
+function newProductImage(folder: string, file: string): string {
+  return r2(`3D Hiwaii/New Products/${folder}/${file}`)
+}
+
+function imageMedia(images: string[]): ProductMedia[] {
+  return images.map((url) => ({ type: 'image', url }))
+}
+
 export const products: Product[] = [
+  {
+    id: 'cr72-champions-gold',
+    slug: 'cr72-champions-gold-shirt',
+    name: 'CR7 Champions Gold Resort Shirt',
+    price: 350,
+    hook: 'Gold-and-black CR7 champions artwork with trophy details.',
+    description: 'A high-impact football celebration print built around gold florals, trophy graphics, and a premium black resort palette.',
+    productType: 'Hawaiian Shirt',
+    niche: 'Sports',
+    subNiche: 'Football',
+    badge: 'Trending',
+    thumbnail: newProductImage('CR72', '704810634_979476901355846_2168163068901386661_n.jpg'),
+    images: [
+      newProductImage('CR72', '704810634_979476901355846_2168163068901386661_n.jpg'),
+      newProductImage('CR72', '296d4917-3d9c-4ec2-8cdb-ca6ba7cc45c6.png'),
+      newProductImage('CR72', 'A5.png'),
+      newProductImage('CR72', 'A65.png'),
+      newProductImage('CR72', 'A76.png'),
+      newProductImage('CR72', '64d65930-5524-423d-8d4e-3f056d5ab9cd.png'),
+      newProductImage('CR72', 'Cổ.png'),
+    ],
+    media: imageMedia([
+      newProductImage('CR72', '704810634_979476901355846_2168163068901386661_n.jpg'),
+      newProductImage('CR72', '296d4917-3d9c-4ec2-8cdb-ca6ba7cc45c6.png'),
+      newProductImage('CR72', 'A5.png'),
+      newProductImage('CR72', 'A65.png'),
+      newProductImage('CR72', 'A76.png'),
+      newProductImage('CR72', '64d65930-5524-423d-8d4e-3f056d5ab9cd.png'),
+      newProductImage('CR72', 'Cổ.png'),
+    ]),
+    sizes: [...LATIN_SILK_SIZE_ORDER],
+    materials: latinSilkMaterials,
+    variants: generateLatinSilkVariants(),
+    specifications: [
+      { label: 'Material', value: 'Chất lụa latin' },
+      { label: 'Fit', value: 'Relaxed resort fit' },
+      { label: 'Care', value: 'Machine wash cold, hang dry' },
+      { label: 'Shipping', value: 'US warehouse, 3-5 business days' },
+      { label: 'Print', value: 'Football tribute all-over sublimation print' },
+      { label: 'SKU / Type code', value: 'HW-SPORT-CR72' },
+    ],
+  },
+  {
+    id: 'cr71-legacy-gold',
+    slug: 'cr71-legacy-gold-shirt',
+    name: 'CR7 Legacy Gold Resort Shirt',
+    price: 350,
+    hook: 'Cream-and-navy CR7 legacy print with gold floral framing.',
+    description: 'A collector-style football shirt design pairing a cream base, navy trim, and ornate championship-inspired visual language.',
+    productType: 'Hawaiian Shirt',
+    niche: 'Sports',
+    subNiche: 'Football',
+    badge: 'Best seller',
+    thumbnail: newProductImage('CR71', '702636459_960250286628890_9191551945257170271_n.jpg'),
+    images: [
+      newProductImage('CR71', '702636459_960250286628890_9191551945257170271_n.jpg'),
+      newProductImage('CR71', 'b03fb274-25cb-4c49-8056-547e7a304714.png'),
+      newProductImage('CR71', 'MT1.png'),
+      newProductImage('CR71', 'MS22.png'),
+      newProductImage('CR71', 'In2.png'),
+      newProductImage('CR71', 'Tay.png'),
+      newProductImage('CR71', 'Cổ.png'),
+    ],
+    media: imageMedia([
+      newProductImage('CR71', '702636459_960250286628890_9191551945257170271_n.jpg'),
+      newProductImage('CR71', 'b03fb274-25cb-4c49-8056-547e7a304714.png'),
+      newProductImage('CR71', 'MT1.png'),
+      newProductImage('CR71', 'MS22.png'),
+      newProductImage('CR71', 'In2.png'),
+      newProductImage('CR71', 'Tay.png'),
+      newProductImage('CR71', 'Cổ.png'),
+    ]),
+    sizes: [...LATIN_SILK_SIZE_ORDER],
+    materials: latinSilkMaterials,
+    variants: generateLatinSilkVariants(),
+    specifications: [
+      { label: 'Material', value: 'Chất lụa latin' },
+      { label: 'Fit', value: 'Relaxed resort fit' },
+      { label: 'Care', value: 'Cold wash, no bleach' },
+      { label: 'Shipping', value: 'Ships from US in 3-5 days' },
+      { label: 'Print', value: 'Cream football legacy full-print' },
+      { label: 'SKU / Type code', value: 'HW-SPORT-CR71' },
+    ],
+  },
+  {
+    id: 'ars1-rice-burgundy',
+    slug: 'ars1-rice-burgundy-shirt',
+    name: 'ARS1 Rice Burgundy Resort Shirt',
+    price: 350,
+    hook: 'Burgundy football artwork with Rice 41 feature styling.',
+    description: 'A deep burgundy football print with fireworks, trophy cues, and a player-focused front composition.',
+    productType: 'Hawaiian Shirt',
+    niche: 'Sports',
+    subNiche: 'Football',
+    badge: 'Premium Edition',
+    thumbnail: newProductImage('ARS1', 'e1eb6515-5d93-49fb-83b5-a1fe759c0bdd.png'),
+    images: [
+      newProductImage('ARS1', 'e1eb6515-5d93-49fb-83b5-a1fe759c0bdd.png'),
+      newProductImage('ARS1', 'Template Hawaiian AR1.jpg'),
+    ],
+    media: imageMedia([
+      newProductImage('ARS1', 'e1eb6515-5d93-49fb-83b5-a1fe759c0bdd.png'),
+      newProductImage('ARS1', 'Template Hawaiian AR1.jpg'),
+    ]),
+    sizes: [...LATIN_SILK_SIZE_ORDER],
+    materials: latinSilkMaterials,
+    variants: generateLatinSilkVariants(),
+    specifications: [
+      { label: 'Material', value: 'Chất lụa latin' },
+      { label: 'Fit', value: 'Regular relaxed fit' },
+      { label: 'Care', value: 'Machine wash cold' },
+      { label: 'Shipping', value: 'US warehouse fulfillment' },
+      { label: 'Print', value: 'Burgundy football all-over print' },
+      { label: 'SKU / Type code', value: 'HW-SPORT-ARS1' },
+    ],
+  },
+  {
+    id: 'ars2-red-champions',
+    slug: 'ars2-red-champions-shirt',
+    name: 'ARS2 Red Champions Resort Shirt',
+    price: 350,
+    hook: 'Red championship collage with energetic football graphics.',
+    description: 'A saturated red football shirt design with layered champion typography, maple-toned artwork, and bold matchday energy.',
+    productType: 'Hawaiian Shirt',
+    niche: 'Sports',
+    subNiche: 'Football',
+    badge: 'Trending',
+    thumbnail: newProductImage('ARS2', 'b0758d9a-8061-40a4-a6ba-f2a5dcf1a1ed.png'),
+    images: [
+      newProductImage('ARS2', 'b0758d9a-8061-40a4-a6ba-f2a5dcf1a1ed.png'),
+      newProductImage('ARS2', 'Template Hawaiian AR2.jpg'),
+    ],
+    media: imageMedia([
+      newProductImage('ARS2', 'b0758d9a-8061-40a4-a6ba-f2a5dcf1a1ed.png'),
+      newProductImage('ARS2', 'Template Hawaiian AR2.jpg'),
+    ]),
+    sizes: [...LATIN_SILK_SIZE_ORDER],
+    materials: latinSilkMaterials,
+    variants: generateLatinSilkVariants(),
+    specifications: [
+      { label: 'Material', value: 'Chất lụa latin' },
+      { label: 'Fit', value: 'Relaxed resort fit' },
+      { label: 'Care', value: 'Gentle cycle, low heat dry' },
+      { label: 'Shipping', value: 'Ships in 3-5 business days' },
+      { label: 'Print', value: 'Red championship sublimation print' },
+      { label: 'SKU / Type code', value: 'HW-SPORT-ARS2' },
+    ],
+  },
+  {
+    id: 'ars3-cream-heritage',
+    slug: 'ars3-cream-heritage-shirt',
+    name: 'ARS3 Cream Heritage Resort Shirt',
+    price: 350,
+    hook: 'Cream and burgundy football layout with heritage poster cues.',
+    description: 'A quieter football resort shirt design with cream poster styling, burgundy accents, and collector-ready artwork.',
+    productType: 'Hawaiian Shirt',
+    niche: 'Sports',
+    subNiche: 'Football',
+    thumbnail: newProductImage('ARS3', '1ed654b8-5f26-4ab2-bc62-3a15519609e2.png'),
+    images: [
+      newProductImage('ARS3', '1ed654b8-5f26-4ab2-bc62-3a15519609e2.png'),
+      newProductImage('ARS3', 'Template Hawaiian AR3.jpg'),
+    ],
+    media: imageMedia([
+      newProductImage('ARS3', '1ed654b8-5f26-4ab2-bc62-3a15519609e2.png'),
+      newProductImage('ARS3', 'Template Hawaiian AR3.jpg'),
+    ]),
+    sizes: [...LATIN_SILK_SIZE_ORDER],
+    materials: latinSilkMaterials,
+    variants: generateLatinSilkVariants(),
+    specifications: [
+      { label: 'Material', value: 'Chất lụa latin' },
+      { label: 'Fit', value: 'Regular fit' },
+      { label: 'Care', value: 'Cold machine wash' },
+      { label: 'Shipping', value: 'US shipping 3-5 days' },
+      { label: 'Print', value: 'Cream football poster all-over print' },
+      { label: 'SKU / Type code', value: 'HW-SPORT-ARS3' },
+    ],
+  },
+  {
+    id: 'ars4-floral-crest',
+    slug: 'ars4-floral-crest-shirt',
+    name: 'ARS4 Floral Crest Resort Shirt',
+    price: 350,
+    hook: 'Red floral football artwork with crest-inspired composition.',
+    description: 'A red floral football print with poster details, tropical accents, and a clean collector-style presentation.',
+    productType: 'Hawaiian Shirt',
+    niche: 'Sports',
+    subNiche: 'Football',
+    badge: 'Premium Edition',
+    thumbnail: newProductImage('ARS4', 'def8faef-35ab-44bb-a538-68d963458da0.png'),
+    images: [
+      newProductImage('ARS4', 'def8faef-35ab-44bb-a538-68d963458da0.png'),
+      newProductImage('ARS4', 'Template Hawaiian AR4.jpg'),
+    ],
+    media: imageMedia([
+      newProductImage('ARS4', 'def8faef-35ab-44bb-a538-68d963458da0.png'),
+      newProductImage('ARS4', 'Template Hawaiian AR4.jpg'),
+    ]),
+    sizes: [...LATIN_SILK_SIZE_ORDER],
+    materials: latinSilkMaterials,
+    variants: generateLatinSilkVariants(),
+    specifications: [
+      { label: 'Material', value: 'Chất lụa latin' },
+      { label: 'Fit', value: 'Relaxed fit' },
+      { label: 'Care', value: 'Machine wash cold, hang dry' },
+      { label: 'Shipping', value: 'Fast US shipping' },
+      { label: 'Print', value: 'Red floral football all-over print' },
+      { label: 'SKU / Type code', value: 'HW-SPORT-ARS4' },
+    ],
+  },
   {
     id: 'cosmic-catmas',
     slug: 'cosmic-catmas-shirt',
@@ -427,6 +671,7 @@ export const products: Product[] = [
 ]
 
 export const niches: { label: Niche; subNiches: SubNiche[] }[] = [
+  { label: 'Sports', subNiches: ['Football'] },
   { label: 'Animal', subNiches: ['Cat', 'Dog', 'Lion', 'Tiger'] },
   { label: 'Art & Music', subNiches: ['Piano', 'Photography'] },
   { label: 'Vintage', subNiches: ['Train'] },

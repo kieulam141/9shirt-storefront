@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { headers } from 'next/headers'
 import HomeClient from './HomeClient'
 import { getLangFromSearchParams, languageAlternates, toCanonical } from '@/lib/seo'
 
@@ -8,15 +9,15 @@ export async function generateMetadata({
   searchParams: Promise<Record<string, string | string[] | undefined>>
 }): Promise<Metadata> {
   const params = await searchParams
-  const lang = getLangFromSearchParams(params)
+  const lang = getLangFromSearchParams(params, (await headers()).get('host'))
   const title =
     lang === 'vi'
       ? 'Hiwaii Shop | Áo Hawaii statement theo phong cách sống'
       : 'Hiwaii Shop | Statement Hawaiian Shirts by Lifestyle'
   const description =
     lang === 'vi'
-      ? 'Khám phá áo Hawaii độc đáo theo từng phong cách sống. Mua nhanh theo ngách Animal, Art & Music, Vintage.'
-      : 'Discover unique Hawaiian shirts categorized by lifestyle. Shop niche prints for Animal lovers, Art & Music fans, and Vintage enthusiasts.'
+      ? 'Khám phá áo Hawaii độc đáo theo từng phong cách sống. Mua nhanh theo ngách Sports, Animal, Art & Music, Vintage.'
+      : 'Discover unique Hawaiian shirts categorized by lifestyle. Shop niche prints for Sports fans, Animal lovers, Art & Music fans, and Vintage enthusiasts.'
 
   return {
     title,
@@ -43,4 +44,3 @@ export async function generateMetadata({
 export default function HomePage() {
   return <HomeClient />
 }
-
