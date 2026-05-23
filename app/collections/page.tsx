@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { headers } from 'next/headers'
 import CollectionsClient from './CollectionsClient'
-import { getLangFromSearchParams, languageAlternates, toCanonical } from '@/lib/seo'
+import { buildSocialImageUrl, getLangFromSearchParams, languageAlternates, socialImage, toCanonical } from '@/lib/seo'
 import { products } from '@/lib/products'
 
 export async function generateMetadata({
@@ -20,10 +20,20 @@ export async function generateMetadata({
     lang === 'vi'
       ? 'Lọc theo niche Sports, Animal, Art & Music, Vintage để tìm mẫu áo Hawaii phù hợp phong cách của bạn.'
       : 'Explore Hiwaii lifestyle collections across Sports, Animal, Art & Music, and Vintage niches.'
+  const socialPreview = buildSocialImageUrl({
+    title: lang === 'vi' ? 'Bộ sưu tập áo Hawaii theo vibe' : 'Shop Hawaiian shirts by lifestyle',
+    subtitle: lang === 'vi'
+      ? 'Sports, Animal, Art & Music, Vintage - xem mẫu thật, chọn size nhanh.'
+      : 'Sports, Animal, Art & Music, Vintage - scan bold designs fast.',
+    lang,
+  })
 
   return {
     title,
     description,
+    keywords: lang === 'vi'
+      ? ['bộ sưu tập áo Hawaii', 'áo Hawaii bóng đá', 'áo Hawaii animal', 'áo Hawaii vintage']
+      : ['Hawaiian shirt collection', 'football Hawaiian shirt', 'animal Hawaiian shirt', 'vintage Hawaiian shirt'],
     alternates: {
       canonical: toCanonical('/collections', lang),
       languages: languageAlternates('/collections'),
@@ -34,6 +44,13 @@ export async function generateMetadata({
       url: toCanonical('/collections', lang),
       locale: lang === 'vi' ? 'vi_VN' : 'en_US',
       type: 'website',
+      images: [socialImage(socialPreview, title)],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [socialPreview],
     },
   }
 }

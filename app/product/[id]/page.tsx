@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { headers } from 'next/headers'
 import ProductClient from './ProductClient'
 import { getProductById } from '@/lib/products'
-import { structuredPrice } from '@/lib/pricing'
-import { getLangFromSearchParams, languageAlternates, PRIMARY_ORIGIN, toCanonical } from '@/lib/seo'
+import { formatPrice, structuredPrice } from '@/lib/pricing'
+import { buildSocialImageUrl, getLangFromSearchParams, languageAlternates, PRIMARY_ORIGIN, socialImage, toCanonical } from '@/lib/seo'
 
 export async function generateMetadata({
   params,
@@ -23,10 +23,26 @@ export async function generateMetadata({
       description: 'This product is not available.',
     }
   }
+  const socialPreview = buildSocialImageUrl({
+    title: product.name,
+    subtitle: product.hook,
+    image: product.thumbnail,
+    price: formatPrice(product.price),
+    lang,
+  })
 
   return {
     title: `${product.name} | Hiwaii`,
     description: product.description,
+    keywords: [
+      product.name,
+      product.niche,
+      product.subNiche,
+      product.productType,
+      'Hiwaii',
+      'Hawaiian shirt',
+      'áo Hawaii',
+    ],
     alternates: {
       canonical: toCanonical(`/product/${product.id}`, lang),
       languages: languageAlternates(`/product/${product.id}`),
@@ -37,13 +53,13 @@ export async function generateMetadata({
       type: 'website',
       url: toCanonical(`/product/${product.id}`, lang),
       locale: lang === 'vi' ? 'vi_VN' : 'en_US',
-      images: [{ url: product.thumbnail, alt: product.name }],
+      images: [socialImage(socialPreview, product.name)],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${product.name} | Hiwaii`,
       description: product.description,
-      images: [product.thumbnail],
+      images: [socialPreview],
     },
   }
 }

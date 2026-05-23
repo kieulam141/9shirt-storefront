@@ -4,7 +4,7 @@ import { Antonio, Be_Vietnam_Pro, Lexend, Manrope } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { CartProvider } from '@/context/CartContext'
 import { LangProvider } from '@/hooks/use-lang'
-import { getDefaultLangForHost, PRIMARY_ORIGIN } from '@/lib/seo'
+import { buildSocialImageUrl, getDefaultLangForHost, PRIMARY_ORIGIN, socialImage } from '@/lib/seo'
 import './globals.css'
 
 const bodyFont = Manrope({
@@ -32,21 +32,38 @@ const viDisplayFont = Lexend({
 
 export const metadata: Metadata = {
   metadataBase: new URL(PRIMARY_ORIGIN),
+  applicationName: 'Hiwaii Shop',
   title: {
     default: 'Hiwaii Shop | Statement Hawaiian Shirts',
     template: '%s | Hiwaii Shop',
   },
   description: 'Discover unique Hawaiian shirts categorized by your lifestyle. Shop niche prints for Sports fans, Animal lovers, Music fans, and Vintage enthusiasts.',
+  keywords: ['Hawaiian shirt', 'custom shirt', 'football shirt', 'CR7 shirt', 'áo Hawaii', 'áo đi biển', 'Hiwaii'],
   openGraph: {
     title: 'Hiwaii Shop | Statement Hawaiian Shirts',
     description: 'Discover unique Hawaiian shirts categorized by your lifestyle. Shop niche prints for Sports fans, Animal lovers, Music fans, and Vintage enthusiasts.',
     type: 'website',
     siteName: 'Hiwaii Shop',
+    images: [
+      socialImage(
+        buildSocialImageUrl({
+          title: 'Hiwaii statement Hawaiian shirts',
+          subtitle: 'Bold drops, lifestyle niches, product mockups, and football-inspired designs.',
+        }),
+        'Hiwaii statement Hawaiian shirts',
+      ),
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Hiwaii Shop | Statement Hawaiian Shirts',
     description: 'Discover unique Hawaiian shirts categorized by your lifestyle. Shop niche prints for Sports fans, Animal lovers, Music fans, and Vintage enthusiasts.',
+    images: [
+      buildSocialImageUrl({
+        title: 'Hiwaii statement Hawaiian shirts',
+        subtitle: 'Bold drops, lifestyle niches, product mockups, and football-inspired designs.',
+      }),
+    ],
   },
   icons: {
     icon: [
