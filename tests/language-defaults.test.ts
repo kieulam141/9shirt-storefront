@@ -1,7 +1,26 @@
 import assert from 'node:assert/strict'
+import { register } from 'node:module'
 import test from 'node:test'
 
-import { getDefaultLangForHost, getLangFromSearchParams, isVietnameseDefaultHost } from '../lib/seo'
+register(
+  `data:text/javascript,${encodeURIComponent(`
+    import { pathToFileURL } from 'node:url'
+
+    export async function resolve(specifier, context, nextResolve) {
+      if (specifier.startsWith('@/')) {
+        return {
+          url: pathToFileURL(process.cwd() + '/' + specifier.slice(2) + '.ts').href,
+          shortCircuit: true,
+        }
+      }
+
+      return nextResolve(specifier, context)
+    }
+  `)}`,
+  import.meta.url,
+)
+
+const { getDefaultLangForHost, getLangFromSearchParams, isVietnameseDefaultHost } = await import('../lib/seo.ts')
 
 test('9shirt domains default to Vietnamese', () => {
   assert.equal(isVietnameseDefaultHost('9shirt.vn'), true)

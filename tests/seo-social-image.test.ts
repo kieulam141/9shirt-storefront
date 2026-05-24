@@ -1,7 +1,26 @@
 import assert from 'node:assert/strict'
+import { register } from 'node:module'
 import test from 'node:test'
 
-import { buildSocialImageUrl, socialImage, SOCIAL_IMAGE_HEIGHT, SOCIAL_IMAGE_WIDTH } from '../lib/seo'
+register(
+  `data:text/javascript,${encodeURIComponent(`
+    import { pathToFileURL } from 'node:url'
+
+    export async function resolve(specifier, context, nextResolve) {
+      if (specifier.startsWith('@/')) {
+        return {
+          url: pathToFileURL(process.cwd() + '/' + specifier.slice(2) + '.ts').href,
+          shortCircuit: true,
+        }
+      }
+
+      return nextResolve(specifier, context)
+    }
+  `)}`,
+  import.meta.url,
+)
+
+const { buildSocialImageUrl, socialImage, SOCIAL_IMAGE_HEIGHT, SOCIAL_IMAGE_WIDTH } = await import('../lib/seo.ts')
 
 test('builds absolute social image URLs for ad platform scrapers', () => {
   const url = buildSocialImageUrl({

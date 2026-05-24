@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 
-import { formatPrice } from '../lib/pricing'
-import { products } from '../lib/products'
+import { formatPrice } from '../lib/pricing.ts'
+import { products } from '../lib/products.ts'
 
 const latinSilkPrices: Record<string, number> = {
   S: 350,
