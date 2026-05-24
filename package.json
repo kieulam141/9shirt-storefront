@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "type": "module",
   "private": true,
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "node --import ./tests/alias-loader.ts --test tests/*.test.ts",
+    "test": "node --import ./tests/alias-loader.mjs --test tests/*.test.ts",
     "lint": "eslint ."
   },
   "dependencies": {
