@@ -1,0 +1,2262 @@
+[
+  {
+    "id": "cr72-champions-gold",
+    "slug": "cr72-champions-gold-shirt",
+    "name": "CR7 Champions Gold Resort Shirt",
+    "price": 350,
+    "hook": "Gold-and-black CR7 champions artwork with trophy details.",
+    "description": "A high-impact football celebration print built around gold florals, trophy graphics, and a premium black resort palette.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Sports",
+    "subNiche": "Football",
+    "badge": "Trending",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/704810634_979476901355846_2168163068901386661_n.jpg",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/704810634_979476901355846_2168163068901386661_n.jpg",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/296d4917-3d9c-4ec2-8cdb-ca6ba7cc45c6.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/A5.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/A65.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/A76.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/64d65930-5524-423d-8d4e-3f056d5ab9cd.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/C%E1%BB%95.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/704810634_979476901355846_2168163068901386661_n.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/296d4917-3d9c-4ec2-8cdb-ca6ba7cc45c6.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/A5.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/A65.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/A76.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/64d65930-5524-423d-8d4e-3f056d5ab9cd.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/C%E1%BB%95.png"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Chất lụa latin",
+        "uplift": 0,
+        "benefit": "Mềm rũ • mát nhẹ • lên màu sắc nét"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 395
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 395
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 445
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 445
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Chất lụa latin"
+      },
+      {
+        "label": "Fit",
+        "value": "Relaxed resort fit"
+      },
+      {
+        "label": "Care",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Shipping",
+        "value": "US warehouse, 3-5 business days"
+      },
+      {
+        "label": "Print",
+        "value": "Football tribute all-over sublimation print"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW-SPORT-CR72"
+      }
+    ]
+  },
+  {
+    "id": "cr71-legacy-gold",
+    "slug": "cr71-legacy-gold-shirt",
+    "name": "CR7 Legacy Gold Resort Shirt",
+    "price": 350,
+    "hook": "Cream-and-navy CR7 legacy print with gold floral framing.",
+    "description": "A collector-style football shirt design pairing a cream base, navy trim, and ornate championship-inspired visual language.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Sports",
+    "subNiche": "Football",
+    "badge": "Best seller",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/702636459_960250286628890_9191551945257170271_n.jpg",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/702636459_960250286628890_9191551945257170271_n.jpg",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/b03fb274-25cb-4c49-8056-547e7a304714.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/MT1.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/MS22.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/In2.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/Tay.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/C%E1%BB%95.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/702636459_960250286628890_9191551945257170271_n.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/b03fb274-25cb-4c49-8056-547e7a304714.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/MT1.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/MS22.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/In2.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/Tay.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/C%E1%BB%95.png"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Chất lụa latin",
+        "uplift": 0,
+        "benefit": "Mềm rũ • mát nhẹ • lên màu sắc nét"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 395
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 395
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 445
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 445
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Chất lụa latin"
+      },
+      {
+        "label": "Fit",
+        "value": "Relaxed resort fit"
+      },
+      {
+        "label": "Care",
+        "value": "Cold wash, no bleach"
+      },
+      {
+        "label": "Shipping",
+        "value": "Ships from US in 3-5 days"
+      },
+      {
+        "label": "Print",
+        "value": "Cream football legacy full-print"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW-SPORT-CR71"
+      }
+    ]
+  },
+  {
+    "id": "ars1-rice-burgundy",
+    "slug": "ars1-rice-burgundy-shirt",
+    "name": "ARS1 Rice Burgundy Resort Shirt",
+    "price": 350,
+    "hook": "Burgundy football artwork with Rice 41 feature styling.",
+    "description": "A deep burgundy football print with fireworks, trophy cues, and a player-focused front composition.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Sports",
+    "subNiche": "Football",
+    "badge": "Premium Edition",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS1/e1eb6515-5d93-49fb-83b5-a1fe759c0bdd.png",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS1/e1eb6515-5d93-49fb-83b5-a1fe759c0bdd.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS1/Template%20Hawaiian%20AR1.jpg"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS1/e1eb6515-5d93-49fb-83b5-a1fe759c0bdd.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS1/Template%20Hawaiian%20AR1.jpg"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Chất lụa latin",
+        "uplift": 0,
+        "benefit": "Mềm rũ • mát nhẹ • lên màu sắc nét"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 395
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 395
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 445
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 445
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Chất lụa latin"
+      },
+      {
+        "label": "Fit",
+        "value": "Regular relaxed fit"
+      },
+      {
+        "label": "Care",
+        "value": "Machine wash cold"
+      },
+      {
+        "label": "Shipping",
+        "value": "US warehouse fulfillment"
+      },
+      {
+        "label": "Print",
+        "value": "Burgundy football all-over print"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW-SPORT-ARS1"
+      }
+    ]
+  },
+  {
+    "id": "ars2-red-champions",
+    "slug": "ars2-red-champions-shirt",
+    "name": "ARS2 Red Champions Resort Shirt",
+    "price": 350,
+    "hook": "Red championship collage with energetic football graphics.",
+    "description": "A saturated red football shirt design with layered champion typography, maple-toned artwork, and bold matchday energy.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Sports",
+    "subNiche": "Football",
+    "badge": "Trending",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS2/b0758d9a-8061-40a4-a6ba-f2a5dcf1a1ed.png",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS2/b0758d9a-8061-40a4-a6ba-f2a5dcf1a1ed.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS2/Template%20Hawaiian%20AR2.jpg"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS2/b0758d9a-8061-40a4-a6ba-f2a5dcf1a1ed.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS2/Template%20Hawaiian%20AR2.jpg"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Chất lụa latin",
+        "uplift": 0,
+        "benefit": "Mềm rũ • mát nhẹ • lên màu sắc nét"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 395
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 395
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 445
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 445
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Chất lụa latin"
+      },
+      {
+        "label": "Fit",
+        "value": "Relaxed resort fit"
+      },
+      {
+        "label": "Care",
+        "value": "Gentle cycle, low heat dry"
+      },
+      {
+        "label": "Shipping",
+        "value": "Ships in 3-5 business days"
+      },
+      {
+        "label": "Print",
+        "value": "Red championship sublimation print"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW-SPORT-ARS2"
+      }
+    ]
+  },
+  {
+    "id": "ars3-cream-heritage",
+    "slug": "ars3-cream-heritage-shirt",
+    "name": "ARS3 Cream Heritage Resort Shirt",
+    "price": 350,
+    "hook": "Cream and burgundy football layout with heritage poster cues.",
+    "description": "A quieter football resort shirt design with cream poster styling, burgundy accents, and collector-ready artwork.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Sports",
+    "subNiche": "Football",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS3/1ed654b8-5f26-4ab2-bc62-3a15519609e2.png",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS3/1ed654b8-5f26-4ab2-bc62-3a15519609e2.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS3/Template%20Hawaiian%20AR3.jpg"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS3/1ed654b8-5f26-4ab2-bc62-3a15519609e2.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS3/Template%20Hawaiian%20AR3.jpg"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Chất lụa latin",
+        "uplift": 0,
+        "benefit": "Mềm rũ • mát nhẹ • lên màu sắc nét"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 395
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 395
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 445
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 445
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Chất lụa latin"
+      },
+      {
+        "label": "Fit",
+        "value": "Regular fit"
+      },
+      {
+        "label": "Care",
+        "value": "Cold machine wash"
+      },
+      {
+        "label": "Shipping",
+        "value": "US shipping 3-5 days"
+      },
+      {
+        "label": "Print",
+        "value": "Cream football poster all-over print"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW-SPORT-ARS3"
+      }
+    ]
+  },
+  {
+    "id": "ars4-floral-crest",
+    "slug": "ars4-floral-crest-shirt",
+    "name": "ARS4 Floral Crest Resort Shirt",
+    "price": 350,
+    "hook": "Red floral football artwork with crest-inspired composition.",
+    "description": "A red floral football print with poster details, tropical accents, and a clean collector-style presentation.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Sports",
+    "subNiche": "Football",
+    "badge": "Premium Edition",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS4/def8faef-35ab-44bb-a538-68d963458da0.png",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS4/def8faef-35ab-44bb-a538-68d963458da0.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS4/Template%20Hawaiian%20AR4.jpg"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS4/def8faef-35ab-44bb-a538-68d963458da0.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS4/Template%20Hawaiian%20AR4.jpg"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Chất lụa latin",
+        "uplift": 0,
+        "benefit": "Mềm rũ • mát nhẹ • lên màu sắc nét"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 350
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 395
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 395
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 445
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 445
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Chất lụa latin"
+      },
+      {
+        "label": "Fit",
+        "value": "Relaxed fit"
+      },
+      {
+        "label": "Care",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Shipping",
+        "value": "Fast US shipping"
+      },
+      {
+        "label": "Print",
+        "value": "Red floral football all-over print"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW-SPORT-ARS4"
+      }
+    ]
+  },
+  {
+    "id": "cosmic-catmas",
+    "slug": "cosmic-catmas-shirt",
+    "name": "Cosmic Catmas Shirt",
+    "price": 24.9,
+    "compareAtPrice": 44.9,
+    "hook": "Cosmic cat artwork with standout all-over depth.",
+    "description": "A bold cat-themed summer statement shirt designed for vacation, weekends, and collectors of wearable art.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Cat",
+    "badge": "Best seller",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/Cosmic%20Catmas%20Shirt.png",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/Cosmic%20Catmas%20Shirt.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/MS.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/MC.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/KXj3K.jpg"
+    ],
+    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/G34.mp4",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/G34.mp4",
+        "thumb": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/Cosmic%20Catmas%20Shirt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/Cosmic%20Catmas%20Shirt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/MS.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/MC.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/KXj3K.jpg"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Standard Poly",
+        "uplift": 0,
+        "benefit": "Lightweight • bold color impact"
+      },
+      {
+        "code": "premium_silk",
+        "label": "Premium Silk Blend",
+        "uplift": 20,
+        "benefit": "Softer touch • better drape",
+        "badge": "Most loved upgrade"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "S",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "M",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "L",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 24.9
+      },
+      {
+        "size": "2XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 44.9
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 24.9
+      },
+      {
+        "size": "3XL",
+        "material": "premium_silk",
+        "available": false,
+        "stockStatus": "out_of_stock",
+        "price": 44.9
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Polyester / Silk blend option"
+      },
+      {
+        "label": "Fit",
+        "value": "Regular relaxed fit"
+      },
+      {
+        "label": "Care",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Shipping",
+        "value": "US warehouse, 3-5 business days"
+      },
+      {
+        "label": "Print",
+        "value": "All-over sublimation print"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW01-CAT-COSMIC"
+      }
+    ]
+  },
+  {
+    "id": "shadow-whiskers",
+    "slug": "shadow-whiskers-shirt",
+    "name": "Shadow Whiskers Shirt",
+    "price": 22.41,
+    "compareAtPrice": 24.9,
+    "hook": "Vintage pilot-cat collage with rich tonal contrast.",
+    "description": "Dark vintage cat collage built for expressive styling and collectible summer looks.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Cat",
+    "badge": "Trending",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/Shadow%20Whiskers%20Hiwaii%20Shirt.jpg",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/Shadow%20Whiskers%20Hiwaii%20Shirt.jpg",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/MS.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/2M.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/zoom.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/gap.png"
+    ],
+    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/0421.mp4",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/0421.mp4",
+        "thumb": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/Shadow%20Whiskers%20Hiwaii%20Shirt.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/Shadow%20Whiskers%20Hiwaii%20Shirt.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/MS.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/2M.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/zoom.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/gap.png"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Standard Poly",
+        "uplift": 0,
+        "benefit": "Quick dry • lightweight wear"
+      },
+      {
+        "code": "premium_silk",
+        "label": "Premium Silk Blend",
+        "uplift": 20,
+        "benefit": "Cleaner drape • elevated finish",
+        "badge": "Most loved upgrade"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 22.41
+      },
+      {
+        "size": "S",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 42.41
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 22.41
+      },
+      {
+        "size": "M",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 42.41
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 22.41
+      },
+      {
+        "size": "L",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 42.41
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 22.41
+      },
+      {
+        "size": "XL",
+        "material": "premium_silk",
+        "available": false,
+        "stockStatus": "out_of_stock",
+        "price": 42.41
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 22.41
+      },
+      {
+        "size": "2XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 42.41
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 22.41
+      },
+      {
+        "size": "3XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 42.41
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Polyester / Silk blend option"
+      },
+      {
+        "label": "Fit",
+        "value": "Relaxed resort fit"
+      },
+      {
+        "label": "Care",
+        "value": "Gentle cycle, low heat dry"
+      },
+      {
+        "label": "Shipping",
+        "value": "Ships from US in 3-5 days"
+      },
+      {
+        "label": "Print",
+        "value": "Fade-resistant all-over print"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW02-CAT-SHADOW"
+      }
+    ]
+  },
+  {
+    "id": "bulldog-forest",
+    "slug": "bulldog-forest-shirt",
+    "name": "Bulldog Forest Shirt",
+    "price": 24.9,
+    "compareAtPrice": 39.9,
+    "hook": "Dense bulldog portrait print with collector energy.",
+    "description": "A conversation-starter shirt with layered bulldog artwork and deep black base.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Dog",
+    "badge": "Best seller",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/Bulldog%20Forest%20Shirt.png",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/Bulldog%20Forest%20Shirt.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/MS.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/Thoan%20188.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/gd.jpg",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/image%20(2).jpg"
+    ],
+    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/0421%20(2).mp4",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/0421%20(2).mp4",
+        "thumb": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/Bulldog%20Forest%20Shirt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/Bulldog%20Forest%20Shirt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/MS.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/Thoan%20188.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/gd.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/image%20(2).jpg"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Standard Poly",
+        "uplift": 0,
+        "benefit": "Lightweight • easy care"
+      },
+      {
+        "code": "premium_silk",
+        "label": "Premium Silk Blend",
+        "uplift": 20,
+        "benefit": "Smoother feel • premium drape",
+        "badge": "Most loved upgrade"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "S",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 24.9
+      },
+      {
+        "size": "M",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 44.9
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 24.9
+      },
+      {
+        "size": "L",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 44.9
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "2XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "3XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Polyester / Silk blend option"
+      },
+      {
+        "label": "Fit",
+        "value": "Regular fit"
+      },
+      {
+        "label": "Care",
+        "value": "Machine wash cold"
+      },
+      {
+        "label": "Shipping",
+        "value": "US warehouse fulfillment"
+      },
+      {
+        "label": "Print",
+        "value": "HD sublimation print"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW01-DOG-BULL"
+      }
+    ]
+  },
+  {
+    "id": "roar-jungle",
+    "slug": "roar-of-the-jungle",
+    "name": "Roar of the Jungle Shirt",
+    "price": 44.9,
+    "hook": "Psychedelic lion palette for bold party fits.",
+    "description": "High-saturation lion artwork made for festival, beach night, and statement gifting.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Lion",
+    "badge": "Premium Edition",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt.png",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/2M.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Ho%20van%20MS.jpg",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/ho%20van.jpg",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/gap.png"
+    ],
+    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/0421%20(1).mp4",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/0421%20(1).mp4",
+        "thumb": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/2M.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Ho%20van%20MS.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/ho%20van.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/gap.png"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Standard Poly",
+        "uplift": 0,
+        "benefit": "Strong print expression"
+      },
+      {
+        "code": "premium_silk",
+        "label": "Premium Silk Blend",
+        "uplift": 20,
+        "benefit": "Luxury drape • upscale feel",
+        "badge": "Most loved upgrade"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 44.9
+      },
+      {
+        "size": "S",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 64.9
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "M",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 64.9
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "L",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 64.9
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 64.9
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "2XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 64.9
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "3XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 64.9
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Polyester / Silk blend option"
+      },
+      {
+        "label": "Fit",
+        "value": "Relaxed fit"
+      },
+      {
+        "label": "Care",
+        "value": "Cold wash, no bleach"
+      },
+      {
+        "label": "Shipping",
+        "value": "3-5 day US delivery"
+      },
+      {
+        "label": "Print",
+        "value": "Ultra vivid multi-color print"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW02-LION-ROAR"
+      }
+    ]
+  },
+  {
+    "id": "neon-jungle",
+    "slug": "neon-jungle-shirt",
+    "name": "Neon Jungle Shirt",
+    "price": 44.9,
+    "hook": "Tiger-driven neon collage with premium depth.",
+    "description": "A standout tiger print designed for bold summer wardrobes and nightlife styling.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Tiger",
+    "badge": "Premium Edition",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt.png",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/Thoan%20198.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/image%20(2).jpg",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/su%20tu.jpg",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/gap.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/zoom.png"
+    ],
+    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/t45.mp4",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/t45.mp4",
+        "thumb": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/Thoan%20198.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/image%20(2).jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/su%20tu.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/gap.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/zoom.png"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Standard Poly",
+        "uplift": 0,
+        "benefit": "Lightweight and vibrant"
+      },
+      {
+        "code": "premium_silk",
+        "label": "Premium Silk Blend",
+        "uplift": 20,
+        "benefit": "Smoother finish • premium look",
+        "badge": "Most loved upgrade"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "S",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 64.9
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 44.9
+      },
+      {
+        "size": "M",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 64.9
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "L",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 64.9
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 64.9
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "2XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 64.9
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 44.9
+      },
+      {
+        "size": "3XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 64.9
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Polyester / Silk blend option"
+      },
+      {
+        "label": "Fit",
+        "value": "Regular fit"
+      },
+      {
+        "label": "Care",
+        "value": "Machine wash cold"
+      },
+      {
+        "label": "Shipping",
+        "value": "US-based fulfillment"
+      },
+      {
+        "label": "Print",
+        "value": "Neon contrast full-print"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW02-TIGER-NEON"
+      }
+    ]
+  },
+  {
+    "id": "hands-harmony",
+    "slug": "hands-of-harmony-shirt",
+    "name": "Hands of Harmony Shirt",
+    "price": 24.9,
+    "compareAtPrice": 44.9,
+    "hook": "Piano-motion artwork for art & music lovers.",
+    "description": "Expressive piano and floral collage made for artistic, creative summer looks.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Art & Music",
+    "subNiche": "Piano",
+    "badge": "Trending",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Music%20&%20Art/Piano/Hands%20of%20Harmony%20Hiwaii%20Shirt/Hands%20of%20Harmony%20Hiwaii%20Shirt.png",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Music%20&%20Art/Piano/Hands%20of%20Harmony%20Hiwaii%20Shirt/Hands%20of%20Harmony%20Hiwaii%20Shirt.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Music%20&%20Art/Piano/Hands%20of%20Harmony%20Hiwaii%20Shirt/gap.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Music%20&%20Art/Piano/Hands%20of%20Harmony%20Hiwaii%20Shirt/Hands%20of%20Harmony%20Hiwaii%20Shirt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Music%20&%20Art/Piano/Hands%20of%20Harmony%20Hiwaii%20Shirt/gap.png"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Standard Poly",
+        "uplift": 0,
+        "benefit": "Breathable and lightweight"
+      },
+      {
+        "code": "premium_silk",
+        "label": "Premium Silk Blend",
+        "uplift": 20,
+        "benefit": "Softer touch for elevated styling",
+        "badge": "Most loved upgrade"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "S",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "M",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 24.9
+      },
+      {
+        "size": "L",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 44.9
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 24.9
+      },
+      {
+        "size": "XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 44.9
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "2XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "3XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Polyester / Silk blend option"
+      },
+      {
+        "label": "Fit",
+        "value": "Regular fit"
+      },
+      {
+        "label": "Care",
+        "value": "Delicate wash recommended"
+      },
+      {
+        "label": "Shipping",
+        "value": "Ships in 3-5 business days"
+      },
+      {
+        "label": "Print",
+        "value": "Art collage sublimation print"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW01-MUSIC-HARMONY"
+      }
+    ]
+  },
+  {
+    "id": "shutter-vibes",
+    "slug": "shutter-vibes-shirt",
+    "name": "Shutter Vibes Shirt",
+    "price": 24.9,
+    "compareAtPrice": 39.9,
+    "hook": "Photography collage print for creator energy.",
+    "description": "Camera-and-collage inspired print for makers, creators, and visual storytellers.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Art & Music",
+    "subNiche": "Photography",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Music%20&%20Art/camera/Shutter%20Vibes%20Hiwaii%20Shirt/Shutter%20Vibes%20Hiwaii%20Shirt.png",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Music%20&%20Art/camera/Shutter%20Vibes%20Hiwaii%20Shirt/Shutter%20Vibes%20Hiwaii%20Shirt.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Music%20&%20Art/camera/Shutter%20Vibes%20Hiwaii%20Shirt/Shutter%20Vibes%20Hiwaii%20Shirt.png"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Standard Poly",
+        "uplift": 0,
+        "benefit": "Quick dry and easy wear"
+      },
+      {
+        "code": "premium_silk",
+        "label": "Premium Silk Blend",
+        "uplift": 20,
+        "benefit": "Premium drape for dressed-up looks",
+        "badge": "Most loved upgrade"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "S",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "M",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "L",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 24.9
+      },
+      {
+        "size": "2XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 44.9
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "3XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Polyester / Silk blend option"
+      },
+      {
+        "label": "Fit",
+        "value": "Regular fit"
+      },
+      {
+        "label": "Care",
+        "value": "Cold machine wash"
+      },
+      {
+        "label": "Shipping",
+        "value": "US shipping 3-5 days"
+      },
+      {
+        "label": "Print",
+        "value": "Camera collage all-over print"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW01-ART-SHUTTER"
+      }
+    ]
+  },
+  {
+    "id": "timeless-tracks",
+    "slug": "timeless-tracks-shirt",
+    "name": "Timeless Tracks Shirt",
+    "price": 24.9,
+    "compareAtPrice": 39.9,
+    "hook": "Classic train nostalgia with vintage ticket texture.",
+    "description": "Train-era collage inspired by timeless rail tickets and old-world travel.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Vintage",
+    "subNiche": "Train",
+    "badge": "Best seller",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Timeless%20Tracks%20Hiwaii%20Shirt.jpg",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Timeless%20Tracks%20Hiwaii%20Shirt.jpg",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/2M%20(1).png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Nghieng.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Mat%20Sau.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/gap.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/zoom.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/zoom2.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/OKY3z.jpg"
+    ],
+    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/ayh).mp4",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/ayh).mp4",
+        "thumb": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Timeless%20Tracks%20Hiwaii%20Shirt.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Timeless%20Tracks%20Hiwaii%20Shirt.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/2M%20(1).png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Nghieng.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Mat%20Sau.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/gap.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/zoom.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/zoom2.png"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/OKY3z.jpg"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Standard Poly",
+        "uplift": 0,
+        "benefit": "Lightweight comfort"
+      },
+      {
+        "code": "premium_silk",
+        "label": "Premium Silk Blend",
+        "uplift": 20,
+        "benefit": "Sharper drape for occasions",
+        "badge": "Most loved upgrade"
+      }
+    ],
+    "variants": [
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 24.9
+      },
+      {
+        "size": "S",
+        "material": "premium_silk",
+        "available": false,
+        "stockStatus": "out_of_stock",
+        "price": 44.9
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 24.9
+      },
+      {
+        "size": "M",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 44.9
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "L",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "2XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 24.9
+      },
+      {
+        "size": "3XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 44.9
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "Polyester / Silk blend option"
+      },
+      {
+        "label": "Fit",
+        "value": "Regular fit"
+      },
+      {
+        "label": "Care",
+        "value": "Machine wash cold, low tumble"
+      },
+      {
+        "label": "Shipping",
+        "value": "Fast US shipping"
+      },
+      {
+        "label": "Print",
+        "value": "Vintage train ticket collage"
+      },
+      {
+        "label": "SKU / Type code",
+        "value": "HW01-VINTAGE-TRACKS"
+      }
+    ]
+  }
+]
