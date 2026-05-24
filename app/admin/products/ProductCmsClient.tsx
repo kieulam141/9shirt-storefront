@@ -5,6 +5,7 @@ import { LogOut, Save, Search } from 'lucide-react'
 import { useMemo, useState, useTransition } from 'react'
 
 import type { Niche, Product, SubNiche } from '@/lib/catalog/types'
+import { formatPrice } from '@/lib/pricing'
 
 import {
   cloneProduct,
@@ -59,12 +60,6 @@ const EMPTY_PRODUCT: Product = {
   variants: [],
   specifications: [],
 }
-
-const currencyFormatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-  maximumFractionDigits: 2,
-})
 
 function formatJsonField(value: unknown): string {
   return JSON.stringify(value, null, 2)
@@ -513,7 +508,7 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
               Storefront price
             </p>
             <p className="mt-1 text-3xl font-black text-white">
-              {currencyFormatter.format(draft.price)}
+              {formatPrice(draft.price)}
             </p>
             <p className="mt-2 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
               {draft.badge ?? 'No merchandising badge'}
