@@ -35,7 +35,7 @@ const productSchema = z.object({
   })).min(1),
   variants: z.array(z.object({
     size: z.string().trim().min(1),
-    material: z.string().trim().min(1),
+    material: materialCodeSchema,
     available: z.boolean(),
     stockStatus: stockStatusSchema,
     price: z.number().finite().nonnegative(),

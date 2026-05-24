@@ -33,7 +33,7 @@ test('catalog validation rejects variants outside declared sizes and materials',
     variants: [
       ...sampleProduct.variants,
       { size: '9XL', material: 'standard_poly', available: true, stockStatus: 'in_stock', price: sampleProduct.price },
-      { size: sampleProduct.sizes[0], material: 'linen', available: true, stockStatus: 'in_stock', price: sampleProduct.price },
+      { size: sampleProduct.sizes[0], material: 'premium_silk', available: true, stockStatus: 'in_stock', price: sampleProduct.price },
     ],
   }
 
