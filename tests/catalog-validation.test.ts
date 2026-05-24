@@ -44,6 +44,13 @@ test('catalog validation rejects variants outside declared sizes and materials',
   assert.match(result.errors.join('\n'), /unknown material/)
 })
 
+test('catalog validation rejects products without a display thumbnail', () => {
+  const result = validateCatalog([{ ...sampleProduct, thumbnail: '' }])
+
+  assert.equal(result.ok, false)
+  assert.match(result.errors.join('\n'), /thumbnail/)
+})
+
 test('normalizeCatalog returns typed products and throws on invalid input', () => {
   assert.equal(normalizeCatalog([sampleProduct])[0].id, sampleProduct.id)
 

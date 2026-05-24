@@ -14,6 +14,11 @@ test('non-9shirt domains keep English as default', () => {
   assert.equal(getDefaultLangForHost('www.hiwaii.store'), 'en')
 })
 
+test('local development defaults to Vietnamese', () => {
+  assert.equal(getDefaultLangForHost('localhost'), 'vi')
+  assert.equal(getDefaultLangForHost('127.0.0.1'), 'vi')
+})
+
 test('explicit lang query overrides host default', () => {
   assert.equal(getLangFromSearchParams({}, '9shirt.vn'), 'vi')
   assert.equal(getLangFromSearchParams({ lang: 'en' }, '9shirt.vn'), 'en')

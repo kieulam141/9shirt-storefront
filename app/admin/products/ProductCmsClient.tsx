@@ -96,6 +96,10 @@ function getPriceInputError(value: string): string | undefined {
   return undefined
 }
 
+function getThumbnailError(value: string): string | undefined {
+  return value.trim() ? undefined : 'Enter the thumbnail image URL used across the storefront.'
+}
+
 export default function ProductCmsClient({ products: initialProducts, onSave, onLogout }: ProductCmsClientProps) {
   const initialProduct = initialProducts[0] ?? EMPTY_PRODUCT
 
@@ -127,9 +131,10 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
     ))
   }, [productList, query])
 
-  const previewImage = draft.thumbnail || draft.media.find((item) => item.type === 'image')?.url
+  const previewImage = draft.thumbnail
   const hasJsonErrors = Object.values(jsonErrors).some(Boolean)
   const priceError = getPriceInputError(priceInput)
+  const thumbnailError = getThumbnailError(draft.thumbnail)
   const selectedSubNiches = SUB_NICHE_OPTIONS[draft.niche]
   const previewPrice = Number.isFinite(draft.price) ? formatPrice(draft.price) : 'Invalid price'
 
@@ -211,10 +216,14 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
   }
 
   function saveDraft(): void {
-    if (priceError || hasJsonErrors) {
+    if (priceError || thumbnailError || hasJsonErrors) {
       setStatusMessage({
         tone: 'error',
-        text: priceError ? 'Fix the invalid price before saving.' : 'Fix the invalid JSON fields before saving.',
+        text: priceError
+          ? 'Fix the invalid price before saving.'
+          : thumbnailError
+            ? 'Add a thumbnail image URL before saving.'
+            : 'Fix the invalid JSON fields before saving.',
       })
       return
     }
@@ -342,7 +351,7 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
             <button
               type="button"
               onClick={saveDraft}
-              disabled={isSaving || Boolean(priceError) || hasJsonErrors}
+              disabled={isSaving || Boolean(priceError) || Boolean(thumbnailError) || hasJsonErrors}
               className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-[var(--hiwaii-accent)] px-5 text-sm font-extrabold uppercase tracking-[0.12em] text-slate-950 transition hover:bg-[var(--hiwaii-accent)]/90 disabled:cursor-not-allowed disabled:opacity-60"
             >
               <Save className="size-4" aria-hidden="true" />
@@ -462,6 +471,26 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
               </div>
             </div>
 
+            <div className="space-y-2">
+              <label htmlFor="product-thumbnail" className="text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
+                Thumbnail image URL
+              </label>
+              <input
+                id="product-thumbnail"
+                value={draft.thumbnail}
+                onChange={(event) => updateDraft('thumbnail', event.currentTarget.value)}
+                aria-invalid={Boolean(thumbnailError)}
+                aria-describedby="product-thumbnail-help"
+                className="min-h-11 w-full rounded-md border border-[var(--hiwaii-border)] bg-slate-950/45 px-3 font-mono text-sm text-white outline-none focus:border-[var(--hiwaii-accent)] focus:ring-2 focus:ring-[var(--hiwaii-accent)]/25 aria-invalid:border-red-400 aria-invalid:focus:border-red-300 aria-invalid:focus:ring-red-400/25"
+              />
+              <p
+                id="product-thumbnail-help"
+                className={thumbnailError ? 'text-xs font-semibold text-red-200' : 'text-xs font-semibold text-[var(--hiwaii-text-muted)]'}
+              >
+                {thumbnailError ?? 'This single thumbnail is automatically used for homepage, collection, and product display previews.'}
+              </p>
+            </div>
+
             <div className="grid gap-4 lg:grid-cols-2">
               <div className="space-y-2">
                 <label htmlFor="product-hook" className="text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
@@ -573,8 +602,10 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
             </h3>
             <dl className="mt-3 grid grid-cols-2 gap-3 text-sm">
               <div>
-                <dt className="text-[var(--hiwaii-text-muted)]">Media</dt>
-                <dd className="font-bold text-white">{draft.media.length}</dd>
+                <dt className="text-[var(--hiwaii-text-muted)]">Thumbnail</dt>
+                <dd className={thumbnailError ? 'font-bold text-red-200' : 'font-bold text-[var(--hiwaii-accent)]'}>
+                  {thumbnailError ? 'Missing' : 'Ready'}
+                </dd>
               </div>
               <div>
                 <dt className="text-[var(--hiwaii-text-muted)]">Variants</dt>
