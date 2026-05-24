@@ -4,9 +4,8 @@ import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
-import { writeCatalogFile } from '@/lib/catalog/storage'
+import { readCatalogFile, writeCatalogFile } from '@/lib/catalog/storage'
 import { normalizeCatalog } from '@/lib/catalog/validation'
-import { products } from '@/lib/products'
 
 import type { Product } from '@/lib/catalog/types'
 
@@ -96,10 +95,11 @@ export async function saveProduct(product: Product): Promise<SaveProductResult> 
     return { ok: false, errors: ['Admin authentication is required.'] }
   }
 
-  const existingProductIndex = products.findIndex((item) => item.id === product.id)
+  const currentProducts = await readCatalogFile()
+  const existingProductIndex = currentProducts.findIndex((item) => item.id === product.id)
   const nextProducts = existingProductIndex >= 0
-    ? products.map((item, index) => (index === existingProductIndex ? product : item))
-    : [...products, product]
+    ? currentProducts.map((item, index) => (index === existingProductIndex ? product : item))
+    : [...currentProducts, product]
 
   try {
     const normalizedProducts = normalizeCatalog(nextProducts)

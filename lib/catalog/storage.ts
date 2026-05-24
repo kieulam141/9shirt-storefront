@@ -1,7 +1,7 @@
 import 'server-only'
 
 import { randomUUID } from 'node:crypto'
-import { mkdir, rename, rm, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -12,6 +12,12 @@ import type { Product } from './types.ts'
 const moduleDirectory = dirname(fileURLToPath(import.meta.url))
 
 export const DEFAULT_CATALOG_PATH = join(moduleDirectory, '..', '..', 'data', 'products.json')
+
+export async function readCatalogFile(path = DEFAULT_CATALOG_PATH): Promise<Product[]> {
+  const content = await readFile(path, 'utf8')
+
+  return normalizeCatalog(JSON.parse(content))
+}
 
 export async function writeCatalogFile(products: unknown, path = DEFAULT_CATALOG_PATH): Promise<Product[]> {
   const normalized = normalizeCatalog(products)

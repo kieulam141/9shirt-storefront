@@ -5,7 +5,7 @@ import { join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import test from 'node:test'
 
-import { writeCatalogFile } from '../lib/catalog/storage.ts'
+import { readCatalogFile, writeCatalogFile } from '../lib/catalog/storage.ts'
 import { products } from '../lib/products.ts'
 
 test('writeCatalogFile writes formatted JSON after validating the full catalog', async () => {
@@ -32,6 +32,27 @@ test('writeCatalogFile rejects invalid catalogs before writing', async () => {
       () => writeCatalogFile([{ ...products[0], name: '' }], target),
       /Catalog validation failed/,
     )
+  } finally {
+    await rm(dir, { recursive: true, force: true })
+  }
+})
+
+test('readCatalogFile reads and validates the current catalog file contents', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'hiwaii-catalog-'))
+  const target = join(dir, 'products.json')
+  const updatedProduct = {
+    ...products[0],
+    name: `${products[0].name} Updated`,
+  }
+
+  try {
+    await writeCatalogFile(products, target)
+    await writeCatalogFile([updatedProduct], target)
+
+    const catalog = await readCatalogFile(target)
+
+    assert.equal(catalog.length, 1)
+    assert.equal(catalog[0].name, updatedProduct.name)
   } finally {
     await rm(dir, { recursive: true, force: true })
   }
