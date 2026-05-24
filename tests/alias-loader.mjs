@@ -27,6 +27,13 @@ register(
     }
 
     export async function resolve(specifier, context, nextResolve) {
+      if (specifier === 'server-only') {
+        return {
+          url: 'data:text/javascript,export {}',
+          shortCircuit: true,
+        }
+      }
+
       if (specifier.startsWith('@/')) {
         const target = resolvePath(process.cwd(), specifier.slice(2))
         const resolved = resolveAliasTarget(target)

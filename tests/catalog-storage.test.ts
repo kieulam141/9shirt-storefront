@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { mkdtemp, readFile, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
+import { pathToFileURL } from 'node:url'
 import test from 'node:test'
 
 import { writeCatalogFile } from '../lib/catalog/storage.ts'
@@ -11,23 +12,45 @@ test('writeCatalogFile writes formatted JSON after validating the full catalog',
   const dir = await mkdtemp(join(tmpdir(), 'hiwaii-catalog-'))
   const target = join(dir, 'products.json')
 
-  await writeCatalogFile(products, target)
+  try {
+    await writeCatalogFile(products, target)
 
-  const content = await readFile(target, 'utf8')
-  assert.equal(content.endsWith('\n'), true)
-  assert.deepEqual(JSON.parse(content)[0].id, products[0].id)
-
-  await rm(dir, { recursive: true, force: true })
+    const content = await readFile(target, 'utf8')
+    assert.equal(content.endsWith('\n'), true)
+    assert.deepEqual(JSON.parse(content)[0].id, products[0].id)
+  } finally {
+    await rm(dir, { recursive: true, force: true })
+  }
 })
 
 test('writeCatalogFile rejects invalid catalogs before writing', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'hiwaii-catalog-'))
   const target = join(dir, 'products.json')
 
-  await assert.rejects(
-    () => writeCatalogFile([{ ...products[0], name: '' }], target),
-    /Catalog validation failed/,
-  )
+  try {
+    await assert.rejects(
+      () => writeCatalogFile([{ ...products[0], name: '' }], target),
+      /Catalog validation failed/,
+    )
+  } finally {
+    await rm(dir, { recursive: true, force: true })
+  }
+})
 
-  await rm(dir, { recursive: true, force: true })
+test('DEFAULT_CATALOG_PATH resolves relative to the catalog storage module', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'hiwaii-catalog-'))
+  const originalCwd = process.cwd()
+
+  try {
+    process.chdir(dir)
+
+    const storageUrl = pathToFileURL(join(originalCwd, 'lib/catalog/storage.ts'))
+    storageUrl.search = `?cwd-test=${Date.now()}`
+    const storage = await import(storageUrl.href)
+
+    assert.equal(storage.DEFAULT_CATALOG_PATH, join(originalCwd, 'data', 'products.json'))
+  } finally {
+    process.chdir(originalCwd)
+    await rm(dir, { recursive: true, force: true })
+  }
 })

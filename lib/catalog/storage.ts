@@ -1,18 +1,22 @@
-import 'next/dist/compiled/server-only/empty.js'
+import 'server-only'
 
+import { randomUUID } from 'node:crypto'
 import { mkdir, rename, rm, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 import { normalizeCatalog } from './validation.ts'
 
 import type { Product } from './types.ts'
 
-export const DEFAULT_CATALOG_PATH = join(process.cwd(), 'data', 'products.json')
+const moduleDirectory = dirname(fileURLToPath(import.meta.url))
+
+export const DEFAULT_CATALOG_PATH = join(moduleDirectory, '..', '..', 'data', 'products.json')
 
 export async function writeCatalogFile(products: unknown, path = DEFAULT_CATALOG_PATH): Promise<Product[]> {
   const normalized = normalizeCatalog(products)
   const directory = dirname(path)
-  const tempPath = join(directory, `.products-${process.pid}-${Date.now()}.tmp`)
+  const tempPath = join(directory, `.products-${randomUUID()}.tmp`)
 
   await mkdir(directory, { recursive: true })
 
