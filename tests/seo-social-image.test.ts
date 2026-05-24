@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 
-import { buildSocialImageUrl, socialImage, SOCIAL_IMAGE_HEIGHT, SOCIAL_IMAGE_WIDTH } from '../lib/seo'
+import { buildSocialImageUrl, socialImage, SOCIAL_IMAGE_HEIGHT, SOCIAL_IMAGE_WIDTH } from '../lib/seo.ts'
 
 test('builds absolute social image URLs for ad platform scrapers', () => {
   const url = buildSocialImageUrl({

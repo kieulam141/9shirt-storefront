@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 
-import { getDefaultLangForHost, getLangFromSearchParams, isVietnameseDefaultHost } from '../lib/seo'
+import { getDefaultLangForHost, getLangFromSearchParams, isVietnameseDefaultHost } from '../lib/seo.ts'
 
 test('9shirt domains default to Vietnamese', () => {
   assert.equal(isVietnameseDefaultHost('9shirt.vn'), true)
@@ -12,6 +12,11 @@ test('9shirt domains default to Vietnamese', () => {
 test('non-9shirt domains keep English as default', () => {
   assert.equal(isVietnameseDefaultHost('hiwaii.store'), false)
   assert.equal(getDefaultLangForHost('www.hiwaii.store'), 'en')
+})
+
+test('local development defaults to Vietnamese', () => {
+  assert.equal(getDefaultLangForHost('localhost'), 'vi')
+  assert.equal(getDefaultLangForHost('127.0.0.1'), 'vi')
 })
 
 test('explicit lang query overrides host default', () => {

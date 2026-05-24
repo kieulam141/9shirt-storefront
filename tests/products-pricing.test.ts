@@ -1,8 +1,14 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 
-import { formatPrice } from '../lib/pricing'
-import { products } from '../lib/products'
+import { formatPrice } from '../lib/pricing.ts'
+import { products } from '../lib/products.ts'
+
+test('product facade loads catalog records from JSON-backed source', () => {
+  assert.equal(products.length > 0, true)
+  assert.equal(typeof products[0].id, 'string')
+  assert.equal(products[0].media.length > 0, true)
+})
 
 const latinSilkPrices: Record<string, number> = {
   S: 350,

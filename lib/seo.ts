@@ -21,7 +21,10 @@ export function normalizeHost(host?: string | null): string {
 
 export function isVietnameseDefaultHost(host?: string | null): boolean {
   const normalized = normalizeHost(host)
-  return normalized.startsWith('9shirt.') || normalized.startsWith('www.9shirt.')
+  return normalized === 'localhost'
+    || normalized === '127.0.0.1'
+    || normalized.startsWith('9shirt.')
+    || normalized.startsWith('www.9shirt.')
 }
 
 export function getDefaultLangForHost(host?: string | null): Lang {
