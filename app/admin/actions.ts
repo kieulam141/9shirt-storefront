@@ -71,7 +71,15 @@ export async function logoutAdmin(): Promise<void> {
   'use server'
 
   const cookieStore = await cookies()
-  cookieStore.delete(ADMIN_COOKIE)
+  cookieStore.set({
+    name: ADMIN_COOKIE,
+    value: '',
+    httpOnly: true,
+    sameSite: 'lax',
+    secure: process.env.NODE_ENV === 'production',
+    path: '/admin',
+    maxAge: 0,
+  })
 
   redirect('/admin/login')
 }
