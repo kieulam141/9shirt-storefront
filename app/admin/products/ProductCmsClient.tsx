@@ -6,7 +6,12 @@ import { useMemo, useState, useTransition } from 'react'
 
 import type { Niche, Product, SubNiche } from '@/lib/catalog/types'
 
-import { cloneProduct, updateProductField, type EditableProduct } from './product-form'
+import {
+  cloneProduct,
+  reconcileSavedProduct,
+  updateProductField,
+  type EditableProduct,
+} from './product-form'
 
 type SaveResult = {
   ok: boolean
@@ -83,9 +88,10 @@ function getJsonParseError(value: string): string | undefined {
   }
 }
 
-export default function ProductCmsClient({ products, onSave, onLogout }: ProductCmsClientProps) {
-  const initialProduct = products[0] ?? EMPTY_PRODUCT
+export default function ProductCmsClient({ products: initialProducts, onSave, onLogout }: ProductCmsClientProps) {
+  const initialProduct = initialProducts[0] ?? EMPTY_PRODUCT
 
+  const [productList, setProductList] = useState<Product[]>(() => initialProducts.map((product) => cloneProduct(product)))
   const [query, setQuery] = useState('')
   const [selectedId, setSelectedId] = useState(initialProduct.id)
   const [draft, setDraft] = useState<EditableProduct>(() => cloneProduct(initialProduct))
@@ -98,9 +104,9 @@ export default function ProductCmsClient({ products, onSave, onLogout }: Product
   const filteredProducts = useMemo(() => {
     const needle = query.trim().toLowerCase()
 
-    if (!needle) return products
+    if (!needle) return productList
 
-    return products.filter((product) => (
+    return productList.filter((product) => (
       [
         product.id,
         product.name,
@@ -110,13 +116,13 @@ export default function ProductCmsClient({ products, onSave, onLogout }: Product
         product.hook,
       ].join(' ').toLowerCase().includes(needle)
     ))
-  }, [products, query])
+  }, [productList, query])
 
   const previewImage = draft.thumbnail || draft.media.find((item) => item.type === 'image')?.url
   const hasJsonErrors = Object.values(jsonErrors).some(Boolean)
   const selectedSubNiches = SUB_NICHE_OPTIONS[draft.niche]
 
-  if (products.length === 0) {
+  if (productList.length === 0) {
     return (
       <main className="min-h-screen bg-[var(--hiwaii-bg)] px-6 py-10 text-[var(--hiwaii-text-primary)]">
         <div className="mx-auto max-w-4xl rounded-lg border border-[var(--hiwaii-border)] bg-[var(--hiwaii-surface)] p-6">
@@ -187,10 +193,12 @@ export default function ProductCmsClient({ products, onSave, onLogout }: Product
     }
 
     setStatusMessage(null)
+    const draftToSave = cloneProduct(draft)
     startSaveTransition(async () => {
-      const result = await onSave(draft)
+      const result = await onSave(draftToSave)
 
       if (result.ok) {
+        setProductList((currentProducts) => reconcileSavedProduct(currentProducts, draftToSave))
         setStatusMessage({
           tone: 'success',
           text: 'Product saved. Deploy the storefront to publish catalog changes.',
@@ -223,7 +231,7 @@ export default function ProductCmsClient({ products, onSave, onLogout }: Product
                 Products
               </h1>
               <p className="mt-2 text-xs font-semibold text-[var(--hiwaii-text-muted)]">
-                {products.length} catalog items
+                {productList.length} catalog items
               </p>
             </div>
 

@@ -13,3 +13,14 @@ export function updateProductField<K extends keyof EditableProduct>(
 ): EditableProduct {
   return { ...product, [key]: value }
 }
+
+export function reconcileSavedProduct(products: Product[], savedProduct: Product): Product[] {
+  const savedProductCopy = cloneProduct(savedProduct)
+  const savedProductIndex = products.findIndex((product) => product.id === savedProduct.id)
+
+  if (savedProductIndex === -1) {
+    return [...products, savedProductCopy]
+  }
+
+  return products.map((product, index) => (index === savedProductIndex ? savedProductCopy : product))
+}
