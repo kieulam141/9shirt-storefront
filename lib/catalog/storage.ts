@@ -6,6 +6,7 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { normalizeCatalog } from './validation.ts'
+import productCatalog from '../../data/products.json' with { type: 'json' }
 
 import type { Product } from './types.ts'
 
@@ -14,9 +15,17 @@ const moduleDirectory = dirname(fileURLToPath(import.meta.url))
 export const DEFAULT_CATALOG_PATH = join(moduleDirectory, '..', '..', 'data', 'products.json')
 
 export async function readCatalogFile(path = DEFAULT_CATALOG_PATH): Promise<Product[]> {
-  const content = await readFile(path, 'utf8')
+  try {
+    const content = await readFile(path, 'utf8')
 
-  return normalizeCatalog(JSON.parse(content))
+    return normalizeCatalog(JSON.parse(content))
+  } catch (error) {
+    if (isMissingFileError(error)) {
+      return normalizeCatalog(productCatalog)
+    }
+
+    throw error
+  }
 }
 
 export async function writeCatalogFile(products: unknown, path = DEFAULT_CATALOG_PATH): Promise<Product[]> {
@@ -35,4 +44,13 @@ export async function writeCatalogFile(products: unknown, path = DEFAULT_CATALOG
   }
 
   return normalized
+}
+
+function isMissingFileError(error: unknown): boolean {
+  return (
+    typeof error === 'object'
+    && error !== null
+    && 'code' in error
+    && error.code === 'ENOENT'
+  )
 }

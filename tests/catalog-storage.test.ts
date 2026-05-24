@@ -58,6 +58,20 @@ test('readCatalogFile reads and validates the current catalog file contents', as
   }
 })
 
+test('readCatalogFile falls back to the bundled catalog when the runtime file is missing', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'hiwaii-catalog-missing-'))
+  const target = join(dir, 'missing-products.json')
+
+  try {
+    const catalog = await readCatalogFile(target)
+
+    assert.equal(catalog.length, products.length)
+    assert.equal(catalog[0].id, products[0].id)
+  } finally {
+    await rm(dir, { recursive: true, force: true })
+  }
+})
+
 test('DEFAULT_CATALOG_PATH resolves relative to the catalog storage module', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'hiwaii-catalog-'))
   const originalCwd = process.cwd()
