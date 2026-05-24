@@ -83,6 +83,19 @@ function getJsonParseError(value: string): string | undefined {
   }
 }
 
+function getPriceInputError(value: string): string | undefined {
+  const trimmedValue = value.trim()
+
+  if (!trimmedValue) return 'Enter a product price.'
+
+  const parsedPrice = Number(trimmedValue)
+
+  if (!Number.isFinite(parsedPrice)) return 'Enter a valid product price.'
+  if (parsedPrice < 0) return 'Price cannot be negative.'
+
+  return undefined
+}
+
 export default function ProductCmsClient({ products: initialProducts, onSave, onLogout }: ProductCmsClientProps) {
   const initialProduct = initialProducts[0] ?? EMPTY_PRODUCT
 
@@ -90,6 +103,7 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
   const [query, setQuery] = useState('')
   const [selectedId, setSelectedId] = useState(initialProduct.id)
   const [draft, setDraft] = useState<EditableProduct>(() => cloneProduct(initialProduct))
+  const [priceInput, setPriceInput] = useState(() => String(initialProduct.price))
   const [jsonText, setJsonText] = useState<JsonEditorState>(() => getJsonEditorState(initialProduct))
   const [jsonErrors, setJsonErrors] = useState<JsonErrorState>({})
   const [statusMessage, setStatusMessage] = useState<StatusMessage>(null)
@@ -115,7 +129,9 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
 
   const previewImage = draft.thumbnail || draft.media.find((item) => item.type === 'image')?.url
   const hasJsonErrors = Object.values(jsonErrors).some(Boolean)
+  const priceError = getPriceInputError(priceInput)
   const selectedSubNiches = SUB_NICHE_OPTIONS[draft.niche]
+  const previewPrice = Number.isFinite(draft.price) ? formatPrice(draft.price) : 'Invalid price'
 
   if (productList.length === 0) {
     return (
@@ -135,6 +151,7 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
 
     setSelectedId(product.id)
     setDraft(nextDraft)
+    setPriceInput(String(nextDraft.price))
     setJsonText(getJsonEditorState(nextDraft))
     setJsonErrors({})
     setStatusMessage(null)
@@ -154,6 +171,18 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
 
       return { ...currentDraft, niche: nextNiche, subNiche: nextSubNiche }
     })
+    setStatusMessage(null)
+  }
+
+  function updatePriceInput(value: string): void {
+    setPriceInput(value)
+
+    const error = getPriceInputError(value)
+
+    if (!error) {
+      setDraft((currentDraft) => updateProductField(currentDraft, 'price', Number(value.trim())))
+    }
+
     setStatusMessage(null)
   }
 
@@ -182,8 +211,11 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
   }
 
   function saveDraft(): void {
-    if (hasJsonErrors) {
-      setStatusMessage({ tone: 'error', text: 'Fix the invalid JSON fields before saving.' })
+    if (priceError || hasJsonErrors) {
+      setStatusMessage({
+        tone: 'error',
+        text: priceError ? 'Fix the invalid price before saving.' : 'Fix the invalid JSON fields before saving.',
+      })
       return
     }
 
@@ -310,7 +342,7 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
             <button
               type="button"
               onClick={saveDraft}
-              disabled={isSaving || hasJsonErrors}
+              disabled={isSaving || Boolean(priceError) || hasJsonErrors}
               className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-[var(--hiwaii-accent)] px-5 text-sm font-extrabold uppercase tracking-[0.12em] text-slate-950 transition hover:bg-[var(--hiwaii-accent)]/90 disabled:cursor-not-allowed disabled:opacity-60"
             >
               <Save className="size-4" aria-hidden="true" />
@@ -367,10 +399,17 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
                   type="number"
                   min="0"
                   step="0.01"
-                  value={draft.price}
-                  onChange={(event) => updateDraft('price', Number(event.currentTarget.value))}
-                  className="min-h-11 w-full rounded-md border border-[var(--hiwaii-border)] bg-slate-950/45 px-3 text-sm font-semibold text-white outline-none focus:border-[var(--hiwaii-accent)] focus:ring-2 focus:ring-[var(--hiwaii-accent)]/25"
+                  value={priceInput}
+                  onChange={(event) => updatePriceInput(event.currentTarget.value)}
+                  aria-invalid={Boolean(priceError)}
+                  aria-describedby={priceError ? 'product-price-error' : undefined}
+                  className="min-h-11 w-full rounded-md border border-[var(--hiwaii-border)] bg-slate-950/45 px-3 text-sm font-semibold text-white outline-none focus:border-[var(--hiwaii-accent)] focus:ring-2 focus:ring-[var(--hiwaii-accent)]/25 aria-invalid:border-red-400 aria-invalid:focus:border-red-300 aria-invalid:focus:ring-red-400/25"
                 />
+                {priceError && (
+                  <p id="product-price-error" className="text-xs font-semibold text-red-200">
+                    {priceError}
+                  </p>
+                )}
               </div>
 
               <div className="space-y-2">
@@ -508,7 +547,7 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
               Storefront price
             </p>
             <p className="mt-1 text-3xl font-black text-white">
-              {formatPrice(draft.price)}
+              {previewPrice}
             </p>
             <p className="mt-2 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
               {draft.badge ?? 'No merchandising badge'}
