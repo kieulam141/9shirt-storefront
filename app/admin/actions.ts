@@ -1,3 +1,5 @@
+import { createHmac, timingSafeEqual } from 'node:crypto'
+
 import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
@@ -10,8 +12,23 @@ import type { Product } from '@/lib/catalog/types'
 
 export const ADMIN_COOKIE = 'hiwaii_admin'
 
+const ADMIN_COOKIE_MESSAGE = 'hiwaii-admin-authenticated'
+
 function getAdminPassword(): string | undefined {
   return process.env.HIWAII_ADMIN_PASSWORD ?? process.env.HIWAIi_ADMIN_PASSWORD
+}
+
+function getAdminCookieValue(adminPassword: string): string {
+  return createHmac('sha256', adminPassword).update(ADMIN_COOKIE_MESSAGE).digest('hex')
+}
+
+function isValidAdminCookie(value: string | undefined, adminPassword: string): boolean {
+  if (!value) return false
+
+  const expected = Buffer.from(getAdminCookieValue(adminPassword), 'hex')
+  const actual = Buffer.from(value, 'hex')
+
+  return actual.length === expected.length && timingSafeEqual(actual, expected)
 }
 
 export function isAdminPasswordConfigured(): boolean {
@@ -24,7 +41,7 @@ export async function isAdminAuthenticated(): Promise<boolean> {
   const adminPassword = getAdminPassword()
   const cookieStore = await cookies()
 
-  return Boolean(adminPassword && cookieStore.get(ADMIN_COOKIE)?.value === '1')
+  return Boolean(adminPassword && isValidAdminCookie(cookieStore.get(ADMIN_COOKIE)?.value, adminPassword))
 }
 
 export async function loginAdmin(formData: FormData): Promise<void> {
@@ -40,7 +57,7 @@ export async function loginAdmin(formData: FormData): Promise<void> {
   const cookieStore = await cookies()
   cookieStore.set({
     name: ADMIN_COOKIE,
-    value: '1',
+    value: getAdminCookieValue(adminPassword),
     httpOnly: true,
     sameSite: 'lax',
     secure: process.env.NODE_ENV === 'production',
