@@ -1,8 +1,9 @@
 {
-  "name": "hiwaii-store",
+  "name": "9shirt-storefront",
   "version": "0.1.0",
   "type": "module",
   "private": true,
+  "packageManager": "pnpm@11.1.2",
   "engines": {
     "node": ">=22.18.0"
   },

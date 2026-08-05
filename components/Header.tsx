@@ -58,7 +58,7 @@ export function Header() {
         </Link>
         <Link
           href={withLang('/cart', lang)}
-          className={`relative ml-6 rounded-full border px-5 py-2 text-sm font-extrabold uppercase tracking-[0.14em] transition-colors hover:border-lime-300/40 hover:text-lime-300 ${pathname === '/cart' ? 'border-lime-300/50 bg-lime-300/10 text-lime-300' : 'border-blue-200/35 bg-[#111d3a] text-slate-100'}`}
+          className={`relative ml-6 hidden rounded-full border px-5 py-2 text-sm font-extrabold uppercase tracking-[0.14em] transition-colors hover:border-lime-300/40 hover:text-lime-300 md:inline-flex ${pathname === '/cart' ? 'border-lime-300/50 bg-lime-300/10 text-lime-300' : 'border-blue-200/35 bg-[#111d3a] text-slate-100'}`}
         >
           {t.cart}
           {cartCount > 0 && (
