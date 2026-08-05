@@ -4,7 +4,8 @@ import { Antonio, Be_Vietnam_Pro, Lexend, Manrope } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { CartProvider } from '@/context/CartContext'
 import { LangProvider } from '@/hooks/use-lang'
-import { buildSocialImageUrl, getDefaultLangForHost, PRIMARY_ORIGIN, socialImage } from '@/lib/seo'
+import { BrandProvider } from '@/hooks/use-brand'
+import { buildSocialImageUrl, getDefaultLangForHost, getBrandConfig, socialImage, isVietnameseDefaultHost } from '@/lib/seo'
 import './globals.css'
 
 const bodyFont = Manrope({
@@ -30,71 +31,77 @@ const viDisplayFont = Lexend({
   variable: '--font-vi-display',
 })
 
-export const metadata: Metadata = {
-  metadataBase: new URL(PRIMARY_ORIGIN),
-  applicationName: 'Hiwaii Shop',
-  title: {
-    default: 'Hiwaii Shop | Statement Hawaiian Shirts',
-    template: '%s | Hiwaii Shop',
-  },
-  description: 'Discover unique Hawaiian shirts categorized by your lifestyle. Shop niche prints for Sports fans, Animal lovers, Music fans, and Vintage enthusiasts.',
-  keywords: ['Hawaiian shirt', 'custom shirt', 'football shirt', 'CR7 shirt', 'áo Hawaii', 'áo đi biển', 'Hiwaii'],
-  openGraph: {
-    title: 'Hiwaii Shop | Statement Hawaiian Shirts',
-    description: 'Discover unique Hawaiian shirts categorized by your lifestyle. Shop niche prints for Sports fans, Animal lovers, Music fans, and Vintage enthusiasts.',
-    type: 'website',
-    siteName: 'Hiwaii Shop',
-    images: [
-      socialImage(
-        buildSocialImageUrl({
-          title: 'Hiwaii statement Hawaiian shirts',
-          subtitle: 'Bold drops, lifestyle niches, product mockups, and football-inspired designs.',
-        }),
-        'Hiwaii statement Hawaiian shirts',
-      ),
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Hiwaii Shop | Statement Hawaiian Shirts',
-    description: 'Discover unique Hawaiian shirts categorized by your lifestyle. Shop niche prints for Sports fans, Animal lovers, Music fans, and Vintage enthusiasts.',
-    images: [
-      buildSocialImageUrl({
-        title: 'Hiwaii statement Hawaiian shirts',
-        subtitle: 'Bold drops, lifestyle niches, product mockups, and football-inspired designs.',
-      }),
-    ],
-  },
-  icons: {
-    icon: [
-      {
-        url: '/favicon.ico',
-        sizes: 'any',
-      },
-      {
-        url: '/favicon-16x16.png',
-        sizes: '16x16',
-        type: 'image/png',
-      },
-      {
-        url: '/favicon-32x32.png',
-        sizes: '32x32',
-        type: 'image/png',
-      },
-      {
-        url: '/icon-192x192.png',
-        sizes: '192x192',
-        type: 'image/png',
-      },
-      {
-        url: '/icon-512x512.png',
-        sizes: '512x512',
-        type: 'image/png',
-      },
-    ],
-    shortcut: '/favicon.ico',
-    apple: '/apple-icon.png',
-  },
+export async function generateMetadata(): Promise<Metadata> {
+  const requestHeaders = await headers()
+  const host = requestHeaders.get('host')
+  const brand = getBrandConfig(host)
+  const lang = getDefaultLangForHost(host)
+
+  const socialPreview = buildSocialImageUrl({
+    title: brand.defaultTitle,
+    subtitle: brand.defaultDescription,
+    lang,
+    host,
+  })
+
+  return {
+    metadataBase: new URL(brand.origin),
+    applicationName: brand.name,
+    title: {
+      default: brand.defaultTitle,
+      template: `%s | ${brand.name}`,
+    },
+    description: brand.defaultDescription,
+    keywords: brand.keywords,
+    openGraph: {
+      title: brand.defaultTitle,
+      description: brand.defaultDescription,
+      type: 'website',
+      siteName: brand.name,
+      images: [
+        socialImage(
+          socialPreview,
+          brand.defaultTitle,
+        ),
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: brand.defaultTitle,
+      description: brand.defaultDescription,
+      images: [socialPreview],
+    },
+    icons: {
+      icon: [
+        {
+          url: '/favicon.ico',
+          sizes: 'any',
+        },
+        {
+          url: '/favicon-16x16.png',
+          sizes: '16x16',
+          type: 'image/png',
+        },
+        {
+          url: '/favicon-32x32.png',
+          sizes: '32x32',
+          type: 'image/png',
+        },
+        {
+          url: '/icon-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          url: '/icon-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+      ],
+      shortcut: '/favicon.ico',
+      apple: '/apple-icon.png',
+    },
+  }
 }
 
 export default async function RootLayout({
@@ -103,27 +110,37 @@ export default async function RootLayout({
   children: React.ReactNode
 }>) {
   const requestHeaders = await headers()
+  const host = requestHeaders.get('host')
+  const isViHost = isVietnameseDefaultHost(host)
+  const brand = getBrandConfig(host)
+  const origin = brand.origin
   const headerLang = requestHeaders.get('x-hiwaii-lang')
   const defaultLang = headerLang === 'en' || headerLang === 'vi'
     ? headerLang
-    : getDefaultLangForHost(requestHeaders.get('host'))
+    : getDefaultLangForHost(host)
+
   const organizationJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Hiwaii',
-    url: PRIMARY_ORIGIN,
-    logo: `${PRIMARY_ORIGIN}/icon-512x512.png`,
+    name: brand.companyName,
+    url: origin,
+    logo: `${origin}/icon-512x512.png`,
+    taxID: '0110712144',
+    address: 'Số 16 ngõ 1 Đốc Ngữ, Sơn Tây, Hà Nội',
+    telephone: '0396218880',
+    email: 'kieutunglam0612@gmail.com',
+    sameAs: ['https://zalo.me/0396218880', 'https://www.facebook.com/9shirt.com.vn'],
   }
 
   const websiteJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Hiwaii Shop',
-    url: PRIMARY_ORIGIN,
+    name: brand.name,
+    url: origin,
     inLanguage: ['en', 'vi'],
     potentialAction: {
       '@type': 'SearchAction',
-      target: `${PRIMARY_ORIGIN}/collections?niche={search_term_string}`,
+      target: `${origin}/collections?niche={search_term_string}`,
       'query-input': 'required name=search_term_string',
     },
   }
@@ -134,9 +151,11 @@ export default async function RootLayout({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         <LangProvider initialLang={defaultLang}>
-          <CartProvider>
-            {children}
-          </CartProvider>
+          <BrandProvider isViHost={isViHost}>
+            <CartProvider>
+              {children}
+            </CartProvider>
+          </BrandProvider>
         </LangProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

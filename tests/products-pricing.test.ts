@@ -29,10 +29,10 @@ test('sports products use Latin silk size price tiers', () => {
   for (const product of sportsProducts) {
     assert.deepEqual(product.sizes, Object.keys(latinSilkPrices))
     assert.equal(product.price, 350)
-    assert.deepEqual(product.materials.map((material) => material.label), ['Chất lụa latin'])
+    assert.deepEqual(product.materials.map((material: { label: string }) => material.label), ['Chất lụa latin'])
 
     const pricesBySize = Object.fromEntries(
-      product.variants.map((variant) => [variant.size, variant.price]),
+      product.variants.map((variant: { size: string; price: number }) => [variant.size, variant.price]),
     )
 
     assert.deepEqual(pricesBySize, latinSilkPrices)

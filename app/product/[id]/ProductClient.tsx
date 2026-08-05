@@ -1,9 +1,11 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 import { useCart } from '@/context/CartContext'
 import { i18n, withLang } from '@/lib/i18n'
 import { formatPrice, formatPriceDelta, priceUnitFor } from '@/lib/pricing'
@@ -179,6 +181,8 @@ export default function ProductClient({ id }: { id: string }) {
     )
   }
 
+  const router = useRouter()
+
   const addToCart = () => {
     if (!canAddToCart) return
     const selectedLabel = lang === 'vi' ? selectedShirtKindData.viLabel : selectedShirtKindData.label
@@ -190,6 +194,12 @@ export default function ProductClient({ id }: { id: string }) {
       price,
       image: selectedArtProduct?.thumbnail || product.thumbnail,
     })
+  }
+
+  const buyNow = () => {
+    if (!canAddToCart) return
+    addToCart()
+    router.push(withLang('/checkout', lang))
   }
 
   return (
@@ -344,7 +354,12 @@ export default function ProductClient({ id }: { id: string }) {
               <button type="button" disabled={!canAddToCart} onClick={addToCart} className={`mt-8 inline-flex min-h-12 w-full items-center justify-center rounded-full px-6 text-base font-black uppercase tracking-[0.12em] transition ${canAddToCart ? 'bg-[var(--hiwaii-accent)] text-[#061227] hover:brightness-105' : 'cursor-not-allowed bg-[#2a3556] text-[#95a4c8]'}`}>
                 {t.addToCart} • {formatPrice(price, priceUnit)}
               </button>
-              <button type="button" className="mt-3 inline-flex min-h-11 w-full items-center justify-center rounded-full border border-[var(--hiwaii-border)] px-6 text-sm font-black uppercase tracking-[0.12em] text-[var(--hiwaii-text-primary)] transition hover:border-[var(--hiwaii-accent)] hover:text-[var(--hiwaii-accent)]">
+              <button
+                type="button"
+                disabled={!canAddToCart}
+                onClick={buyNow}
+                className={`mt-3 inline-flex min-h-11 w-full items-center justify-center rounded-full border border-[var(--hiwaii-border)] px-6 text-sm font-black uppercase tracking-[0.12em] transition ${canAddToCart ? 'text-[var(--hiwaii-text-primary)] hover:border-[var(--hiwaii-accent)] hover:text-[var(--hiwaii-accent)]' : 'cursor-not-allowed bg-[#2a3556] text-[#95a4c8]'}`}
+              >
                 {t.buyNow}
               </button>
               <p className="mt-3 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">{t.shippingTrust}</p>
@@ -545,6 +560,7 @@ export default function ProductClient({ id }: { id: string }) {
           </section>
         </div>
       </main>
+      <Footer />
     </div>
   )
 }

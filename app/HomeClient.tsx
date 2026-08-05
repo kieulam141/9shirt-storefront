@@ -4,10 +4,13 @@ import { useMemo, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 import { ProductCard } from '@/components/ProductCard'
 import { i18n, withLang } from '@/lib/i18n'
 import { niches, products } from '@/lib/products'
 import { useLang } from '@/hooks/use-lang'
+
+import { getAllPosts } from '@/lib/blog'
 
 export default function HomeClient() {
   const lang = useLang()
@@ -15,6 +18,7 @@ export default function HomeClient() {
   const featured = products.slice(0, 6)
   const hero = featured[0]
   const studioPicks = featured.slice(0, 3)
+  const blogPosts = useMemo(() => getAllPosts().slice(0, 3), [])
   const [studioFocus, setStudioFocus] = useState(studioPicks[0]?.id || hero.id)
   const activeStudio = useMemo(
     () => studioPicks.find((item) => item.id === studioFocus) || studioPicks[0],
@@ -210,44 +214,69 @@ export default function HomeClient() {
             </div>
           </div>
         </section>
+
+        {/* Blog & Cẩm nang Hè Section */}
+        <section className="px-4 pb-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-[1360px] space-y-8">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[var(--hiwaii-border)] pb-4">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.24em] text-[var(--hiwaii-accent)]">
+                  {lang === 'vi' ? 'Kiến Thức & Cẩm Nang' : 'Journal & Guides'}
+                </p>
+                <h2 className="mt-2 text-3xl font-black md:text-4xl text-[var(--hiwaii-text-primary)]">
+                  {lang === 'vi' ? 'Góc Thời Trang & Outfit Du Lịch' : 'Style Journal & Fabric Insights'}
+                </h2>
+              </div>
+              <Link
+                href={withLang('/blog', lang)}
+                className="inline-flex items-center text-xs font-black uppercase tracking-[0.16em] text-[var(--hiwaii-accent)] hover:underline"
+              >
+                {lang === 'vi' ? 'Xem tất cả bài viết →' : 'View All Blog Posts →'}
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {blogPosts.map((post) => (
+                <div
+                  key={post.slug}
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-[var(--hiwaii-border)] bg-[#0b1736] transition hover:border-[var(--hiwaii-accent)]"
+                >
+                  <Link href={withLang(`/blog/${post.slug}`, lang)} className="relative aspect-[16/10] w-full overflow-hidden bg-[#061026]">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </Link>
+                  <div className="p-5 flex flex-1 flex-col justify-between space-y-3">
+                    <div className="space-y-2">
+                      <div className="text-[11px] font-black uppercase tracking-wider text-[var(--hiwaii-accent)]">
+                        {post.category} • {post.readTime}
+                      </div>
+                      <h3 className="text-base font-black text-white group-hover:text-[var(--hiwaii-accent)] transition-colors line-clamp-2">
+                        <Link href={withLang(`/blog/${post.slug}`, lang)}>{post.title}</Link>
+                      </h3>
+                      <p className="text-xs font-medium text-[var(--hiwaii-text-secondary)] leading-relaxed line-clamp-2">
+                        {post.excerpt}
+                      </p>
+                    </div>
+                    <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-xs font-bold text-[var(--hiwaii-text-muted)]">
+                      <span>{post.date}</span>
+                      <Link href={withLang(`/blog/${post.slug}`, lang)} className="text-[var(--hiwaii-accent)] uppercase font-black tracking-wider hover:underline">
+                        {lang === 'vi' ? 'Đọc bài →' : 'Read →'}
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer id="support" className="border-t border-[var(--hiwaii-border)] bg-[#061024] px-4 py-10 sm:px-6 lg:px-8">
-        <div className="mx-auto grid max-w-[1360px] gap-6 md:grid-cols-4">
-          <div>
-            <h3 className="text-sm font-black uppercase tracking-[0.2em] text-[var(--hiwaii-accent)]">Hiwaii</h3>
-            <p className="mt-3 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
-              {lang === 'vi'
-                ? 'Áo Hawaii in full-print theo phong cách sống. Lọc nhanh theo niche, mua nhanh theo vibe.'
-                : 'Statement Hawaiian shirts organized by lifestyle. Discover faster and shop with confidence.'}
-            </p>
-          </div>
-          <div>
-            <h4 className="text-sm font-black uppercase tracking-[0.16em] text-[var(--hiwaii-text-primary)]">{lang === 'vi' ? 'Mua sắm' : 'Shop'}</h4>
-            <ul className="mt-3 space-y-2 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
-              <li><Link href={withLang('/collections', lang)}>{lang === 'vi' ? 'Tất cả sản phẩm' : 'All shirts'}</Link></li>
-              <li><Link href={withLang('/collections?niche=Sports', lang)}>Sports</Link></li>
-              <li><Link href={withLang('/collections?niche=Animal', lang)}>Animal</Link></li>
-              <li><Link href={withLang('/collections?niche=Art%20%26%20Music', lang)}>Art & Music</Link></li>
-              <li><Link href={withLang('/collections?niche=Vintage', lang)}>Vintage</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-sm font-black uppercase tracking-[0.16em] text-[var(--hiwaii-text-primary)]">{lang === 'vi' ? 'Hỗ trợ' : 'Support'}</h4>
-            <ul className="mt-3 space-y-2 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
-              <li>{lang === 'vi' ? 'Giao hàng 3-5 ngày' : '3-5 day delivery'}</li>
-              <li>{lang === 'vi' ? 'Đổi trả dễ dàng' : 'Easy returns'}</li>
-              <li>{lang === 'vi' ? 'Thanh toán bảo mật' : 'Secure checkout'}</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-sm font-black uppercase tracking-[0.16em] text-[var(--hiwaii-text-primary)]">{lang === 'vi' ? 'Về Hiwaii' : 'About'}</h4>
-            <p className="mt-3 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
-              {lang === 'vi' ? 'Dòng áo statement cho mùa hè và du lịch.' : 'Statement shirt line for travel, gifting, and standout daily wear.'}
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

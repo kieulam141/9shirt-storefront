@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { useCart } from '@/context/CartContext'
 import { i18n, withLang } from '@/lib/i18n'
 import { useLang } from '@/hooks/use-lang'
+import { useIsViHost } from '@/hooks/use-brand'
 
 export function Header() {
   const { items } = useCart()
@@ -12,6 +13,8 @@ export function Header() {
   const lang = useLang()
   const t = i18n[lang].header
   const pathname = usePathname()
+
+  const isViHost = useIsViHost()
 
   function navClass(href: string) {
     const isActive = href === '/' ? pathname === '/' : pathname.startsWith(href)
@@ -26,9 +29,11 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-blue-200/15 bg-[#050d22]/90 backdrop-blur-2xl">
       <div className="mx-auto flex h-[76px] w-full max-w-[1360px] items-center px-4 sm:px-6 lg:px-8">
         <Link href={withLang('/', lang)} className="mr-auto flex items-center gap-3 text-lime-300">
-          <span className="text-4xl font-black tracking-tight">HIWAII</span>
+          <span className="text-4xl font-black tracking-tight">{isViHost ? '9SHIRT' : 'HIWAII'}</span>
           <span className="hidden rounded-full border border-lime-300/40 bg-lime-300/10 px-2 py-1 text-[10px] font-black uppercase tracking-[0.12em] text-lime-200 lg:inline-flex">
-            {lang === 'vi' ? 'xưởng mockup' : 'mockup lab'}
+            {isViHost
+              ? (lang === 'vi' ? 'áo hè' : 'summer drops')
+              : (lang === 'vi' ? 'xưởng mockup' : 'mockup lab')}
           </span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
@@ -41,9 +46,12 @@ export function Header() {
           <a href={withLang('/#lifestyle', lang)} className="text-sm font-extrabold uppercase tracking-[0.14em] text-slate-100 transition-colors hover:text-lime-300">
             {t.lifestyle}
           </a>
-          <a href={withLang('/#support', lang)} className="text-sm font-extrabold uppercase tracking-[0.14em] text-slate-100 transition-colors hover:text-lime-300">
+          <Link href={withLang('/blog', lang)} className={navClass('/blog')}>
+            Blog
+          </Link>
+          <Link href={withLang('/contact', lang)} className={navClass('/contact')}>
             {t.contact}
-          </a>
+          </Link>
         </nav>
         <div className="ml-4 hidden items-center gap-2 rounded-full border border-blue-200/20 bg-[#0f1c39] px-3 py-1.5 md:flex">
           <Link href={withLang('/', 'en')} className={`text-xs font-black uppercase tracking-[0.14em] ${lang === 'en' ? 'text-lime-300' : 'text-slate-300 hover:text-slate-100'}`}>EN</Link>
@@ -54,7 +62,7 @@ export function Header() {
           href={withLang('/collections', lang)}
           className="ml-3 hidden min-h-10 items-center rounded-full border border-lime-300/30 bg-lime-300/10 px-4 text-xs font-extrabold uppercase tracking-[0.14em] text-lime-200 transition hover:bg-lime-300/20 lg:inline-flex"
         >
-          {lang === 'vi' ? 'Build mockup' : 'Build mockup'}
+          {lang === 'vi' ? 'Khám phá ngay' : 'Explore now'}
         </Link>
         <Link
           href={withLang('/cart', lang)}
@@ -83,7 +91,8 @@ export function Header() {
         <div className="mx-auto flex max-w-7xl items-center gap-6 text-xs font-extrabold uppercase tracking-[0.14em] text-slate-200">
           <Link href={withLang('/', lang)} className={pathname === '/' ? 'text-lime-300' : ''}>{t.shop}</Link>
           <Link href={withLang('/collections', lang)} className={pathname.startsWith('/collections') ? 'text-lime-300' : ''}>{t.collections}</Link>
-          <a href={withLang('/#lifestyle', lang)}>{t.lifestyle}</a>
+          <Link href={withLang('/blog', lang)} className={pathname.startsWith('/blog') ? 'text-lime-300' : ''}>Blog</Link>
+          <Link href={withLang('/contact', lang)} className={pathname.startsWith('/contact') ? 'text-lime-300' : ''}>{t.contact}</Link>
           <Link href={withLang('/', lang === 'en' ? 'vi' : 'en')} className="ml-auto rounded-full border border-blue-200/25 px-2 py-1">{lang === 'en' ? 'VI' : 'EN'}</Link>
         </div>
       </div>

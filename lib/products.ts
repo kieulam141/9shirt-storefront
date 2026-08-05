@@ -90,5 +90,13 @@ export const bundleOffers: BundleOffer[] = [
 ]
 
 export function getProductById(id: string): Product | undefined {
-  return products.find((product) => product.id === id)
+  if (!id) return undefined
+  const target = id.toLowerCase().trim()
+  return products.find(
+    (product) =>
+      product.id.toLowerCase() === target ||
+      product.slug.toLowerCase() === target ||
+      product.slug.toLowerCase() === `${target}-shirt` ||
+      product.id.toLowerCase() === target.replace(/-shirt$/, '')
+  )
 }

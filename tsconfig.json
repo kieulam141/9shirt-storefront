@@ -5,6 +5,7 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": ".",
     "allowImportingTsExtensions": true,
     "allowJs": true,
     "target": "ES6",
