@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "main": {
+      "type": "hiwaii-home"
+    }
+  },
+  "order": ["main"]
+}

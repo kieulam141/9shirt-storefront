@@ -1,0 +1,88 @@
+<section class="section">
+  <div class="wrap">
+    {% assign active_collection = collection | default: collections.all %}
+    <div class="collection-toolbar">
+      <p class="eyebrow">Catalog</p>
+      <h1 data-collection-title>{{ active_collection.title | default: 'All products' }}</h1>
+      <p class="collection-summary">
+        <span data-product-count>{{ active_collection.products_count }}</span> statement Hawaiian shirts. Sizes S-3XL, two material options, one Shopify checkout.
+      </p>
+      <div class="filter-tabs" aria-label="Catalog filters">
+        <a data-filter-tab="all" href="/collections/all">Shop all</a>
+        <a data-filter-tab="hawaiian-shirt" href="/collections/all/hawaiian-shirt">Hawaiian shirts</a>
+        <a data-filter-tab="rabbit-playboy" href="/collections/all/rabbit-playboy">Rabbit playboy</a>
+      </div>
+    </div>
+    <div class="product-grid">
+      {% paginate active_collection.products by 24 %}
+        {% if active_collection.products_count > 0 %}
+          {% for product in active_collection.products %}
+            {% render 'hiwaii-product-card', product: product %}
+          {% endfor %}
+        {% elsif current_tags contains 'vintage' or current_tags contains 'Vintage' %}
+          <div class="empty-state">
+            <h2>Redirecting to the full catalog</h2>
+            <p>Vintage is being retagged. Browse all active statement shirts for now.</p>
+            <a class="button" href="/collections/all">Shop all</a>
+          </div>
+          <script>window.location.replace('/collections/all');</script>
+        {% else %}
+          <div class="empty-state">
+            <h2>No products found</h2>
+            <p>Try the full catalog while this collection is being tuned.</p>
+            <a class="button" href="/collections/all">Shop all</a>
+          </div>
+        {% endif %}
+        {% if paginate.pages > 1 %}
+          <div class="pagination">
+            {{ paginate | default_pagination }}
+          </div>
+        {% endif %}
+      {% endpaginate %}
+    </div>
+  </div>
+</section>
+
+<script>
+  (function() {
+    if (window.location.pathname.replace(/\/$/, '').endsWith('/collections/all/vintage')) {
+      window.location.replace('/collections/all');
+      return;
+    }
+    var params = new URLSearchParams(window.location.search);
+    var style = params.get('style');
+    var productType = params.get('filter.p.product_type');
+    var title = document.querySelector('[data-collection-title]');
+    var tabs = Array.from(document.querySelectorAll('[data-filter-tab]'));
+    var legacyRoutes = {
+      'rabbit-playboy': '/collections/all/rabbit-playboy',
+      vintage: '/collections/all'
+    };
+    if (style && legacyRoutes[style]) {
+      window.location.replace(legacyRoutes[style]);
+      return;
+    }
+    if (productType) {
+      window.location.replace('/collections/all/' + productType.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''));
+      return;
+    }
+    var labels = {
+      'rabbit-playboy': 'Rabbit Playboy',
+      'hawaiian-shirt': 'Hawaiian shirts',
+      all: 'All products'
+    };
+    var pathFilter = window.location.pathname.split('/').filter(Boolean).pop();
+    var active = labels[pathFilter] ? pathFilter : 'all';
+    if (title) title.textContent = labels[active] || labels.all;
+    tabs.forEach(function(tab) {
+      tab.classList.toggle('is-active', tab.dataset.filterTab === active);
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Hiwaii collection",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,133 @@
+<section class="section">
+  <div class="wrap product-shell">
+    <div class="product-media">
+      {% for image in product.images %}
+        <figure class="product-media__item {% if forloop.first %}product-media__item--featured{% endif %}">
+          {{ image | image_url: width: 1400 | image_tag: loading: 'lazy', alt: product.title }}
+        </figure>
+      {% endfor %}
+    </div>
+    <aside class="product-info">
+      <p class="eyebrow">{{ product.type }}</p>
+      <h1>{{ product.title }}</h1>
+      <div class="product-price" data-product-price>{{ product.selected_or_first_available_variant.price | money }}</div>
+      <div class="product-trust-row" aria-label="Purchase information">
+        <span>Made to order</span>
+        <span>Dispatched from Hanoi in 2-3 business days</span>
+        <span>Estimated US delivery: 5-8 business days</span>
+        <span>Secure Shopify checkout</span>
+      </div>
+      <p class="hero-copy">{{ product.description | strip_html }}</p>
+      {% assign product_form_id = 'product-form-' | append: section.id %}
+      {% form 'product', product, id: product_form_id, class: 'product-form' %}
+        {% unless product.has_only_default_variant %}
+          {% for option in product.options_with_values %}
+            <label class="option-label">
+              <span class="option-label__top">
+                {{ option.name }}
+                {% if option.name == 'Size' %}
+                  <a href="#size-guide">Size guide</a>
+                {% endif %}
+              </span>
+              <select name="options[{{ option.name | escape }}]">
+                {% for value in option.values %}
+                  <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
+                {% endfor %}
+              </select>
+            </label>
+          {% endfor %}
+        {% endunless %}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <label class="option-label">
+          Quantity
+          <input class="quantity-input" name="quantity" type="number" min="1" value="1">
+        </label>
+        <button class="button" type="submit" name="return_to" value="/checkout" {% unless product.available %}disabled{% endunless %}>
+          Buy now
+        </button>
+        <button class="button button--secondary" type="submit" data-add-to-cart {% unless product.available %}disabled{% endunless %}>
+          {% if product.available %}Add to cart{% else %}Sold out{% endif %}
+        </button>
+        <p class="checkout-note">Card checkout is available now. Express wallets can be enabled later.</p>
+      {% endform %}
+      <div class="product-detail-list">
+        <details open>
+          <summary>Shipping</summary>
+          <p>Made and dispatched from Hanoi within 2-3 business days. Estimated US delivery is 5-8 business days after dispatch. Tracking is provided after fulfillment.</p>
+        </details>
+        <details open id="size-guide">
+          <summary>Fit and sizing</summary>
+          <p>Relaxed resort fit. Choose your usual US shirt size; size up if you are between sizes or prefer a looser vacation fit.</p>
+          <div class="size-table-wrap">
+            <table class="size-table">
+              <thead>
+                <tr><th>Size</th><th>Chest</th><th>Length</th><th>Shoulder</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>S</td><td>40 in</td><td>28 in</td><td>18 in</td></tr>
+                <tr><td>M</td><td>42 in</td><td>29 in</td><td>18.5 in</td></tr>
+                <tr><td>L</td><td>44 in</td><td>30 in</td><td>19 in</td></tr>
+                <tr><td>XL</td><td>46 in</td><td>31 in</td><td>20 in</td></tr>
+                <tr><td>2XL</td><td>49 in</td><td>32 in</td><td>21 in</td></tr>
+                <tr><td>3XL</td><td>52 in</td><td>33 in</td><td>22 in</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details>
+          <summary>Material</summary>
+          <p>Latin silk is a lightweight woven shirt fabric with a smooth handfeel and vibrant all-over print finish. Premium latin silk has a softer finish and a more elevated drape.</p>
+        </details>
+        <details>
+          <summary>Care</summary>
+          <p>Machine wash cold with similar colors. Hang dry or tumble dry low. Do not bleach. Iron on low inside out if needed.</p>
+        </details>
+        <details>
+          <summary>Returns and support</summary>
+          <p>Need help with sizing or an order issue? Contact support before or after purchase and we will help quickly.</p>
+        </details>
+      </div>
+    </aside>
+  </div>
+</section>
+
+{% if product.available %}
+  <div class="sticky-buy-bar">
+    <div>
+      <strong>{{ product.title }}</strong>
+      <span data-sticky-price>{{ product.selected_or_first_available_variant.price | money }}</span>
+    </div>
+    <button class="button" type="submit" name="return_to" value="/checkout" form="{{ product_form_id }}">
+      Buy now
+    </button>
+  </div>
+{% endif %}
+
+<script>
+  document.addEventListener('change', function(event) {
+    if (!event.target.closest('.product-form')) return;
+    var variants = {{ product.variants | json }};
+    var selected = Array.from(document.querySelectorAll('.product-form select')).map(function(select) { return select.value; });
+    var match = variants.find(function(variant) {
+      return selected.every(function(value, index) { return variant.options[index] === value; });
+    });
+    if (!match) return;
+    document.querySelector('.product-form input[name="id"]').value = match.id;
+    var price = document.querySelector('[data-product-price]');
+    if (price && window.Shopify && Shopify.formatMoney) price.textContent = Shopify.formatMoney(match.price);
+    var stickyPrice = document.querySelector('[data-sticky-price]');
+    if (stickyPrice && window.Shopify && Shopify.formatMoney) stickyPrice.textContent = Shopify.formatMoney(match.price);
+    var button = document.querySelector('[data-add-to-cart]');
+    if (button) {
+      button.disabled = !match.available;
+      button.textContent = match.available ? 'Add to cart' : 'Sold out';
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Hiwaii checkout product",
+  "settings": []
+}
+{% endschema %}

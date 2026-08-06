@@ -1,0 +1,20 @@
+<a class="product-card" href="{{ product.url }}" data-product-card data-niche="{{ product.metafields.custom.niche | default: product.type | handleize }}" data-sub-niche="{{ product.metafields.custom.sub_niche | handleize }}" data-product-type="{{ product.type | handleize }}">
+  <div class="product-card__image">
+    {% if product.tags contains 'Rabbit Playboy' %}
+      <span class="badge">Trending</span>
+    {% elsif product.tags contains 'Vintage' %}
+      <span class="badge">New drop</span>
+    {% endif %}
+    {% if product.featured_image %}
+      {{ product.featured_image | image_url: width: 900 | image_tag: loading: 'lazy', alt: product.title }}
+    {% endif %}
+  </div>
+  <div class="product-card__body">
+    <p>{% if product.tags contains 'Rabbit Playboy' %}Rabbit Playboy{% else %}{{ product.type }}{% endif %}</p>
+    <h3>{{ product.title }}</h3>
+    <div class="price-row">
+      <span>{{ product.price_min | money }}</span>
+      <small>Sizes S-3XL</small>
+    </div>
+  </div>
+</a>

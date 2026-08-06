@@ -1,0 +1,79 @@
+{% assign hero_product = all_products['rabbit-playboys-black-shirt'] %}
+{% if hero_product == blank %}
+  {% assign hero_product = collections.all.products.first %}
+{% endif %}
+
+<section class="section">
+  <div class="wrap hero-grid">
+    <article class="hero-panel">
+      <p class="eyebrow">Hiwaii summer 2026</p>
+      <h1 class="hero-title">Wear your obsession.</h1>
+      <p class="hero-copy">Statement Hawaiian shirts for people who collect bold artwork, niche stories, and weekend energy.</p>
+      <a class="button" href="/collections/all">Shop best sellers</a>
+      <div class="value-row">
+        <span>From $39.99</span>
+        <span>Ships in 3-7 business days</span>
+        <span>Limited drop this week</span>
+      </div>
+      <div class="steps">
+        <span>1. Pick design</span>
+        <span>2. Pick size</span>
+        <span>3. Shopify checkout</span>
+      </div>
+    </article>
+    <article class="hero-product hero-panel">
+      <a class="hero-image" href="{{ hero_product.url }}">
+        {% if hero_product.featured_image %}
+          {{ hero_product.featured_image | image_url: width: 1200 | image_tag: loading: 'eager', alt: hero_product.title }}
+        {% endif %}
+      </a>
+      <div class="hero-info">
+        <p class="eyebrow">Trending now</p>
+        <h2>{{ hero_product.title }}</h2>
+        <p>{{ hero_product.description | strip_html | truncate: 120 }}</p>
+        <a class="button" href="{{ hero_product.url }}">View product</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap trust-grid">
+    <article class="feature-card"><h3>Made to order</h3><p>Each shirt is produced after purchase to keep drops focused.</p></article>
+    <article class="feature-card"><h3>Clear sizing</h3><p>Choose your fit before checkout with support if you need help.</p></article>
+    <article class="feature-card"><h3>Secure checkout</h3><p>Card payments are processed through Shopify checkout.</p></article>
+    <article class="feature-card"><h3>Support first</h3><p>Questions about fit, shipping, or your order are handled by Hiwaii support.</p></article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Featured styles</p>
+    <h2 class="section-heading">Shop customer favorites first</h2>
+    <div class="product-grid">
+      {% for product in collections.all.products limit: 6 %}
+        {% render 'hiwaii-product-card', product: product %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap style-band">
+    <p class="eyebrow">Shop by lifestyle</p>
+    <h2 class="section-heading">Shop by obsession</h2>
+    <div class="style-grid">
+      <a class="style-card" href="/collections/all/rabbit-playboy"><h3>Rabbit Playboy</h3><p>The hottest drop: sharp, playful, premium.</p></a>
+      <a class="style-card" href="/collections/all"><h3>Animal Graphics</h3><p>Bold creatures, high contrast artwork, and resort-ready silhouettes.</p></a>
+      <a class="style-card" href="/collections/all"><h3>Art & Music</h3><p>Expressive artwork for collectors who want a louder weekend shirt.</p></a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hiwaii home",
+  "settings": [],
+  "presets": [{ "name": "Hiwaii home" }]
+}
+{% endschema %}

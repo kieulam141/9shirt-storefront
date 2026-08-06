@@ -1,75 +1,127 @@
-import type { Metadata } from 'next'
-import { headers } from 'next/headers'
-import Link from 'next/link'
+'use client'
+
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-import { withLang } from '@/lib/i18n'
-import { getBrandConfig, getDefaultLangForHost, languageAlternates, toCanonical } from '@/lib/seo'
+import { useLang } from '@/hooks/use-lang'
+import { useIsViHost } from '@/hooks/use-brand'
 
-export async function generateMetadata(): Promise<Metadata> {
-  const host = (await headers()).get('host')
-  const brand = getBrandConfig(host)
-  const lang = getDefaultLangForHost(host)
-  const title = lang === 'vi' ? `Chính sách vận chuyển | ${brand.name}` : `Shipping Policy | ${brand.name}`
-
-  return {
-    title,
-    description: `Chính sách vận chuyển toàn quốc từ kho Hà Nội của ${brand.name}. Giao hàng 2-4 ngày, đồng kiểm trước khi nhận.`,
-    alternates: {
-      canonical: toCanonical('/shipping-policy', lang, host),
-      languages: languageAlternates('/shipping-policy', host),
-    },
-  }
-}
-
-export default async function ShippingPolicyPage() {
-  const requestHeaders = await headers()
-  const host = requestHeaders.get('host')
-  const lang = getDefaultLangForHost(host)
-  const isVi = lang === 'vi'
+export default function ShippingPolicyPage() {
+  const lang = useLang()
+  const isViHost = useIsViHost()
 
   return (
     <div className="min-h-screen bg-[var(--hiwaii-bg)] text-[var(--hiwaii-text-primary)]">
       <Header />
+      
       <main className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="hiwaii-reveal rounded-3xl border border-blue-200/15 bg-[#081329] p-8 md:p-12 space-y-8">
-          <div>
-            <span className="text-xs font-black uppercase tracking-[0.2em] text-lime-300">Quy định giao nhận</span>
-            <h1 className="mt-2 text-4xl font-black">{isVi ? 'Chính sách vận chuyển' : 'Shipping Policy'}</h1>
-            <p className="mt-3 text-sm text-slate-400 font-semibold">Cập nhật lần cuối: Tháng 8/2026</p>
+        <div className="hiwaii-reveal hiwaii-grid-bg rounded-3xl border border-[var(--hiwaii-border)] bg-[#0a1736]/40 p-8 md:p-12 space-y-8 shadow-2xl backdrop-blur-md">
+          <div className="space-y-2 border-b border-[var(--hiwaii-border)] pb-6">
+            <p className="text-xs font-black uppercase tracking-[0.24em] text-[var(--hiwaii-accent)]">
+              {lang === 'vi' ? 'Hỗ trợ khách hàng' : 'Customer Support'}
+            </p>
+            <h1 className="text-4xl font-black md:text-5xl">
+              {lang === 'vi' ? 'Chính sách vận chuyển' : 'Shipping Policy'}
+            </h1>
           </div>
 
-          <div className="space-y-6 text-slate-200 leading-relaxed font-medium">
-            <section className="space-y-2">
-              <h2 className="text-xl font-black text-lime-300">1. Phạm vi & Thời gian giao hàng</h2>
-              <p>9Shirt hỗ trợ giao hàng tận nơi trên toàn bộ 63 tỉnh thành Việt Nam thông qua các đối tác vận chuyển uy tín (GHTK, GHN, Viettel Post):</p>
-              <ul className="list-disc pl-6 space-y-1 text-slate-300">
-                <li><strong>Khu vực Hà Nội & Nội thành:</strong> 1 - 2 ngày làm việc.</li>
-                <li><strong>Các Tỉnh/Thành phố khác:</strong> 2 - 4 ngày làm việc.</li>
-              </ul>
-            </section>
+          <div className="space-y-6 text-slate-300 font-semibold leading-relaxed">
+            {isViHost ? (
+              // 9Shirt Shipping Policy
+              lang === 'vi' ? (
+                <>
+                  <section className="space-y-3">
+                    <h2 className="text-2xl font-black text-[var(--hiwaii-accent)]">1. Thời gian giao hàng</h2>
+                    <p>Mọi đơn hàng tại 9shirt được in ấn và chuẩn bị từ điểm vận hành của CÔNG TY TNHH 9FASHION tại số 16 ngõ 1 Đốc Ngữ, Sơn Tây, Hà Nội. Thời gian giao hàng dự kiến:</p>
+                    <ul className="list-disc pl-5 space-y-1">
+                      <li><strong>Nội thành Hà Nội:</strong> 1 - 2 ngày làm việc.</li>
+                      <li><strong>Các tỉnh thành miền Bắc & miền Trung:</strong> 2 - 3 ngày làm việc.</li>
+                      <li><strong>Các tỉnh thành miền Nam:</strong> 3 - 5 ngày làm việc.</li>
+                    </ul>
+                  </section>
 
-            <section className="space-y-2 border-t border-blue-200/10 pt-6">
-              <h2 className="text-xl font-black text-lime-300">2. Phí vận chuyển</h2>
-              <p>Phí vận chuyển chuẩn là <strong>30.000 VNĐ</strong> cho mỗi đơn hàng toàn quốc. Miễn phí vận chuyển áp dụng đối với các đơn hàng khuyến mãi combo bộ hoặc đơn từ 2 sản phẩm trở lên.</p>
-            </section>
+                  <section className="space-y-3">
+                    <h2 className="text-2xl font-black text-[var(--hiwaii-accent)]">2. Phí vận chuyển</h2>
+                    <p>9Shirt áp dụng chính sách <strong>MIỄN PHÍ VẬN CHUYỂN TOÀN QUỐC</strong> cho tất cả các đơn hàng, không giới hạn giá trị đơn hàng tối thiểu.</p>
+                  </section>
 
-            <section className="space-y-2 border-t border-blue-200/10 pt-6">
-              <h2 className="text-xl font-black text-lime-300">3. Quyền lợi kiểm tra hàng (Đồng kiểm)</h2>
-              <p>Khách hàng được quyền <strong>bóc bưu phẩm và kiểm tra mẫu mã, chất lụa latin, đúng size</strong> trước khi thanh toán tiền mặt cho shipper (COD).</p>
-            </section>
-          </div>
+                  <section className="space-y-3">
+                    <h2 className="text-2xl font-black text-[var(--hiwaii-accent)]">3. Đơn vị vận chuyển đối tác</h2>
+                    <p>Đơn hàng được chuyển phát thông qua các đối tác giao vận hàng đầu Việt Nam như Giao Hàng Nhanh (GHN), Viettel Post hoặc Giao Hàng Tiết Kiệm (GHTK) để đảm bảo hàng hóa đến tay khách hàng nhanh nhất và an toàn nhất.</p>
+                  </section>
 
-          <div className="pt-6 border-t border-blue-200/10 text-center">
-            <Link
-              href={withLang('/collections', lang)}
-              className="inline-flex min-h-12 items-center justify-center rounded-full bg-lime-300 px-8 text-sm font-black uppercase tracking-wider text-[#061227] transition hover:brightness-105"
-            >
-              {isVi ? 'Mua sắm ngay' : 'Shop Now'}
-            </Link>
+                  <section className="space-y-3">
+                    <h2 className="text-2xl font-black text-[var(--hiwaii-accent)]">4. Kiểm tra và nhận hàng</h2>
+                    <p>Khi nhận hàng, quý khách được quyền mở gói hàng kiểm tra mẫu mã, size số và chất vải trước khi thanh toán cho nhân viên giao hàng (áp dụng cho đơn COD).</p>
+                  </section>
+                </>
+              ) : (
+                <>
+                  <section className="space-y-3">
+                    <h2 className="text-2xl font-black text-[var(--hiwaii-accent)]">1. Delivery Timeframes</h2>
+                    <p>All 9Shirt orders are printed and fulfilled directly from our workshop in Son Tay, Hanoi. Estimated delivery times:</p>
+                    <ul className="list-disc pl-5 space-y-1">
+                      <li><strong>Hanoi Area:</strong> 1 - 2 business days.</li>
+                      <li><strong>Central & Northern Vietnam:</strong> 2 - 3 business days.</li>
+                      <li><strong>Southern Vietnam:</strong> 3 - 5 business days.</li>
+                    </ul>
+                  </section>
+
+                  <section className="space-y-3">
+                    <h2 className="text-2xl font-black text-[var(--hiwaii-accent)]">2. Shipping Fees</h2>
+                    <p>9Shirt offers <strong>FREE NATIONWIDE SHIPPING</strong> for all orders, with no minimum purchase required.</p>
+                  </section>
+
+                  <section className="space-y-3">
+                    <h2 className="text-2xl font-black text-[var(--hiwaii-accent)]">3. Shipping Partners</h2>
+                    <p>We partner with major Vietnamese carriers including Giao Hang Nhanh (GHN), Viettel Post, and Giao Hang Tiet Kiem (GHTK) to ensure quick and reliable delivery.</p>
+                  </section>
+
+                  <section className="space-y-3">
+                    <h2 className="text-2xl font-black text-[var(--hiwaii-accent)]">4. Inspection upon Delivery</h2>
+                    <p>For Cash on Delivery (COD) orders, customers are welcome to inspect the package (check the style, size, and fabric feel) before making the payment.</p>
+                  </section>
+                </>
+              )
+            ) : (
+              // Hiwaii Shipping Policy
+              lang === 'vi' ? (
+                <>
+                  <section className="space-y-3">
+                    <h2 className="text-2xl font-black text-[var(--hiwaii-accent)]">1. Thời gian xử lý & vận chuyển</h2>
+                    <p>Sản phẩm của Hiwaii được vận chuyển từ hệ thống kho tại Hoa Kỳ. Thời gian vận chuyển:</p>
+                    <ul className="list-disc pl-5 space-y-1">
+                      <li><strong>Vận chuyển nội địa Mỹ:</strong> 3 - 5 ngày làm việc.</li>
+                      <li><strong>Vận chuyển quốc tế:</strong> 7 - 14 ngày làm việc tùy quốc gia.</li>
+                    </ul>
+                  </section>
+
+                  <section className="space-y-3">
+                    <h2 className="text-2xl font-black text-[var(--hiwaii-accent)]">2. Phí vận chuyển toàn cầu</h2>
+                    <p>Miễn phí vận chuyển cho các đơn hàng từ $75 trở lên. Với đơn hàng dưới $75, phí vận chuyển tiêu chuẩn sẽ được tính khi thanh toán.</p>
+                  </section>
+                </>
+              ) : (
+                <>
+                  <section className="space-y-3">
+                    <h2 className="text-2xl font-black text-[var(--hiwaii-accent)]">1. Processing & Shipping Times</h2>
+                    <p>Hiwaii products are shipped from our US fulfillment centers. Delivery times:</p>
+                    <ul className="list-disc pl-5 space-y-1">
+                      <li><strong>Standard US Shipping:</strong> 3 - 5 business days.</li>
+                      <li><strong>International Shipping:</strong> 7 - 14 business days depending on destination.</li>
+                    </ul>
+                  </section>
+
+                  <section className="space-y-3">
+                    <h2 className="text-2xl font-black text-[var(--hiwaii-accent)]">2. Shipping Costs</h2>
+                    <p>Free standard shipping is automatically applied to all orders over $75. For orders under $75, flat-rate shipping is calculated at checkout.</p>
+                  </section>
+                </>
+              )
+            )}
           </div>
         </div>
       </main>
+
       <Footer />
     </div>
   )

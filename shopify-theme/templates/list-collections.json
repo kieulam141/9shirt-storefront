@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "main": {
+      "type": "hiwaii-collections-redirect"
+    }
+  },
+  "order": ["main"]
+}

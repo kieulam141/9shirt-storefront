@@ -44,8 +44,10 @@
   --hiwaii-text-secondary: #b7c4e4;
   --hiwaii-text-muted: #8192bc;
   --hiwaii-border: #24345f;
-  --hiwaii-accent: #c8ff3d;
-  --hiwaii-accent-soft: rgba(200, 255, 61, 0.14);
+  --hiwaii-accent: #ff9a2f;
+  --hiwaii-accent-soft: rgba(255, 154, 47, 0.16);
+  --shirt-brand-orange: #ff8a1f;
+  --shirt-brand-orange-soft: rgba(255, 138, 31, 0.18);
   --hiwaii-transition: 180ms ease;
   --font-hiwaii-body: 'Manrope', 'Segoe UI', sans-serif;
   --font-hiwaii-display: 'Antonio', 'Impact', sans-serif;
@@ -84,6 +86,14 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
+}
+
+.shirt-brand-wordmark {
+  background: linear-gradient(135deg, #ffd38a 0%, #ff9a2f 42%, #ff6b18 72%, #fff0c9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 28px var(--shirt-brand-orange-soft);
 }
 
 @theme inline {
@@ -134,10 +144,11 @@
   body {
     @apply bg-background text-foreground;
     background:
-      radial-gradient(circle at 12% -4%, rgba(200, 255, 61, 0.16), transparent 38%),
+      radial-gradient(circle at 12% -4%, rgba(255, 154, 47, 0.16), transparent 38%),
       radial-gradient(circle at 85% 3%, rgba(53, 126, 255, 0.2), transparent 44%),
       linear-gradient(160deg, #020814 0%, #050f23 48%, #07112a 100%);
     color: var(--hiwaii-text-primary);
+    overflow-x: clip;
   }
 
   h1,
@@ -186,7 +197,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(120deg, transparent 30%, rgba(203, 255, 95, 0.18) 46%, transparent 63%);
+    background: linear-gradient(120deg, transparent 30%, rgba(255, 166, 64, 0.18) 46%, transparent 63%);
     transform: translateX(-120%);
     transition: transform 700ms ease;
     pointer-events: none;
@@ -214,7 +225,7 @@
   .hiwaii-orb-bg::before {
     width: clamp(180px, 20vw, 340px);
     height: clamp(180px, 20vw, 340px);
-    background: radial-gradient(circle at 38% 36%, rgba(200, 255, 61, 0.7), rgba(200, 255, 61, 0));
+    background: radial-gradient(circle at 38% 36%, rgba(255, 154, 47, 0.66), rgba(255, 154, 47, 0));
     top: -16%;
     right: -8%;
   }
@@ -231,7 +242,7 @@
     border: 1px solid transparent;
     background:
       linear-gradient(#0a1733, #0a1733) padding-box,
-      linear-gradient(140deg, rgba(176, 198, 255, 0.5), rgba(200, 255, 61, 0.45), rgba(100, 134, 255, 0.45)) border-box;
+      linear-gradient(140deg, rgba(176, 198, 255, 0.5), rgba(255, 154, 47, 0.45), rgba(100, 134, 255, 0.45)) border-box;
   }
 }
 

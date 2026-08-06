@@ -1,5 +1,5 @@
-export type Niche = 'Sports' | 'Animal' | 'Art & Music' | 'Vintage'
-export type SubNiche = 'Football' | 'Cat' | 'Dog' | 'Lion' | 'Tiger' | 'Piano' | 'Photography' | 'Train'
+export type Niche = 'Sports' | 'Animal' | 'Art & Music' | 'Vintage' | 'Lifestyle' | 'Fantasy'
+export type SubNiche = 'Football' | 'Cat' | 'Dog' | 'Rabbit Playboy' | 'Lion' | 'Tiger' | 'Animal Graphic' | 'Piano' | 'Photography' | 'Train' | 'Statement / Novelty' | 'Mythology Romance'
 export type ProductType = 'Hawaiian Shirt' | 'Polo Shirt' | 'T-Shirt' | 'Baseball Cap' | 'Shorts'
 export type MaterialCode = 'standard_poly' | 'premium_silk'
 export type StockStatus = 'in_stock' | 'low_stock' | 'out_of_stock'

@@ -13,18 +13,15 @@ function trimText(value: string | null, maxLength: number): string {
 
 export function GET(request: Request) {
   const { searchParams } = new URL(request.url)
-  const lang = searchParams.get('lang') === 'vi' ? 'vi' : 'en'
-  const title = trimText(searchParams.get('title') || 'Hiwaii statement Hawaiian shirts', MAX_TITLE_LENGTH)
+  const title = trimText(searchParams.get('title') || '9shirt áo Hawaii cá tính', MAX_TITLE_LENGTH)
   const subtitle = trimText(
-    searchParams.get('subtitle') || (lang === 'vi'
-      ? 'Áo Hawaii cá tính, ảnh thật nổi bật, sẵn sàng lên mockup.'
-      : 'Statement Hawaiian shirts with bold product visuals and mockup-ready styling.'),
+    searchParams.get('subtitle') || 'Áo Hawaii cá tính, quần short và outfit hè giao từ Hà Nội.',
     MAX_SUBTITLE_LENGTH,
   )
   const image = searchParams.get('image') || DEFAULT_SOCIAL_PRODUCT_IMAGE
   const price = searchParams.get('price')
-  const eyebrow = lang === 'vi' ? 'HIWAII | ÁO HAWAII THIẾT KẾ' : 'HIWAII | STATEMENT HAWAIIAN SHIRTS'
-  const cta = lang === 'vi' ? 'Xem mẫu mới' : 'Shop the drop'
+  const eyebrow = '9SHIRT | CÔNG TY TNHH 9FASHION'
+  const cta = 'Mua theo phong cách'
 
   return new ImageResponse(
     (
@@ -45,7 +42,7 @@ export function GET(request: Request) {
       >
         <div
           style={{
-            background: 'radial-gradient(circle, rgba(200,255,61,0.2), rgba(200,255,61,0) 62%)',
+            background: 'radial-gradient(circle, rgba(255,154,47,0.22), rgba(255,154,47,0) 62%)',
             height: 560,
             left: -170,
             position: 'absolute',
@@ -69,9 +66,9 @@ export function GET(request: Request) {
             <div
               style={{
                 alignItems: 'center',
-                border: '1px solid rgba(200,255,61,0.42)',
+                border: '1px solid rgba(255,154,47,0.44)',
                 borderRadius: 999,
-                color: '#d9ff6a',
+                color: '#ffd38a',
                 display: 'flex',
                 fontSize: 24,
                 fontWeight: 800,
@@ -96,7 +93,7 @@ export function GET(request: Request) {
           <div style={{ alignItems: 'center', display: 'flex', gap: 18 }}>
             <div
               style={{
-                background: '#c8ff3d',
+                background: '#ff9a2f',
                 borderRadius: 999,
                 color: '#061128',
                 fontSize: 26,
@@ -108,7 +105,7 @@ export function GET(request: Request) {
               {cta}
             </div>
             {price ? (
-              <div style={{ color: '#c8ff3d', fontSize: 40, fontWeight: 900 }}>
+              <div style={{ color: '#ff9a2f', fontSize: 40, fontWeight: 900 }}>
                 {price}
               </div>
             ) : null}

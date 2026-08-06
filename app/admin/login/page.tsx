@@ -1,7 +1,9 @@
 import { LockKeyhole } from 'lucide-react'
+import { headers } from 'next/headers'
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { isVietnameseDefaultHost } from '@/lib/seo'
 
 import { isAdminPasswordConfigured, loginAdmin } from '../actions'
 
@@ -13,6 +15,10 @@ export default async function AdminLoginPage({ searchParams }: AdminLoginPagePro
   const params = await searchParams
   const hasInvalidPasswordError = params.error === '1'
   const isConfigured = isAdminPasswordConfigured()
+  const requestHeaders = await headers()
+  const host = requestHeaders.get('host')
+  const isViHost = isVietnameseDefaultHost(host)
+  const brandName = isViHost ? '9Shirt' : 'Hiwaii'
 
   return (
     <main className="min-h-screen bg-[#030916] text-[var(--hiwaii-text-primary)]">
@@ -24,7 +30,7 @@ export default async function AdminLoginPage({ searchParams }: AdminLoginPagePro
             </div>
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-[var(--hiwaii-accent)]">
-                Hiwaii CMS
+                {brandName} CMS
               </p>
               <h1 className="text-3xl font-black uppercase leading-none text-white">
                 Admin Login

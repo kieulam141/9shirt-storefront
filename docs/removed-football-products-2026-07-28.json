@@ -1,0 +1,261 @@
+[
+  {
+    "id": "cr71-legacy-gold",
+    "slug": "cr71-legacy-gold-shirt",
+    "name": "CR7 Legacy Gold Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "cr72-champions-gold",
+    "slug": "cr72-champions-gold-shirt",
+    "name": "CR7 Champions Gold Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "ars2-red-champions",
+    "slug": "ars2-red-champions-shirt",
+    "name": "ARS2 Red Champions Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "agentina",
+    "slug": "agentina-shirt",
+    "name": "Argentina Sky Blue Matchday Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "agentina-xanh-den",
+    "slug": "agentina-xanh-den-shirt",
+    "name": "Argentina Midnight Blue Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "anh",
+    "slug": "anh-shirt",
+    "name": "England Crest White Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "anh-so-2",
+    "slug": "anh-so-2-shirt",
+    "name": "England Red Heritage Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "bdn",
+    "slug": "bdn-shirt",
+    "name": "Portugal Green Matchday Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "bdn-do",
+    "slug": "bdn-do-shirt",
+    "name": "Portugal Red Signature Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "bdn-trang",
+    "slug": "bdn-trang-shirt",
+    "name": "Portugal White Signature Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "brazin",
+    "slug": "brazin-shirt",
+    "name": "Brazil Yellow Carnival Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "brazin-xanh-den",
+    "slug": "brazin-xanh-den-shirt",
+    "name": "Brazil Midnight Green Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "cr7-legend",
+    "slug": "cr7-legend-shirt",
+    "name": "CR7 Legend Black Gold Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "cr73",
+    "slug": "cr73-shirt",
+    "name": "CR7 White Gold Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "cr74",
+    "slug": "cr74-shirt",
+    "name": "CR7 Crimson Legacy Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "croatia",
+    "slug": "croatia-shirt",
+    "name": "Croatia Checkered Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "duc",
+    "slug": "duc-shirt",
+    "name": "Germany Black Eagle Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "duc-trang",
+    "slug": "duc-trang-shirt",
+    "name": "Germany White Eagle Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "ha-lan",
+    "slug": "ha-lan-shirt",
+    "name": "Netherlands Oranje Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "hanquoc",
+    "slug": "hanquoc-shirt",
+    "name": "South Korea Tiger Crest Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "man-city",
+    "slug": "man-city-shirt",
+    "name": "Manchester City Sky Blue Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "mu-bruno",
+    "slug": "mu-bruno-shirt",
+    "name": "Bruno Red Playmaker Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "mu-bruno2",
+    "slug": "mu-bruno2-shirt",
+    "name": "Bruno Black Playmaker Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "mu-bruno3",
+    "slug": "mu-bruno3-shirt",
+    "name": "Bruno White Playmaker Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "mucr7",
+    "slug": "mucr7-shirt",
+    "name": "CR7 United Red Legacy Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "mucunha",
+    "slug": "mucunha-shirt",
+    "name": "United Forward Statement Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "nauy",
+    "slug": "nauy-shirt",
+    "name": "Norway Nordic Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "nhat",
+    "slug": "nhat-shirt",
+    "name": "Japan Blue Samurai Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "phap",
+    "slug": "phap-shirt",
+    "name": "France Blue Heritage Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "phap-2-olise",
+    "slug": "phap-2-olise-shirt",
+    "name": "France Olise Blue Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "psg",
+    "slug": "psg-shirt",
+    "name": "Paris Blue Crest Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "psg-btb",
+    "slug": "psg-btb-shirt",
+    "name": "Paris Black Gold Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "psg3",
+    "slug": "psg3-shirt",
+    "name": "Paris Midnight Crest Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "tbn",
+    "slug": "tbn-shirt",
+    "name": "Spain Red Gold Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "ars1-rice-burgundy",
+    "slug": "ars1-rice-burgundy-shirt",
+    "name": "ARS1 Rice Burgundy Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "ars3-cream-heritage",
+    "slug": "ars3-cream-heritage-shirt",
+    "name": "ARS3 Cream Heritage Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  },
+  {
+    "id": "ars4-floral-crest",
+    "slug": "ars4-floral-crest-shirt",
+    "name": "ARS4 Floral Crest Resort Shirt",
+    "niche": "Sports",
+    "subNiche": "Football"
+  }
+]

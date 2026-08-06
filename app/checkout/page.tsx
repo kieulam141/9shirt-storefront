@@ -5,29 +5,31 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
 import { useCart } from '@/context/CartContext'
 import { withLang } from '@/lib/i18n'
 import { formatPrice, priceUnitFor } from '@/lib/pricing'
 import { useLang } from '@/hooks/use-lang'
+import { useIsViHost } from '@/hooks/use-brand'
 
 export default function CheckoutPage() {
   const { items, total, clearCart } = useCart()
   const lang = useLang()
+  const isViHost = useIsViHost()
   const router = useRouter()
-
+  
   const unit = priceUnitFor(total)
   const isVnd = unit === 'vndK'
 
   // Form states
   const [fullName, setFullName] = useState('')
+  const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [province, setProvince] = useState('')
   const [district, setDistrict] = useState('')
   const [ward, setWard] = useState('')
   const [addressDetail, setAddressDetail] = useState('')
   const [paymentMethod, setPaymentMethod] = useState<'cod' | 'vietqr'>('cod')
-
+  
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [orderSuccess, setOrderSuccess] = useState(false)
   const [createdOrderId, setCreatedOrderId] = useState('')
@@ -44,29 +46,31 @@ export default function CheckoutPage() {
     return '9S' + Math.floor(100000 + Math.random() * 900000)
   }, [])
 
-  // Calculate final total
+  // Calculate final total (including tax 10% for USD, or flat price for VND)
   const finalPriceValue = isVnd ? total : total * 1.1
   const finalPriceString = formatPrice(finalPriceValue, unit)
-
-  // Techcombank VietQR URL generation
+  
+  // VietQR URL generation
   const vietQrUrl = useMemo(() => {
     const amountInVnd = total * 1000
-    return `https://img.vietqr.io/image/TCB-89088868-print.png?amount=${amountInVnd}&addInfo=9SHIRT%20${orderId}&accountName=CONG%20TY%20TNHH%209FASHION`
+    return `https://img.vietqr.io/image/MB-999914101996-print.png?amount=${amountInVnd}&addInfo=9SHIRT%20${orderId}&accountName=KIEU%20TUNG%20LAM`
   }, [total, orderId])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (!fullName || !phone || !province || !district || !ward || !addressDetail) {
+    if (!fullName || !phone || !province || !district || !ward || !addressDetail || (!isViHost && !email)) {
       alert(lang === 'vi' ? 'Vui lòng nhập đầy đủ thông tin giao hàng!' : 'Please fill in all shipping fields!')
       return
     }
 
     setIsSubmitting(true)
-
+    
+    // Construct order payload
     const orderPayload = {
       orderId,
       customer: {
         fullName,
+        email,
         phone,
         address: `${addressDetail}, ${ward}, ${district}, ${province}`,
       },
@@ -91,6 +95,12 @@ export default function CheckoutPage() {
       })
 
       if (response.ok) {
+        const data = await response.json()
+        if (data.checkoutUrl) {
+          clearCart()
+          window.location.href = data.checkoutUrl
+          return
+        }
         setCreatedOrderId(orderId)
         setOrderSuccess(true)
         clearCart()
@@ -110,20 +120,20 @@ export default function CheckoutPage() {
       <div className="min-h-screen bg-[var(--hiwaii-bg)] text-[var(--hiwaii-text-primary)]">
         <Header />
         <main className="mx-auto max-w-2xl px-4 py-16 text-center">
-          <div className="hiwaii-reveal hiwaii-grid-bg rounded-3xl border border-lime-300/20 bg-[#0a1736] p-8 md:p-12 space-y-6 shadow-2xl">
-            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-lime-300/10 border border-lime-300/30">
-              <svg className="h-10 w-10 text-lime-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+          <div className="hiwaii-reveal hiwaii-grid-bg rounded-3xl border border-[var(--hiwaii-accent)]/20 bg-[#0a1736] p-8 md:p-12 space-y-6 shadow-2xl">
+            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[var(--hiwaii-accent)]/10 border border-[var(--hiwaii-accent)]/30">
+              <svg className="h-10 w-10 text-[var(--hiwaii-accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
             </div>
-
+            
             <h1 className="text-4xl font-black text-[var(--hiwaii-text-primary)]">
               {lang === 'vi' ? 'Đặt hàng thành công!' : 'Order Placed!'}
             </h1>
-
+            
             <div className="text-slate-300 space-y-2 font-semibold">
-              <p>{lang === 'vi' ? `Cảm ơn bạn đã mua sắm tại 9Shirt. Mã đơn hàng của bạn là:` : `Thank you for shopping. Your order ID is:`}</p>
-              <p className="text-2xl font-black text-lime-300">{createdOrderId}</p>
+              <p>{lang === 'vi' ? `Cảm ơn bạn đã mua sắm tại 9Shirt. Mã đơn hàng của bạn là:` : `Thank you for shopping at Hiwaii. Your order ID is:`}</p>
+              <p className="text-2xl font-black text-[var(--hiwaii-accent)]">{createdOrderId}</p>
             </div>
 
             {paymentMethod === 'vietqr' && (
@@ -132,13 +142,12 @@ export default function CheckoutPage() {
                   {lang === 'vi' ? 'Quét mã VietQR chuyển khoản' : 'Scan VietQR to Transfer'}
                 </p>
                 <div className="relative mx-auto aspect-square w-full max-w-[240px] bg-white p-2 rounded-xl">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={vietQrUrl} alt="VietQR Code" className="w-full h-full object-contain" />
                 </div>
                 <div className="text-left text-xs space-y-1 text-slate-300">
-                  <p>🏛️ <strong>{lang === 'vi' ? 'Ngân hàng:' : 'Bank:'}</strong> Techcombank (TCB)</p>
-                  <p>💳 <strong>{lang === 'vi' ? 'Số tài khoản:' : 'Account No:'}</strong> 89088868</p>
-                  <p>👤 <strong>{lang === 'vi' ? 'Chủ tài khoản:' : 'Account Name:'}</strong> CÔNG TY TNHH 9FASHION</p>
+                  <p>🏛️ <strong>{lang === 'vi' ? 'Ngân hàng:' : 'Bank:'}</strong> MB Bank (Ngân hàng Quân đội)</p>
+                  <p>💳 <strong>{lang === 'vi' ? 'Số tài khoản:' : 'Account No:'}</strong> 999914101996</p>
+                  <p>👤 <strong>{lang === 'vi' ? 'Chủ tài khoản:' : 'Account Name:'}</strong> KIEU TUNG LAM</p>
                   <p>💰 <strong>{lang === 'vi' ? 'Số tiền:' : 'Amount:'}</strong> {finalPriceString}</p>
                   <p>📝 <strong>{lang === 'vi' ? 'Nội dung:' : 'Description:'}</strong> 9SHIRT {createdOrderId}</p>
                 </div>
@@ -147,7 +156,7 @@ export default function CheckoutPage() {
 
             <div className="pt-6">
               <Link
-                href={withLang('/collections', lang)}
+                href={withLang('/', lang)}
                 className="inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--hiwaii-accent)] px-8 text-sm font-black uppercase tracking-[0.14em] text-[#071425] transition hover:brightness-105"
               >
                 {lang === 'vi' ? 'Tiếp tục mua sắm' : 'Continue Shopping'}
@@ -155,7 +164,6 @@ export default function CheckoutPage() {
             </div>
           </div>
         </main>
-        <Footer />
       </div>
     )
   }
@@ -163,7 +171,7 @@ export default function CheckoutPage() {
   return (
     <div className="min-h-screen bg-[var(--hiwaii-bg)] text-[var(--hiwaii-text-primary)]">
       <Header />
-
+      
       <main className="mx-auto max-w-[1360px] px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-8">
           <p className="text-xs font-black uppercase tracking-[0.24em] text-[var(--hiwaii-accent)]">
@@ -208,6 +216,22 @@ export default function CheckoutPage() {
                   />
                 </label>
               </div>
+
+              {!isViHost ? (
+                <label className="block space-y-2">
+                  <span className="text-xs font-black text-slate-300 uppercase tracking-wide">
+                    Email *
+                  </span>
+                  <input
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="you@example.com"
+                    className="min-h-11 w-full rounded-xl border border-[var(--hiwaii-border)] bg-[#0a1632] px-4 text-sm font-semibold text-[var(--hiwaii-text-primary)] outline-none focus:border-[var(--hiwaii-accent)] focus:ring-1 focus:ring-[var(--hiwaii-accent)]"
+                  />
+                </label>
+              ) : null}
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <label className="block space-y-2">
@@ -260,18 +284,18 @@ export default function CheckoutPage() {
                   required
                   value={addressDetail}
                   onChange={(e) => setAddressDetail(e.target.value)}
-                  placeholder={lang === 'vi' ? '16 ngõ 1 Đốc Ngữ' : '16 ngo 1 Doc Ngu'}
+                  placeholder={lang === 'vi' ? '11 Đốc Ngữ' : '11 Doc Ngu'}
                   className="min-h-11 w-full rounded-xl border border-[var(--hiwaii-border)] bg-[#0a1632] px-4 text-sm font-semibold text-[var(--hiwaii-text-primary)] outline-none focus:border-[var(--hiwaii-accent)]"
                 />
               </label>
             </fieldset>
 
-            {/* Payment Options */}
             <fieldset className="hiwaii-reveal rounded-2xl border border-[var(--hiwaii-border)] bg-[#0a1736]/40 p-6 space-y-4">
               <legend className="px-3 text-lg font-black text-[var(--hiwaii-accent)] uppercase tracking-wider">
                 {lang === 'vi' ? 'Phương thức thanh toán' : 'Payment Method'}
               </legend>
 
+              {isViHost ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <button
                   type="button"
@@ -287,7 +311,7 @@ export default function CheckoutPage() {
                     </p>
                   </div>
                   {paymentMethod === 'cod' && (
-                    <span className="w-5 h-5 rounded-full bg-lime-300 flex items-center justify-center text-[#061227] text-xs font-black">✓</span>
+                    <span className="w-5 h-5 rounded-full bg-[var(--hiwaii-accent)] flex items-center justify-center text-[#061227] text-xs font-black">✓</span>
                   )}
                 </button>
 
@@ -301,14 +325,24 @@ export default function CheckoutPage() {
                       📱 {lang === 'vi' ? 'Chuyển khoản VietQR' : 'VietQR Bank Transfer'}
                     </p>
                     <p className="mt-1 text-xs text-slate-300 font-semibold">
-                      {lang === 'vi' ? 'Chuyển khoản Techcombank (STK: 89088868)' : 'Instant transfer via VietQR'}
+                      {lang === 'vi' ? 'Quét mã VietQR chuyển khoản nhanh' : 'Instant transfer via VietQR'}
                     </p>
                   </div>
                   {paymentMethod === 'vietqr' && (
-                    <span className="w-5 h-5 rounded-full bg-lime-300 flex items-center justify-center text-[#061227] text-xs font-black">✓</span>
+                    <span className="w-5 h-5 rounded-full bg-[var(--hiwaii-accent)] flex items-center justify-center text-[#061227] text-xs font-black">✓</span>
                   )}
                 </button>
               </div>
+              ) : (
+                <div className="rounded-2xl border border-[var(--hiwaii-accent)] bg-[var(--hiwaii-accent-soft)] p-4">
+                  <p className="text-base font-black text-[var(--hiwaii-text-primary)]">
+                    Shopify secure checkout
+                  </p>
+                  <p className="mt-1 text-sm font-semibold text-slate-300">
+                    You will be redirected to Hiwaii&apos;s Shopify checkout to complete payment securely.
+                  </p>
+                </div>
+              )}
             </fieldset>
           </div>
 
@@ -347,7 +381,7 @@ export default function CheckoutPage() {
                 </div>
                 <div className="flex justify-between">
                   <span>{lang === 'vi' ? 'Vận chuyển' : 'Shipping'}</span>
-                  <span className="text-lime-300 font-black">{lang === 'vi' ? 'Miễn phí' : 'Free'}</span>
+                  <span className="text-[var(--hiwaii-accent)] font-black">{lang === 'vi' ? 'Miễn phí' : 'Free'}</span>
                 </div>
                 {!isVnd && (
                   <div className="flex justify-between">
@@ -357,7 +391,7 @@ export default function CheckoutPage() {
                 )}
                 <div className="flex justify-between text-white text-lg font-black border-t border-[var(--hiwaii-border)] pt-3">
                   <span>{lang === 'vi' ? 'Tổng cộng' : 'Total'}</span>
-                  <span className="text-lime-300 text-2xl">{finalPriceString}</span>
+                  <span className="text-[var(--hiwaii-accent)] text-2xl">{finalPriceString}</span>
                 </div>
               </div>
 
@@ -374,21 +408,22 @@ export default function CheckoutPage() {
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="h-4 w-4 mr-2" aria-hidden="true">
                       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                     </svg>
-                    {lang === 'vi' ? `Đặt hàng • ${finalPriceString}` : `Place Order • ${finalPriceString}`}
+                    {isViHost
+                      ? (lang === 'vi' ? `Đặt hàng • ${finalPriceString}` : `Place Order • ${finalPriceString}`)
+                      : `Continue to Shopify • ${finalPriceString}`}
                   </>
                 )}
               </button>
-
+              
               <p className="text-[10px] text-slate-400 font-semibold text-center leading-relaxed">
-                {lang === 'vi'
+                {lang === 'vi' 
                   ? 'Bằng việc đặt hàng, bạn đồng ý với các Điều khoản mua bán của 9Shirt.'
-                  : 'By placing your order, you agree to 9Shirt\'s Terms of Sale.'}
+                  : 'By continuing, you agree to Hiwaii\'s Shopify checkout terms.'}
               </p>
             </div>
           </div>
         </form>
       </main>
-      <Footer />
     </div>
   )
 }

@@ -1,14 +1,11 @@
 export type Lang = 'en' | 'vi'
 
-export function resolveLang(value?: string | null): Lang {
-  return value === 'vi' ? 'vi' : 'en'
+export function resolveLang(_value?: string | null): Lang {
+  return 'vi'
 }
 
-export function withLang(path: string, lang: Lang): string {
-  const [base, hash] = path.split('#')
-  const separator = base.includes('?') ? '&' : '?'
-  const url = `${base}${separator}lang=${lang}`
-  return hash ? `${url}#${hash}` : url
+export function withLang(path: string, _lang: Lang): string {
+  return path
 }
 
 export const i18n = {
@@ -26,15 +23,15 @@ export const i18n = {
       subtitle: 'From football energy to vintage nostalgia, discover Hawaiian shirts built to stand out.',
       ctaPrimary: 'Shop Best Sellers',
       ctaSecondary: 'Browse Collections',
-      value1: 'From $19.9 • Premium upgrade available',
-      value2: 'Ships from US • 3-5 days delivery',
+      value1: 'All shirts at $39.99',
+      value2: 'Ships from Hanoi • 3-7 days delivery',
       value3: 'Limited drop this week',
       sectionFeatured: 'Featured styles',
       sectionFeaturedTitle: 'Shop customer favorites first',
       sectionLifestyle: 'Shop by lifestyle',
       sectionLifestyleTitle: 'Four style worlds, one storefront',
       trust: [
-        ['Fast US shipping', '3-5 day delivery window'],
+        ['Fast fulfillment', 'Ships from Hanoi in 3-7 days'],
         ['Easy returns', 'Simple support and return handling'],
         ['4.8/5 rating', 'Loved by 2,100+ customers'],
         ['Secure checkout', 'Encrypted payment flow'],
@@ -43,10 +40,6 @@ export const i18n = {
     collections: {
       title: 'Collections',
       subtitle: 'Filter by niche and sub-niche, then shop top styles quickly.',
-      bundleTitle: 'Bundle by product type',
-      bundleSubtitle: 'Group products by category to increase AOV with outfit bundles.',
-      bundleCta: 'Build this bundle',
-      bundleOfferTitle: 'Ready-made bundle offers',
       allNiches: 'All niches',
       allSubNiches: 'All sub-niches',
       sortPopular: 'Most popular',
@@ -63,14 +56,8 @@ export const i18n = {
       notFound: 'Product not found',
       backToShop: 'Back to shop',
       reviewLine: '4.8 (124 reviews) • 2,100+ happy customers',
-      studioEyebrow: 'Mockup studio',
-      studioTitle: 'Build your final look before checkout',
-      selectArt: 'Select artwork',
-      selectShirtKind: 'Select shirt kind',
-      mockupPreview: 'Live mockup preview',
-      selectedCombo: 'Selected combo',
-      tryOnTitle: 'Try-on motion preview',
-      tryOnSubtitle: 'Use available 3D clip to check movement, texture, and fit.',
+      selectArt: 'Select design',
+      selectShirtKind: 'Select product',
       storyTitle: 'Artwork story',
       storyPrefix: 'Story:',
       detailsTitle: 'What makes this design special',
@@ -114,38 +101,34 @@ export const i18n = {
   vi: {
     header: {
       shop: 'Mua sắm',
-      collections: 'Bộ sưu tập',
+      collections: 'Phong cách',
       lifestyle: 'Phong cách',
       contact: 'Hỗ trợ',
       cart: 'Giỏ hàng',
     },
     home: {
-      eyebrow: 'Hiwaii hè 2026',
-      title: 'Mặc đúng cá tính của bạn.',
-      subtitle: 'Từ Sports đến Vintage, khám phá áo Hawaii được thiết kế để nổi bật ngay từ cái nhìn đầu tiên.',
+      eyebrow: '9shirt hè 2026',
+      title: 'Áo Hawaii cá tính, mặc là nổi bật.',
+      subtitle: 'Chọn mẫu theo gu, chọn size và đặt outfit hè nhanh trong vài bước.',
       ctaPrimary: 'Mua mẫu bán chạy',
-      ctaSecondary: 'Xem bộ sưu tập',
-      value1: 'Từ $19.9 • Có nâng cấp Premium',
-      value2: 'Giao từ kho US • 3-5 ngày',
+      ctaSecondary: 'Chọn theo phong cách',
+      value1: 'Chọn mẫu theo gu',
+      value2: 'Chọn size dễ dàng',
       value3: 'Drop giới hạn trong tuần',
       sectionFeatured: 'Mẫu nổi bật',
       sectionFeaturedTitle: 'Bắt đầu với các mẫu khách mua nhiều nhất',
       sectionLifestyle: 'Mua theo phong cách',
       sectionLifestyleTitle: '4 thế giới style, 1 storefront',
       trust: [
-        ['Giao nhanh từ US', 'Khung giao 3-5 ngày'],
-        ['Đổi trả dễ', 'Hỗ trợ và xử lý đổi trả nhanh'],
-        ['Đánh giá 4.8/5', '2,100+ khách đã mua'],
-        ['Thanh toán bảo mật', 'Luồng thanh toán mã hóa'],
+        ['CÔNG TY TNHH 9FASHION', 'MST: 0110712144'],
+        ['Địa chỉ rõ ràng', 'Số 16 ngõ 1 Đốc Ngữ, Sơn Tây, Hà Nội'],
+        ['Hotline hỗ trợ', '0396218880'],
+        ['Thanh toán linh hoạt', 'COD/VietQR, xác nhận đơn nhanh qua email'],
       ],
     },
     collections: {
-      title: 'Bộ sưu tập',
-      subtitle: 'Lọc theo niche và sub-niche để chọn mẫu phù hợp nhanh hơn.',
-      bundleTitle: 'Bundle theo loại sản phẩm',
-      bundleSubtitle: 'Gộp theo danh mục để bán combo outfit và tăng giá trị đơn hàng.',
-      bundleCta: 'Tạo bundle này',
-      bundleOfferTitle: 'Combo gợi ý sẵn',
+      title: 'Phong cách',
+      subtitle: 'Lọc theo niche và sub-niche để chọn mẫu hợp gu nhanh hơn.',
       allNiches: 'Tất cả niche',
       allSubNiches: 'Tất cả sub-niche',
       sortPopular: 'Phổ biến nhất',
@@ -162,14 +145,8 @@ export const i18n = {
       notFound: 'Không tìm thấy sản phẩm',
       backToShop: 'Quay lại mua sắm',
       reviewLine: '4.8 (124 đánh giá) • 2,100+ khách hài lòng',
-      studioEyebrow: 'Xưởng mockup',
-      studioTitle: 'Tạo phối đồ cuối cùng trước khi thanh toán',
-      selectArt: 'Chọn artwork',
-      selectShirtKind: 'Chọn kiểu áo',
-      mockupPreview: 'Mockup xem trước',
-      selectedCombo: 'Combo đã chọn',
-      tryOnTitle: 'Video thử áo chuyển động',
-      tryOnSubtitle: 'Xem clip 3D để kiểm tra độ rũ, bề mặt in và fit.',
+      selectArt: 'Chọn mẫu',
+      selectShirtKind: 'Chọn sản phẩm',
       storyTitle: 'Câu chuyện thiết kế',
       storyPrefix: 'Câu chuyện:',
       detailsTitle: 'Điểm nổi bật của thiết kế',
@@ -189,7 +166,7 @@ export const i18n = {
     },
     cart: {
       emptyTitle: 'Giỏ hàng đang trống',
-      emptyText: 'Thêm sản phẩm Hiwaii đầu tiên để thanh toán nhanh.',
+      emptyText: 'Thêm sản phẩm 9shirt đầu tiên để thanh toán nhanh.',
       continue: 'Tiếp tục mua sắm',
       title: 'Giỏ hàng',
       orderSummary: 'Tóm tắt đơn hàng',

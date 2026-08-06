@@ -1,210 +1,33 @@
 [
   {
-    "id": "cr72-champions-gold",
-    "slug": "cr72-champions-gold-shirt",
-    "name": "CR7 Champions Gold Resort Shirt",
-    "price": 350,
-    "hook": "Gold-and-black CR7 champions artwork with trophy details.",
-    "description": "A high-impact football celebration print built around gold florals, trophy graphics, and a premium black resort palette.",
+    "id": "rabbit-playboys-black",
+    "slug": "rabbit-playboys-black-shirt",
+    "name": "Áo Hawaii Thỏ Đen Playboy",
+    "price": 495,
+    "hook": "Họa tiết thỏ đen phong cách cao cấp nổi bật trên form áo đi biển dễ mặc.",
+    "description": "Họa tiết thỏ đen phong cách cao cấp nổi bật trên form áo đi biển dễ mặc. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
     "productType": "Hawaiian Shirt",
-    "niche": "Sports",
-    "subNiche": "Football",
-    "badge": "Trending",
-    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/704810634_979476901355846_2168163068901386661_n.jpg",
-    "images": [
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/704810634_979476901355846_2168163068901386661_n.jpg",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/296d4917-3d9c-4ec2-8cdb-ca6ba7cc45c6.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/A5.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/A65.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/A76.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/64d65930-5524-423d-8d4e-3f056d5ab9cd.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/C%E1%BB%95.png"
-    ],
-    "media": [
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/704810634_979476901355846_2168163068901386661_n.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/296d4917-3d9c-4ec2-8cdb-ca6ba7cc45c6.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/A5.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/A65.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/A76.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/64d65930-5524-423d-8d4e-3f056d5ab9cd.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR72/C%E1%BB%95.png"
-      }
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL",
-      "5XL"
-    ],
-    "materials": [
-      {
-        "code": "standard_poly",
-        "label": "Chất lụa latin",
-        "uplift": 0,
-        "benefit": "Mềm rũ • mát nhẹ • lên màu sắc nét"
-      }
-    ],
-    "variants": [
-      {
-        "size": "S",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "M",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "L",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "2XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 395
-      },
-      {
-        "size": "3XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 395
-      },
-      {
-        "size": "4XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 445
-      },
-      {
-        "size": "5XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 445
-      }
-    ],
-    "specifications": [
-      {
-        "label": "Material",
-        "value": "Chất lụa latin"
-      },
-      {
-        "label": "Fit",
-        "value": "Relaxed resort fit"
-      },
-      {
-        "label": "Care",
-        "value": "Machine wash cold, hang dry"
-      },
-      {
-        "label": "Shipping",
-        "value": "US warehouse, 3-5 business days"
-      },
-      {
-        "label": "Print",
-        "value": "Football tribute all-over sublimation print"
-      },
-      {
-        "label": "SKU / Type code",
-        "value": "HW-SPORT-CR72"
-      }
-    ]
-  },
-  {
-    "id": "cr71-legacy-gold",
-    "slug": "cr71-legacy-gold-shirt",
-    "name": "CR7 Legacy Gold Resort Shirt",
-    "price": 350,
-    "hook": "Cream-and-navy CR7 legacy print with gold floral framing.",
-    "description": "A collector-style football shirt design pairing a cream base, navy trim, and ornate championship-inspired visual language.",
-    "productType": "Hawaiian Shirt",
-    "niche": "Sports",
-    "subNiche": "Football",
+    "niche": "Animal",
+    "subNiche": "Rabbit Playboy",
     "badge": "Best seller",
-    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/702636459_960250286628890_9191551945257170271_n.jpg",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit-playboys-black/mt.png",
     "images": [
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/702636459_960250286628890_9191551945257170271_n.jpg",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/b03fb274-25cb-4c49-8056-547e7a304714.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/MT1.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/MS22.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/In2.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/Tay.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/C%E1%BB%95.png"
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit-playboys-black/mt.png",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit-playboys-black/ms.png"
     ],
     "media": [
       {
         "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/702636459_960250286628890_9191551945257170271_n.jpg"
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit-playboys-black/mt.png"
       },
       {
         "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/b03fb274-25cb-4c49-8056-547e7a304714.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/MT1.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/MS22.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/In2.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/Tay.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/CR71/C%E1%BB%95.png"
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit-playboys-black/ms.png"
       }
     ],
     "sizes": [
+      "2XS",
+      "XS",
       "S",
       "M",
       "L",
@@ -217,1700 +40,2130 @@
     "materials": [
       {
         "code": "standard_poly",
-        "label": "Chất lụa latin",
+        "label": "Lụa Latin",
         "uplift": 0,
-        "benefit": "Mềm rũ • mát nhẹ • lên màu sắc nét"
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
       }
     ],
     "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
       {
         "size": "S",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 350
+        "price": 495
       },
       {
         "size": "M",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 350
+        "price": 495
       },
       {
         "size": "L",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 350
+        "price": 495
       },
       {
         "size": "XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 350
+        "price": 495
       },
       {
         "size": "2XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 395
+        "price": 495
       },
       {
         "size": "3XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 395
+        "price": 495
       },
       {
         "size": "4XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 445
+        "price": 495
       },
       {
         "size": "5XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 445
+        "price": 495
       }
     ],
     "specifications": [
       {
-        "label": "Material",
-        "value": "Chất lụa latin"
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
       },
       {
-        "label": "Fit",
-        "value": "Relaxed resort fit"
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
       },
       {
-        "label": "Care",
-        "value": "Cold wash, no bleach"
-      },
-      {
-        "label": "Shipping",
-        "value": "Ships from US in 3-5 days"
-      },
-      {
-        "label": "Print",
-        "value": "Cream football legacy full-print"
-      },
-      {
-        "label": "SKU / Type code",
-        "value": "HW-SPORT-CR71"
-      }
-    ]
-  },
-  {
-    "id": "ars1-rice-burgundy",
-    "slug": "ars1-rice-burgundy-shirt",
-    "name": "ARS1 Rice Burgundy Resort Shirt",
-    "price": 350,
-    "hook": "Burgundy football artwork with Rice 41 feature styling.",
-    "description": "A deep burgundy football print with fireworks, trophy cues, and a player-focused front composition.",
-    "productType": "Hawaiian Shirt",
-    "niche": "Sports",
-    "subNiche": "Football",
-    "badge": "Premium Edition",
-    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS1/e1eb6515-5d93-49fb-83b5-a1fe759c0bdd.png",
-    "images": [
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS1/e1eb6515-5d93-49fb-83b5-a1fe759c0bdd.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS1/Template%20Hawaiian%20AR1.jpg"
-    ],
-    "media": [
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS1/e1eb6515-5d93-49fb-83b5-a1fe759c0bdd.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS1/Template%20Hawaiian%20AR1.jpg"
-      }
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL",
-      "5XL"
-    ],
-    "materials": [
-      {
-        "code": "standard_poly",
-        "label": "Chất lụa latin",
-        "uplift": 0,
-        "benefit": "Mềm rũ • mát nhẹ • lên màu sắc nét"
-      }
-    ],
-    "variants": [
-      {
-        "size": "S",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "M",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "L",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "2XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 395
-      },
-      {
-        "size": "3XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 395
-      },
-      {
-        "size": "4XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 445
-      },
-      {
-        "size": "5XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 445
-      }
-    ],
-    "specifications": [
-      {
-        "label": "Material",
-        "value": "Chất lụa latin"
-      },
-      {
-        "label": "Fit",
-        "value": "Regular relaxed fit"
-      },
-      {
-        "label": "Care",
-        "value": "Machine wash cold"
-      },
-      {
-        "label": "Shipping",
-        "value": "US warehouse fulfillment"
-      },
-      {
-        "label": "Print",
-        "value": "Burgundy football all-over print"
-      },
-      {
-        "label": "SKU / Type code",
-        "value": "HW-SPORT-ARS1"
-      }
-    ]
-  },
-  {
-    "id": "ars2-red-champions",
-    "slug": "ars2-red-champions-shirt",
-    "name": "ARS2 Red Champions Resort Shirt",
-    "price": 350,
-    "hook": "Red championship collage with energetic football graphics.",
-    "description": "A saturated red football shirt design with layered champion typography, maple-toned artwork, and bold matchday energy.",
-    "productType": "Hawaiian Shirt",
-    "niche": "Sports",
-    "subNiche": "Football",
-    "badge": "Trending",
-    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS2/b0758d9a-8061-40a4-a6ba-f2a5dcf1a1ed.png",
-    "images": [
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS2/b0758d9a-8061-40a4-a6ba-f2a5dcf1a1ed.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS2/Template%20Hawaiian%20AR2.jpg"
-    ],
-    "media": [
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS2/b0758d9a-8061-40a4-a6ba-f2a5dcf1a1ed.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS2/Template%20Hawaiian%20AR2.jpg"
-      }
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL",
-      "5XL"
-    ],
-    "materials": [
-      {
-        "code": "standard_poly",
-        "label": "Chất lụa latin",
-        "uplift": 0,
-        "benefit": "Mềm rũ • mát nhẹ • lên màu sắc nét"
-      }
-    ],
-    "variants": [
-      {
-        "size": "S",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "M",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "L",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "2XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 395
-      },
-      {
-        "size": "3XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 395
-      },
-      {
-        "size": "4XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 445
-      },
-      {
-        "size": "5XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 445
-      }
-    ],
-    "specifications": [
-      {
-        "label": "Material",
-        "value": "Chất lụa latin"
-      },
-      {
-        "label": "Fit",
-        "value": "Relaxed resort fit"
-      },
-      {
-        "label": "Care",
-        "value": "Gentle cycle, low heat dry"
-      },
-      {
-        "label": "Shipping",
-        "value": "Ships in 3-5 business days"
-      },
-      {
-        "label": "Print",
-        "value": "Red championship sublimation print"
-      },
-      {
-        "label": "SKU / Type code",
-        "value": "HW-SPORT-ARS2"
-      }
-    ]
-  },
-  {
-    "id": "ars3-cream-heritage",
-    "slug": "ars3-cream-heritage-shirt",
-    "name": "ARS3 Cream Heritage Resort Shirt",
-    "price": 350,
-    "hook": "Cream and burgundy football layout with heritage poster cues.",
-    "description": "A quieter football resort shirt design with cream poster styling, burgundy accents, and collector-ready artwork.",
-    "productType": "Hawaiian Shirt",
-    "niche": "Sports",
-    "subNiche": "Football",
-    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS3/1ed654b8-5f26-4ab2-bc62-3a15519609e2.png",
-    "images": [
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS3/1ed654b8-5f26-4ab2-bc62-3a15519609e2.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS3/Template%20Hawaiian%20AR3.jpg"
-    ],
-    "media": [
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS3/1ed654b8-5f26-4ab2-bc62-3a15519609e2.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS3/Template%20Hawaiian%20AR3.jpg"
-      }
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL",
-      "5XL"
-    ],
-    "materials": [
-      {
-        "code": "standard_poly",
-        "label": "Chất lụa latin",
-        "uplift": 0,
-        "benefit": "Mềm rũ • mát nhẹ • lên màu sắc nét"
-      }
-    ],
-    "variants": [
-      {
-        "size": "S",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "M",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "L",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "2XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 395
-      },
-      {
-        "size": "3XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 395
-      },
-      {
-        "size": "4XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 445
-      },
-      {
-        "size": "5XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 445
-      }
-    ],
-    "specifications": [
-      {
-        "label": "Material",
-        "value": "Chất lụa latin"
-      },
-      {
-        "label": "Fit",
-        "value": "Regular fit"
-      },
-      {
-        "label": "Care",
-        "value": "Cold machine wash"
-      },
-      {
-        "label": "Shipping",
-        "value": "US shipping 3-5 days"
-      },
-      {
-        "label": "Print",
-        "value": "Cream football poster all-over print"
-      },
-      {
-        "label": "SKU / Type code",
-        "value": "HW-SPORT-ARS3"
-      }
-    ]
-  },
-  {
-    "id": "ars4-floral-crest",
-    "slug": "ars4-floral-crest-shirt",
-    "name": "ARS4 Floral Crest Resort Shirt",
-    "price": 350,
-    "hook": "Red floral football artwork with crest-inspired composition.",
-    "description": "A red floral football print with poster details, tropical accents, and a clean collector-style presentation.",
-    "productType": "Hawaiian Shirt",
-    "niche": "Sports",
-    "subNiche": "Football",
-    "badge": "Premium Edition",
-    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS4/def8faef-35ab-44bb-a538-68d963458da0.png",
-    "images": [
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS4/def8faef-35ab-44bb-a538-68d963458da0.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS4/Template%20Hawaiian%20AR4.jpg"
-    ],
-    "media": [
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS4/def8faef-35ab-44bb-a538-68d963458da0.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/New%20Products/ARS4/Template%20Hawaiian%20AR4.jpg"
-      }
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL",
-      "5XL"
-    ],
-    "materials": [
-      {
-        "code": "standard_poly",
-        "label": "Chất lụa latin",
-        "uplift": 0,
-        "benefit": "Mềm rũ • mát nhẹ • lên màu sắc nét"
-      }
-    ],
-    "variants": [
-      {
-        "size": "S",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "M",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "L",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 350
-      },
-      {
-        "size": "2XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 395
-      },
-      {
-        "size": "3XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 395
-      },
-      {
-        "size": "4XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 445
-      },
-      {
-        "size": "5XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 445
-      }
-    ],
-    "specifications": [
-      {
-        "label": "Material",
-        "value": "Chất lụa latin"
-      },
-      {
-        "label": "Fit",
-        "value": "Relaxed fit"
-      },
-      {
-        "label": "Care",
+        "label": "Bảo quản",
         "value": "Machine wash cold, hang dry"
       },
       {
-        "label": "Shipping",
-        "value": "Fast US shipping"
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
       },
       {
-        "label": "Print",
-        "value": "Red floral football all-over print"
+        "label": "Công nghệ in",
+        "value": "Đồ họa động vật họa tiết in chuyển nhiệt toàn thân"
       },
       {
-        "label": "SKU / Type code",
-        "value": "HW-SPORT-ARS4"
+        "label": "Mã sản phẩm",
+        "value": "rabbit-playboys-black"
+      }
+    ]
+  },
+  {
+    "id": "pink-playboys",
+    "slug": "pink-playboys-shirt",
+    "name": "Áo Hawaii Thỏ Hồng Playboy",
+    "price": 495,
+    "hook": "Tông hồng tươi vui với họa tiết thỏ Playboy bắt mắt cho outfit hè nổi bật.",
+    "description": "Tông hồng tươi vui với họa tiết thỏ Playboy bắt mắt cho outfit hè nổi bật. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Rabbit Playboy",
+    "badge": "Best seller",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/pink-playboys/mt.png",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/pink-playboys/mt.png",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/pink-playboys/ms.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/pink-playboys/mt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/pink-playboys/ms.png"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Đồ họa động vật họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "pink-playboys"
+      }
+    ]
+  },
+  {
+    "id": "rabbit",
+    "slug": "rabbit-shirt",
+    "name": "Áo Hawaii Thỏ Pop Graphic",
+    "price": 495,
+    "hook": "Họa tiết thỏ đồ họa pop vui mắt, hợp đi biển, du lịch và phối đồ cá tính.",
+    "description": "Họa tiết thỏ đồ họa pop vui mắt, hợp đi biển, du lịch và phối đồ cá tính. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Rabbit Playboy",
+    "badge": "Best seller",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit/mt.png",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit/mt.png",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit/ms.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit/mt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit/ms.png"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Đồ họa động vật họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "rabbit"
+      }
+    ]
+  },
+  {
+    "id": "rabbit-v2",
+    "slug": "rabbit-v2-shirt",
+    "name": "Áo Hawaii Thỏ Pop Graphic V2",
+    "price": 495,
+    "hook": "Phiên bản thỏ đồ họa pop V2 với bố cục in toàn thân sắc nét và trẻ trung.",
+    "description": "Phiên bản thỏ đồ họa pop V2 với bố cục in toàn thân sắc nét và trẻ trung. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Rabbit Playboy",
+    "badge": "Best seller",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit-v2/mt.png",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit-v2/mt.png",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit-v2/ms.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit-v2/mt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/rabbit-v2/ms.png"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Đồ họa động vật họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "rabbit-v2"
       }
     ]
   },
   {
     "id": "cosmic-catmas",
     "slug": "cosmic-catmas-shirt",
-    "name": "Cosmic Catmas Shirt",
-    "price": 24.9,
-    "compareAtPrice": 44.9,
-    "hook": "Cosmic cat artwork with standout all-over depth.",
-    "description": "A bold cat-themed summer statement shirt designed for vacation, weekends, and collectors of wearable art.",
+    "name": "Áo Hawaii Mèo Cosmic",
+    "price": 495,
+    "hook": "Họa tiết mèo cosmic có chiều sâu thị giác, nổi bật khi lên ảnh và khi di chuyển.",
+    "description": "Họa tiết mèo cosmic có chiều sâu thị giác, nổi bật khi lên ảnh và khi di chuyển. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
     "productType": "Hawaiian Shirt",
     "niche": "Animal",
     "subNiche": "Cat",
     "badge": "Best seller",
-    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/Cosmic%20Catmas%20Shirt.png",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/cosmic-catmas/mt.png",
     "images": [
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/Cosmic%20Catmas%20Shirt.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/MS.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/MC.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/KXj3K.jpg"
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/cosmic-catmas/mt.png",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/cosmic-catmas/ms.png"
     ],
     "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/G34.mp4",
     "media": [
       {
-        "type": "video",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/G34.mp4",
-        "thumb": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/Cosmic%20Catmas%20Shirt.png"
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/cosmic-catmas/mt.png"
       },
       {
         "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/Cosmic%20Catmas%20Shirt.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/MS.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/MC.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Cosmic%20Catmas%20Shirt/KXj3K.jpg"
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/cosmic-catmas/ms.png"
       }
     ],
     "sizes": [
+      "2XS",
+      "XS",
       "S",
       "M",
       "L",
       "XL",
       "2XL",
-      "3XL"
+      "3XL",
+      "4XL",
+      "5XL"
     ],
     "materials": [
       {
         "code": "standard_poly",
-        "label": "Standard Poly",
+        "label": "Lụa Latin",
         "uplift": 0,
-        "benefit": "Lightweight • bold color impact"
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
       },
       {
         "code": "premium_silk",
-        "label": "Premium Silk Blend",
-        "uplift": 20,
-        "benefit": "Softer touch • better drape",
-        "badge": "Most loved upgrade"
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
       }
     ],
     "variants": [
       {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
         "size": "S",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "S",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "M",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "M",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "L",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "L",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "2XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "2XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "3XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "3XL",
         "material": "premium_silk",
         "available": false,
         "stockStatus": "out_of_stock",
-        "price": 44.9
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
       }
     ],
     "specifications": [
       {
-        "label": "Material",
+        "label": "Chất liệu",
         "value": "Polyester / Silk blend option"
       },
       {
-        "label": "Fit",
+        "label": "Form áo",
         "value": "Regular relaxed fit"
       },
       {
-        "label": "Care",
+        "label": "Bảo quản",
         "value": "Machine wash cold, hang dry"
       },
       {
-        "label": "Shipping",
-        "value": "US warehouse, 3-5 business days"
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
       },
       {
-        "label": "Print",
+        "label": "Công nghệ in",
         "value": "All-over sublimation print"
       },
       {
-        "label": "SKU / Type code",
-        "value": "HW01-CAT-COSMIC"
-      }
-    ]
-  },
-  {
-    "id": "shadow-whiskers",
-    "slug": "shadow-whiskers-shirt",
-    "name": "Shadow Whiskers Shirt",
-    "price": 22.41,
-    "compareAtPrice": 24.9,
-    "hook": "Vintage pilot-cat collage with rich tonal contrast.",
-    "description": "Dark vintage cat collage built for expressive styling and collectible summer looks.",
-    "productType": "Hawaiian Shirt",
-    "niche": "Animal",
-    "subNiche": "Cat",
-    "badge": "Trending",
-    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/Shadow%20Whiskers%20Hiwaii%20Shirt.jpg",
-    "images": [
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/Shadow%20Whiskers%20Hiwaii%20Shirt.jpg",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/MS.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/2M.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/zoom.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/gap.png"
-    ],
-    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/0421.mp4",
-    "media": [
-      {
-        "type": "video",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/0421.mp4",
-        "thumb": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/Shadow%20Whiskers%20Hiwaii%20Shirt.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/Shadow%20Whiskers%20Hiwaii%20Shirt.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/MS.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/2M.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/zoom.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/gap.png"
-      }
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL"
-    ],
-    "materials": [
-      {
-        "code": "standard_poly",
-        "label": "Standard Poly",
-        "uplift": 0,
-        "benefit": "Quick dry • lightweight wear"
-      },
-      {
-        "code": "premium_silk",
-        "label": "Premium Silk Blend",
-        "uplift": 20,
-        "benefit": "Cleaner drape • elevated finish",
-        "badge": "Most loved upgrade"
-      }
-    ],
-    "variants": [
-      {
-        "size": "S",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 22.41
-      },
-      {
-        "size": "S",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 42.41
-      },
-      {
-        "size": "M",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 22.41
-      },
-      {
-        "size": "M",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 42.41
-      },
-      {
-        "size": "L",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 22.41
-      },
-      {
-        "size": "L",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 42.41
-      },
-      {
-        "size": "XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "low_stock",
-        "price": 22.41
-      },
-      {
-        "size": "XL",
-        "material": "premium_silk",
-        "available": false,
-        "stockStatus": "out_of_stock",
-        "price": 42.41
-      },
-      {
-        "size": "2XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "low_stock",
-        "price": 22.41
-      },
-      {
-        "size": "2XL",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "low_stock",
-        "price": 42.41
-      },
-      {
-        "size": "3XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 22.41
-      },
-      {
-        "size": "3XL",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 42.41
-      }
-    ],
-    "specifications": [
-      {
-        "label": "Material",
-        "value": "Polyester / Silk blend option"
-      },
-      {
-        "label": "Fit",
-        "value": "Relaxed resort fit"
-      },
-      {
-        "label": "Care",
-        "value": "Gentle cycle, low heat dry"
-      },
-      {
-        "label": "Shipping",
-        "value": "Ships from US in 3-5 days"
-      },
-      {
-        "label": "Print",
-        "value": "Fade-resistant all-over print"
-      },
-      {
-        "label": "SKU / Type code",
-        "value": "HW02-CAT-SHADOW"
+        "label": "Mã sản phẩm",
+        "value": "cosmic-catmas"
       }
     ]
   },
   {
     "id": "bulldog-forest",
     "slug": "bulldog-forest-shirt",
-    "name": "Bulldog Forest Shirt",
-    "price": 24.9,
-    "compareAtPrice": 39.9,
-    "hook": "Dense bulldog portrait print with collector energy.",
-    "description": "A conversation-starter shirt with layered bulldog artwork and deep black base.",
+    "name": "Áo Hawaii Bulldog Forest",
+    "price": 495,
+    "hook": "Bản in chân dung bulldog dày chi tiết, mang năng lượng sưu tầm mạnh mẽ.",
+    "description": "Bản in chân dung bulldog dày chi tiết, mang năng lượng sưu tầm mạnh mẽ. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
     "productType": "Hawaiian Shirt",
     "niche": "Animal",
     "subNiche": "Dog",
     "badge": "Best seller",
-    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/Bulldog%20Forest%20Shirt.png",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/bulldog-forest/mt.png",
     "images": [
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/Bulldog%20Forest%20Shirt.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/MS.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/Thoan%20188.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/gd.jpg",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/image%20(2).jpg"
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/bulldog-forest/mt.png",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/bulldog-forest/ms.png"
     ],
     "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/0421%20(2).mp4",
     "media": [
       {
-        "type": "video",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/0421%20(2).mp4",
-        "thumb": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/Bulldog%20Forest%20Shirt.png"
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/bulldog-forest/mt.png"
       },
       {
         "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/Bulldog%20Forest%20Shirt.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/MS.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/Thoan%20188.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/gd.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Dog/Bulldog%20Forest%20Shirt/image%20(2).jpg"
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/bulldog-forest/ms.png"
       }
     ],
     "sizes": [
+      "2XS",
+      "XS",
       "S",
       "M",
       "L",
       "XL",
       "2XL",
-      "3XL"
+      "3XL",
+      "4XL",
+      "5XL"
     ],
     "materials": [
       {
         "code": "standard_poly",
-        "label": "Standard Poly",
+        "label": "Lụa Latin",
         "uplift": 0,
-        "benefit": "Lightweight • easy care"
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
       },
       {
         "code": "premium_silk",
-        "label": "Premium Silk Blend",
-        "uplift": 20,
-        "benefit": "Smoother feel • premium drape",
-        "badge": "Most loved upgrade"
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
       }
     ],
     "variants": [
       {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
         "size": "S",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "S",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "M",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "M",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "L",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "L",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "2XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "2XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "3XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "3XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
       }
     ],
     "specifications": [
       {
-        "label": "Material",
+        "label": "Chất liệu",
         "value": "Polyester / Silk blend option"
       },
       {
-        "label": "Fit",
+        "label": "Form áo",
         "value": "Regular fit"
       },
       {
-        "label": "Care",
+        "label": "Bảo quản",
         "value": "Machine wash cold"
       },
       {
-        "label": "Shipping",
-        "value": "US warehouse fulfillment"
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
       },
       {
-        "label": "Print",
+        "label": "Công nghệ in",
         "value": "HD sublimation print"
       },
       {
-        "label": "SKU / Type code",
-        "value": "HW01-DOG-BULL"
+        "label": "Mã sản phẩm",
+        "value": "bulldog-forest"
       }
     ]
   },
   {
-    "id": "roar-jungle",
-    "slug": "roar-of-the-jungle",
-    "name": "Roar of the Jungle Shirt",
-    "price": 44.9,
-    "hook": "Psychedelic lion palette for bold party fits.",
-    "description": "High-saturation lion artwork made for festival, beach night, and statement gifting.",
+    "id": "timeless-tracks",
+    "slug": "timeless-tracks-shirt",
+    "name": "Áo Hawaii Tàu Hoài Cổ",
+    "price": 495,
+    "hook": "Cảm hứng vé tàu vintage và chất hoài niệm cổ điển trên nền áo Hawaii.",
+    "description": "Cảm hứng vé tàu vintage và chất hoài niệm cổ điển trên nền áo Hawaii. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
     "productType": "Hawaiian Shirt",
-    "niche": "Animal",
-    "subNiche": "Lion",
-    "badge": "Premium Edition",
-    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt.png",
+    "niche": "Vintage",
+    "subNiche": "Train",
+    "badge": "Best seller",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Timeless%20Tracks%20Hiwaii%20Shirt.jpg",
     "images": [
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/2M.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Ho%20van%20MS.jpg",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/ho%20van.jpg",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/gap.png"
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Timeless%20Tracks%20Hiwaii%20Shirt.jpg",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/OKY3z.jpg",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/2M%20(1).png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Nghieng.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/zoom.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/zoom2.png",
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Mat%20Sau.png"
     ],
-    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/0421%20(1).mp4",
+    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/ayh).mp4",
     "media": [
       {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Timeless%20Tracks%20Hiwaii%20Shirt.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/OKY3z.jpg"
+      },
+      {
         "type": "video",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/0421%20(1).mp4",
-        "thumb": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt.png"
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/ayh).mp4",
+        "thumb": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Timeless%20Tracks%20Hiwaii%20Shirt.jpg"
       },
       {
         "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt.png"
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/2M%20(1).png"
       },
       {
         "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/2M.png"
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Nghieng.png"
       },
       {
         "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Ho%20van%20MS.jpg"
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/zoom.png"
       },
       {
         "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/ho%20van.jpg"
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/zoom2.png"
       },
       {
         "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/gap.png"
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Mat%20Sau.png"
       }
     ],
     "sizes": [
+      "2XS",
+      "XS",
       "S",
       "M",
       "L",
       "XL",
       "2XL",
-      "3XL"
+      "3XL",
+      "4XL",
+      "5XL"
     ],
     "materials": [
       {
         "code": "standard_poly",
-        "label": "Standard Poly",
+        "label": "Lụa Latin",
         "uplift": 0,
-        "benefit": "Strong print expression"
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
       },
       {
         "code": "premium_silk",
-        "label": "Premium Silk Blend",
-        "uplift": 20,
-        "benefit": "Luxury drape • upscale feel",
-        "badge": "Most loved upgrade"
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
       }
     ],
     "variants": [
       {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
         "size": "S",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "S",
         "material": "premium_silk",
-        "available": true,
-        "stockStatus": "low_stock",
-        "price": 64.9
+        "available": false,
+        "stockStatus": "out_of_stock",
+        "price": 495
       },
       {
         "size": "M",
         "material": "standard_poly",
         "available": true,
-        "stockStatus": "in_stock",
-        "price": 44.9
+        "stockStatus": "low_stock",
+        "price": 495
       },
       {
         "size": "M",
         "material": "premium_silk",
         "available": true,
-        "stockStatus": "in_stock",
-        "price": 64.9
+        "stockStatus": "low_stock",
+        "price": 495
       },
       {
         "size": "L",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "L",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 64.9
+        "price": 495
       },
       {
         "size": "XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 64.9
+        "price": 495
       },
       {
         "size": "2XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "2XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 64.9
+        "price": 495
       },
       {
         "size": "3XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "3XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 64.9
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
       }
     ],
     "specifications": [
       {
-        "label": "Material",
+        "label": "Chất liệu",
         "value": "Polyester / Silk blend option"
       },
       {
-        "label": "Fit",
-        "value": "Relaxed fit"
-      },
-      {
-        "label": "Care",
-        "value": "Cold wash, no bleach"
-      },
-      {
-        "label": "Shipping",
-        "value": "3-5 day US delivery"
-      },
-      {
-        "label": "Print",
-        "value": "Ultra vivid multi-color print"
-      },
-      {
-        "label": "SKU / Type code",
-        "value": "HW02-LION-ROAR"
-      }
-    ]
-  },
-  {
-    "id": "neon-jungle",
-    "slug": "neon-jungle-shirt",
-    "name": "Neon Jungle Shirt",
-    "price": 44.9,
-    "hook": "Tiger-driven neon collage with premium depth.",
-    "description": "A standout tiger print designed for bold summer wardrobes and nightlife styling.",
-    "productType": "Hawaiian Shirt",
-    "niche": "Animal",
-    "subNiche": "Tiger",
-    "badge": "Premium Edition",
-    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt.png",
-    "images": [
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/Thoan%20198.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/image%20(2).jpg",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/su%20tu.jpg",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/gap.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/zoom.png"
-    ],
-    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/t45.mp4",
-    "media": [
-      {
-        "type": "video",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/t45.mp4",
-        "thumb": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/Thoan%20198.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/image%20(2).jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/su%20tu.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/gap.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/zoom.png"
-      }
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL"
-    ],
-    "materials": [
-      {
-        "code": "standard_poly",
-        "label": "Standard Poly",
-        "uplift": 0,
-        "benefit": "Lightweight and vibrant"
-      },
-      {
-        "code": "premium_silk",
-        "label": "Premium Silk Blend",
-        "uplift": 20,
-        "benefit": "Smoother finish • premium look",
-        "badge": "Most loved upgrade"
-      }
-    ],
-    "variants": [
-      {
-        "size": "S",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 44.9
-      },
-      {
-        "size": "S",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 64.9
-      },
-      {
-        "size": "M",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "low_stock",
-        "price": 44.9
-      },
-      {
-        "size": "M",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "low_stock",
-        "price": 64.9
-      },
-      {
-        "size": "L",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 44.9
-      },
-      {
-        "size": "L",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 64.9
-      },
-      {
-        "size": "XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 44.9
-      },
-      {
-        "size": "XL",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 64.9
-      },
-      {
-        "size": "2XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 44.9
-      },
-      {
-        "size": "2XL",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 64.9
-      },
-      {
-        "size": "3XL",
-        "material": "standard_poly",
-        "available": true,
-        "stockStatus": "low_stock",
-        "price": 44.9
-      },
-      {
-        "size": "3XL",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "low_stock",
-        "price": 64.9
-      }
-    ],
-    "specifications": [
-      {
-        "label": "Material",
-        "value": "Polyester / Silk blend option"
-      },
-      {
-        "label": "Fit",
+        "label": "Form áo",
         "value": "Regular fit"
       },
       {
-        "label": "Care",
-        "value": "Machine wash cold"
+        "label": "Bảo quản",
+        "value": "Machine wash cold, low tumble"
       },
       {
-        "label": "Shipping",
-        "value": "US-based fulfillment"
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
       },
       {
-        "label": "Print",
-        "value": "Neon contrast full-print"
+        "label": "Công nghệ in",
+        "value": "Collage vé tàu vintage"
       },
       {
-        "label": "SKU / Type code",
-        "value": "HW02-TIGER-NEON"
+        "label": "Mã sản phẩm",
+        "value": "timeless-tracks"
+      }
+    ]
+  },
+  {
+    "id": "shadow-whiskers",
+    "slug": "shadow-whiskers-shirt",
+    "name": "Áo Hawaii Mèo Phi Công Vintage",
+    "price": 495,
+    "hook": "Collage mèo phi công vintage với tương phản màu sâu và cảm giác điện ảnh.",
+    "description": "Collage mèo phi công vintage với tương phản màu sâu và cảm giác điện ảnh. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Cat",
+    "badge": "Trending",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/shadow-whiskers/mt.jpg",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/shadow-whiskers/mt.jpg",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/shadow-whiskers/ms.png"
+    ],
+    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Cat/Shadow%20Whiskers%20Hiwaii%20Shirt/0421.mp4",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/shadow-whiskers/mt.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/shadow-whiskers/ms.png"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      },
+      {
+        "code": "premium_silk",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "premium_silk",
+        "available": false,
+        "stockStatus": "out_of_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Polyester / Silk blend option"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Gentle cycle, low heat dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Fade-resistant all-over print"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "shadow-whiskers"
       }
     ]
   },
   {
     "id": "hands-harmony",
     "slug": "hands-of-harmony-shirt",
-    "name": "Hands of Harmony Shirt",
-    "price": 24.9,
-    "compareAtPrice": 44.9,
-    "hook": "Piano-motion artwork for art & music lovers.",
-    "description": "Expressive piano and floral collage made for artistic, creative summer looks.",
+    "name": "Áo Hawaii Giai Điệu Piano",
+    "price": 495,
+    "hook": "Họa tiết chuyển động bàn tay và piano dành cho người yêu nghệ thuật, âm nhạc.",
+    "description": "Họa tiết chuyển động bàn tay và piano dành cho người yêu nghệ thuật, âm nhạc. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
     "productType": "Hawaiian Shirt",
     "niche": "Art & Music",
     "subNiche": "Piano",
     "badge": "Trending",
-    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Music%20&%20Art/Piano/Hands%20of%20Harmony%20Hiwaii%20Shirt/Hands%20of%20Harmony%20Hiwaii%20Shirt.png",
+    "thumbnail": "https://cdn.shopify.com/s/files/1/0829/5143/8575/files/hands-of-harmony-shirt-optimized.jpg?v=1785212968",
     "images": [
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Music%20&%20Art/Piano/Hands%20of%20Harmony%20Hiwaii%20Shirt/Hands%20of%20Harmony%20Hiwaii%20Shirt.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Music%20&%20Art/Piano/Hands%20of%20Harmony%20Hiwaii%20Shirt/gap.png"
+      "https://cdn.shopify.com/s/files/1/0829/5143/8575/files/hands-of-harmony-shirt-optimized.jpg?v=1785212968"
     ],
     "media": [
       {
         "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Music%20&%20Art/Piano/Hands%20of%20Harmony%20Hiwaii%20Shirt/Hands%20of%20Harmony%20Hiwaii%20Shirt.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Music%20&%20Art/Piano/Hands%20of%20Harmony%20Hiwaii%20Shirt/gap.png"
+        "url": "https://cdn.shopify.com/s/files/1/0829/5143/8575/files/hands-of-harmony-shirt-optimized.jpg?v=1785212968"
       }
     ],
     "sizes": [
+      "2XS",
+      "XS",
       "S",
       "M",
       "L",
       "XL",
       "2XL",
-      "3XL"
+      "3XL",
+      "4XL",
+      "5XL"
     ],
     "materials": [
       {
         "code": "standard_poly",
-        "label": "Standard Poly",
+        "label": "Lụa Latin",
         "uplift": 0,
-        "benefit": "Breathable and lightweight"
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
       },
       {
         "code": "premium_silk",
-        "label": "Premium Silk Blend",
-        "uplift": 20,
-        "benefit": "Softer touch for elevated styling",
-        "badge": "Most loved upgrade"
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
       }
     ],
     "variants": [
       {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
         "size": "S",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "S",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "M",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "M",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "L",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "L",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "2XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "2XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "3XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "3XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
       }
     ],
     "specifications": [
       {
-        "label": "Material",
+        "label": "Chất liệu",
         "value": "Polyester / Silk blend option"
       },
       {
-        "label": "Fit",
+        "label": "Form áo",
         "value": "Regular fit"
       },
       {
-        "label": "Care",
+        "label": "Bảo quản",
         "value": "Delicate wash recommended"
       },
       {
-        "label": "Shipping",
-        "value": "Ships in 3-5 business days"
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
       },
       {
-        "label": "Print",
+        "label": "Công nghệ in",
         "value": "Art collage sublimation print"
       },
       {
-        "label": "SKU / Type code",
-        "value": "HW01-MUSIC-HARMONY"
+        "label": "Mã sản phẩm",
+        "value": "hands-harmony"
+      }
+    ]
+  },
+  {
+    "id": "roar-jungle",
+    "slug": "roar-of-the-jungle",
+    "name": "Áo Hawaii Sư Tử Rực Rỡ",
+    "price": 495,
+    "hook": "Bảng màu psychedelic với năng lượng sư tử mạnh, hợp tiệc hè và du lịch hè.",
+    "description": "Bảng màu psychedelic với năng lượng sư tử mạnh, hợp tiệc hè và du lịch hè. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Lion",
+    "badge": "Premium Edition",
+    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt.png",
+    "images": [
+      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt.png"
+    ],
+    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/0421%20(1).mp4",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Tiger/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt/Roar%20of%20the%20Jungle%20Hiwaii%20Shirt.png"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      },
+      {
+        "code": "premium_silk",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Polyester / Silk blend option"
+      },
+      {
+        "label": "Form áo",
+        "value": "Relaxed fit"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Cold wash, no bleach"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Ultra vivid multi-color print"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "roar-jungle"
+      }
+    ]
+  },
+  {
+    "id": "neon-jungle",
+    "slug": "neon-jungle-shirt",
+    "name": "Áo Hawaii Hổ Neon Jungle",
+    "price": 495,
+    "hook": "Collage hổ neon có chiều sâu, tạo hiệu ứng thị giác mạnh ngay từ cái nhìn đầu tiên.",
+    "description": "Collage hổ neon có chiều sâu, tạo hiệu ứng thị giác mạnh ngay từ cái nhìn đầu tiên. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Tiger",
+    "badge": "Premium Edition",
+    "thumbnail": "https://cdn.shopify.com/s/files/1/0829/5143/8575/files/neon-jungle-shirt-optimized-1.jpg?v=1785213042",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0829/5143/8575/files/neon-jungle-shirt-optimized-1.jpg?v=1785213042",
+      "https://cdn.shopify.com/s/files/1/0829/5143/8575/files/neon-jungle-shirt-optimized-2.jpg?v=1785213042",
+      "https://cdn.shopify.com/s/files/1/0829/5143/8575/files/neon-jungle-shirt-optimized-3.jpg?v=1785213042"
+    ],
+    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Animal/Lion/Neon%20Jungle%20Shirt%20Hiwaii%20Shirt/t45.mp4",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://cdn.shopify.com/s/files/1/0829/5143/8575/files/neon-jungle-shirt-optimized-1.jpg?v=1785213042"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.shopify.com/s/files/1/0829/5143/8575/files/neon-jungle-shirt-optimized-2.jpg?v=1785213042"
+      },
+      {
+        "type": "image",
+        "url": "https://cdn.shopify.com/s/files/1/0829/5143/8575/files/neon-jungle-shirt-optimized-3.jpg?v=1785213042"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      },
+      {
+        "code": "premium_silk",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "low_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Polyester / Silk blend option"
+      },
+      {
+        "label": "Form áo",
+        "value": "Regular fit"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Neon contrast full-print"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "neon-jungle"
       }
     ]
   },
   {
     "id": "shutter-vibes",
     "slug": "shutter-vibes-shirt",
-    "name": "Shutter Vibes Shirt",
-    "price": 24.9,
-    "compareAtPrice": 39.9,
-    "hook": "Photography collage print for creator energy.",
-    "description": "Camera-and-collage inspired print for makers, creators, and visual storytellers.",
+    "name": "Áo Hawaii Shutter Vibes",
+    "price": 495,
+    "hook": "Bản in bố cục ghép ảnh nhiếp ảnh dành cho người sáng tạo và người thích hiệu ứng thị giác độc lạ.",
+    "description": "Bản in bố cục ghép ảnh nhiếp ảnh dành cho người sáng tạo và người thích hiệu ứng thị giác độc lạ. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
     "productType": "Hawaiian Shirt",
     "niche": "Art & Music",
     "subNiche": "Photography",
@@ -1925,337 +2178,2077 @@
       }
     ],
     "sizes": [
+      "2XS",
+      "XS",
       "S",
       "M",
       "L",
       "XL",
       "2XL",
-      "3XL"
+      "3XL",
+      "4XL",
+      "5XL"
     ],
     "materials": [
       {
         "code": "standard_poly",
-        "label": "Standard Poly",
+        "label": "Lụa Latin",
         "uplift": 0,
-        "benefit": "Quick dry and easy wear"
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
       },
       {
         "code": "premium_silk",
-        "label": "Premium Silk Blend",
-        "uplift": 20,
-        "benefit": "Premium drape for dressed-up looks",
-        "badge": "Most loved upgrade"
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
       }
     ],
     "variants": [
       {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
         "size": "S",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "S",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "M",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "M",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "L",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "L",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "2XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "2XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "low_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "3XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
         "size": "3XL",
         "material": "premium_silk",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "premium_silk",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
       }
     ],
     "specifications": [
       {
-        "label": "Material",
+        "label": "Chất liệu",
         "value": "Polyester / Silk blend option"
       },
       {
-        "label": "Fit",
+        "label": "Form áo",
         "value": "Regular fit"
       },
       {
-        "label": "Care",
+        "label": "Bảo quản",
         "value": "Cold machine wash"
       },
       {
-        "label": "Shipping",
-        "value": "US shipping 3-5 days"
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
       },
       {
-        "label": "Print",
+        "label": "Công nghệ in",
         "value": "Camera collage all-over print"
       },
       {
-        "label": "SKU / Type code",
-        "value": "HW01-ART-SHUTTER"
+        "label": "Mã sản phẩm",
+        "value": "shutter-vibes"
       }
     ]
   },
   {
-    "id": "timeless-tracks",
-    "slug": "timeless-tracks-shirt",
-    "name": "Timeless Tracks Shirt",
-    "price": 24.9,
-    "compareAtPrice": 39.9,
-    "hook": "Classic train nostalgia with vintage ticket texture.",
-    "description": "Train-era collage inspired by timeless rail tickets and old-world travel.",
+    "id": "boss",
+    "slug": "boss-shirt",
+    "name": "Áo Hawaii Boss Statement",
+    "price": 495,
+    "hook": "Typography boss energy được chuyển thành họa tiết all-over táo bạo.",
+    "description": "Typography boss energy được chuyển thành họa tiết all-over táo bạo. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
     "productType": "Hawaiian Shirt",
-    "niche": "Vintage",
-    "subNiche": "Train",
-    "badge": "Best seller",
-    "thumbnail": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Timeless%20Tracks%20Hiwaii%20Shirt.jpg",
+    "niche": "Lifestyle",
+    "subNiche": "Statement / Novelty",
+    "badge": "Premium Edition",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/boss/mt.png",
     "images": [
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Timeless%20Tracks%20Hiwaii%20Shirt.jpg",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/2M%20(1).png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Nghieng.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Mat%20Sau.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/gap.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/zoom.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/zoom2.png",
-      "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/OKY3z.jpg"
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/boss/mt.png",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/boss/ms.png"
     ],
-    "videoUrl": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/ayh).mp4",
     "media": [
       {
-        "type": "video",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/ayh).mp4",
-        "thumb": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Timeless%20Tracks%20Hiwaii%20Shirt.jpg"
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/boss/mt.png"
       },
       {
         "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Timeless%20Tracks%20Hiwaii%20Shirt.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/2M%20(1).png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Nghieng.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/Mat%20Sau.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/gap.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/zoom.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/zoom2.png"
-      },
-      {
-        "type": "image",
-        "url": "https://cdn.9tech.cloud/3D%20Hiwaii/Stock/Vintage/Timeless%20Tracks%20Hiwaii%20Shirt/OKY3z.jpg"
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/boss/ms.png"
       }
     ],
     "sizes": [
+      "2XS",
+      "XS",
       "S",
       "M",
       "L",
       "XL",
       "2XL",
-      "3XL"
+      "3XL",
+      "4XL",
+      "5XL"
     ],
     "materials": [
       {
         "code": "standard_poly",
-        "label": "Standard Poly",
+        "label": "Lụa Latin",
         "uplift": 0,
-        "benefit": "Lightweight comfort"
-      },
-      {
-        "code": "premium_silk",
-        "label": "Premium Silk Blend",
-        "uplift": 20,
-        "benefit": "Sharper drape for occasions",
-        "badge": "Most loved upgrade"
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
       }
     ],
     "variants": [
       {
-        "size": "S",
+        "size": "2XS",
         "material": "standard_poly",
         "available": true,
-        "stockStatus": "low_stock",
-        "price": 24.9
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
       },
       {
         "size": "S",
-        "material": "premium_silk",
-        "available": false,
-        "stockStatus": "out_of_stock",
-        "price": 44.9
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
       },
       {
         "size": "M",
         "material": "standard_poly",
         "available": true,
-        "stockStatus": "low_stock",
-        "price": 24.9
-      },
-      {
-        "size": "M",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "low_stock",
-        "price": 44.9
+        "stockStatus": "in_stock",
+        "price": 495
       },
       {
         "size": "L",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
-      },
-      {
-        "size": "L",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
-      },
-      {
-        "size": "XL",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "2XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
-      },
-      {
-        "size": "2XL",
-        "material": "premium_silk",
-        "available": true,
-        "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
       },
       {
         "size": "3XL",
         "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 24.9
+        "price": 495
       },
       {
-        "size": "3XL",
-        "material": "premium_silk",
+        "size": "4XL",
+        "material": "standard_poly",
         "available": true,
         "stockStatus": "in_stock",
-        "price": 44.9
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
       }
     ],
     "specifications": [
       {
-        "label": "Material",
-        "value": "Polyester / Silk blend option"
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
       },
       {
-        "label": "Fit",
-        "value": "Regular fit"
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
       },
       {
-        "label": "Care",
-        "value": "Machine wash cold, low tumble"
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
       },
       {
-        "label": "Shipping",
-        "value": "Fast US shipping"
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
       },
       {
-        "label": "Print",
-        "value": "Vintage train ticket collage"
+        "label": "Công nghệ in",
+        "value": "Statement nổi bật họa tiết in chuyển nhiệt toàn thân"
       },
       {
-        "label": "SKU / Type code",
-        "value": "HW01-VINTAGE-TRACKS"
+        "label": "Mã sản phẩm",
+        "value": "boss"
+      }
+    ]
+  },
+  {
+    "id": "bulldog",
+    "slug": "bulldog-shirt",
+    "name": "Áo Hawaii Bulldog Street",
+    "price": 495,
+    "hook": "Tinh thần đường phố bulldog mạnh mẽ trên form áo đi biển thoải mái.",
+    "description": "Tinh thần đường phố bulldog mạnh mẽ trên form áo đi biển thoải mái. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Dog",
+    "badge": "Premium Edition",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/bulldog/mt.jpg",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/bulldog/mt.jpg",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/bulldog/ms.jpg"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/bulldog/mt.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/bulldog/ms.jpg"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Đồ họa động vật họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "bulldog"
+      }
+    ]
+  },
+  {
+    "id": "buttefly",
+    "slug": "buttefly-shirt",
+    "name": "Áo Hawaii Vườn Bướm",
+    "price": 495,
+    "hook": "Màu sắc vườn bướm nổi bật, nhẹ mắt nhưng vẫn đủ nổi bật.",
+    "description": "Màu sắc vườn bướm nổi bật, nhẹ mắt nhưng vẫn đủ nổi bật. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Animal Graphic",
+    "badge": "Premium Edition",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/buttefly/mt.png",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/buttefly/mt.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/buttefly/mt.png"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Đồ họa động vật họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "buttefly"
+      }
+    ]
+  },
+  {
+    "id": "cat",
+    "slug": "cat-shirt",
+    "name": "Áo Hawaii Mèo Midnight",
+    "price": 495,
+    "hook": "Graphic mèo midnight dành cho người yêu mèo và outfit cá tính.",
+    "description": "Graphic mèo midnight dành cho người yêu mèo và outfit cá tính. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Cat",
+    "badge": "Premium Edition",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/cat/mt.jpg",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/cat/mt.jpg",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/cat/ms-2.jpg"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/cat/mt.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/cat/ms-2.jpg"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Cat họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "cat"
+      }
+    ]
+  },
+  {
+    "id": "elma-aterna",
+    "slug": "elma-aterna-shirt",
+    "name": "Áo Hawaii Elma & Aterna",
+    "price": 495,
+    "hook": "Họa tiết huyền ảo lãng mạn với cảm giác thần thoại và bố cục in nổi bật.",
+    "description": "Họa tiết huyền ảo lãng mạn với cảm giác thần thoại và bố cục in nổi bật. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Fantasy",
+    "subNiche": "Mythology Romance",
+    "badge": "Premium Edition",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/elma-aterna/mt.png",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/elma-aterna/mt.png",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/elma-aterna/ms.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/elma-aterna/mt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/elma-aterna/ms.png"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Fantasy họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "elma-aterna"
+      }
+    ]
+  },
+  {
+    "id": "erros-cupid",
+    "slug": "erros-cupid-shirt",
+    "name": "Áo Hawaii Eros Cupid",
+    "price": 495,
+    "hook": "Cảm hứng Cupid lãng mạn được chuyển thành họa tiết áo đi biển táo bạo.",
+    "description": "Cảm hứng Cupid lãng mạn được chuyển thành họa tiết áo đi biển táo bạo. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Fantasy",
+    "subNiche": "Mythology Romance",
+    "badge": "Premium Edition",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/erros-cupid/mt.jpeg",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/erros-cupid/mt.jpeg",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/erros-cupid/ms.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/erros-cupid/mt.jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/erros-cupid/ms.png"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Fantasy họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "erros-cupid"
+      }
+    ]
+  },
+  {
+    "id": "lion",
+    "slug": "lion-shirt",
+    "name": "Áo Hawaii Lion Pride",
+    "price": 495,
+    "hook": "Năng lượng sư tử đầy tự tin cho outfit du lịch và dạo phố.",
+    "description": "Năng lượng sư tử đầy tự tin cho outfit du lịch và dạo phố. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Lion",
+    "badge": "Premium Edition",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/lion/mt.png",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/lion/mt.png",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/lion/ms.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/lion/mt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/lion/ms.png"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Big Cat họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "lion"
+      }
+    ]
+  },
+  {
+    "id": "medusa",
+    "slug": "medusa-shirt",
+    "name": "Áo Hawaii Medusa Myth",
+    "price": 495,
+    "hook": "Họa tiết Medusa thần thoại với cảm giác bí ẩn và hiệu ứng thị giác mạnh.",
+    "description": "Họa tiết Medusa thần thoại với cảm giác bí ẩn và hiệu ứng thị giác mạnh. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Fantasy",
+    "subNiche": "Mythology Romance",
+    "badge": "Premium Edition",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/medusa/mt.png",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/medusa/mt.png",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/medusa/ms.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/medusa/mt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/medusa/ms.png"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Fantasy họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "medusa"
+      }
+    ]
+  },
+  {
+    "id": "snake",
+    "slug": "snake-shirt",
+    "name": "Áo Hawaii Họa Tiết Rắn",
+    "price": 495,
+    "hook": "Họa tiết rắn cá tính, sắc nét và dễ tạo điểm nhấn khi phối đồ.",
+    "description": "Họa tiết rắn cá tính, sắc nét và dễ tạo điểm nhấn khi phối đồ. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Animal Graphic",
+    "badge": "Premium Edition",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/snake/mt.png",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/snake/mt.png",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/snake/ms.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/snake/mt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/snake/ms.png"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Đồ họa động vật họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "snake"
+      }
+    ]
+  },
+  {
+    "id": "tem-tau",
+    "slug": "tem-tau-shirt",
+    "name": "Áo Hawaii Tem Tàu Vintage",
+    "price": 495,
+    "hook": "Nostalgia vé tàu cổ điển trên một bản in all-over đầy chất sưu tầm.",
+    "description": "Nostalgia vé tàu cổ điển trên một bản in all-over đầy chất sưu tầm. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Vintage",
+    "subNiche": "Train",
+    "badge": "Premium Edition",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/tem-tau/mt.jpg",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/tem-tau/mt.jpg",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/tem-tau/ms.jpg"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/tem-tau/mt.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/tem-tau/ms.jpg"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Statement nổi bật họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "tem-tau"
+      }
+    ]
+  },
+  {
+    "id": "texas-beer",
+    "slug": "texas-beer-shirt",
+    "name": "Áo Hawaii Texas Beer",
+    "price": 495,
+    "hook": "Mood vườn bia hoài cổ Mỹ dành cho những buổi đi chơi nổi bật.",
+    "description": "Mood vườn bia hoài cổ Mỹ dành cho những buổi đi chơi nổi bật. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Lifestyle",
+    "subNiche": "Statement / Novelty",
+    "badge": "Premium Edition",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/texas-beer/mt.png",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/texas-beer/mt.png",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/texas-beer/ms.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/texas-beer/mt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/texas-beer/ms.png"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Statement nổi bật họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "texas-beer"
+      }
+    ]
+  },
+  {
+    "id": "tiger",
+    "slug": "tiger-shirt",
+    "name": "Áo Hawaii Hổ Graphic",
+    "price": 495,
+    "hook": "Năng lượng hổ mạnh mẽ được thể hiện qua bản in đồ họa sắc nét.",
+    "description": "Năng lượng hổ mạnh mẽ được thể hiện qua bản in đồ họa sắc nét. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Animal",
+    "subNiche": "Tiger",
+    "badge": "Premium Edition",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/tiger/mt.jpg",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/tiger/mt.jpg",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/tiger/ms.jpg"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/tiger/mt.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/tiger/ms.jpg"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Big Cat họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "tiger"
+      }
+    ]
+  },
+  {
+    "id": "vip",
+    "slug": "vip-shirt",
+    "name": "Áo Hawaii VIP Monogram",
+    "price": 495,
+    "hook": "Đồ họa VIP cao cấp và monogram nổi bật trên form áo đi biển nổi bật.",
+    "description": "Đồ họa VIP cao cấp và monogram nổi bật trên form áo đi biển nổi bật. Áo Hawaii 9shirt đồng giá 495k, chất Latin silk mềm nhẹ, phù hợp du lịch, đi biển và outfit cuối tuần.",
+    "productType": "Hawaiian Shirt",
+    "niche": "Lifestyle",
+    "subNiche": "Statement / Novelty",
+    "badge": "Premium Edition",
+    "thumbnail": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/vip/mt.png",
+    "images": [
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/vip/mt.png",
+      "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/vip/ms.png"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/vip/mt.png"
+      },
+      {
+        "type": "image",
+        "url": "https://pub-157061fd1bef406882e9cab9827efcb4.r2.dev/products/vip/ms.png"
+      }
+    ],
+    "sizes": [
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "materials": [
+      {
+        "code": "standard_poly",
+        "label": "Lụa Latin",
+        "uplift": 0,
+        "benefit": "Mềm nhẹ, rũ đẹp, màu in sắc nét và thoáng khi mặc mùa hè"
+      }
+    ],
+    "variants": [
+      {
+        "size": "2XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XS",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "S",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "M",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "L",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "2XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "3XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "4XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      },
+      {
+        "size": "5XL",
+        "material": "standard_poly",
+        "available": true,
+        "stockStatus": "in_stock",
+        "price": 495
+      }
+    ],
+    "specifications": [
+      {
+        "label": "Chất liệu",
+        "value": "Lụa Latin"
+      },
+      {
+        "label": "Form áo",
+        "value": "Form resort thoải mái"
+      },
+      {
+        "label": "Bảo quản",
+        "value": "Machine wash cold, hang dry"
+      },
+      {
+        "label": "Giao hàng",
+        "value": "Giao từ Hà Nội trong 2-4 ngày"
+      },
+      {
+        "label": "Công nghệ in",
+        "value": "Statement nổi bật họa tiết in chuyển nhiệt toàn thân"
+      },
+      {
+        "label": "Mã sản phẩm",
+        "value": "vip"
       }
     ]
   }

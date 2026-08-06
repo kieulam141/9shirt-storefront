@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ page_title }}{% unless page_title contains shop.name %} | {{ shop.name }}{% endunless %}</title>
+    {% if page_description %}
+      <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+    {{ content_for_header }}
+    {{ 'hiwaii-storefront.css' | asset_url | stylesheet_tag }}
+  </head>
+  <body data-hiwaii-theme-revision="ux-fix-20260729">
+    <header class="site-header">
+      <a class="brand" href="{{ routes.root_url }}" aria-label="{{ shop.name }} home">HIWAII</a>
+      <nav class="nav">
+        <a href="/collections/all">Best Sellers</a>
+        <a href="/collections/all/rabbit-playboy">Obsessions</a>
+        <a href="/collections/all/hawaiian-shirt">All Shirts</a>
+      </nav>
+      <div class="header-actions">
+        <a href="{{ routes.account_login_url }}">Login</a>
+        <a class="pill" href="{{ routes.cart_url }}">Cart <span data-cart-count>{{ cart.item_count }}</span></a>
+      </div>
+    </header>
+
+    <main id="MainContent">
+      {{ content_for_layout }}
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="{{ routes.root_url }}">HIWAII</a>
+        <p>Statement Hawaiian shirts by obsession. Made and dispatched from Hanoi with tracking.</p>
+        <p class="footer-support">Support: <a href="mailto:support@hiwaii.store">support@hiwaii.store</a></p>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-link-group">
+          <strong>Shop</strong>
+          <a href="/collections/all">Shop all</a>
+          <a href="/collections/all/rabbit-playboy">Rabbit Collection</a>
+          <a href="{{ routes.search_url }}">Search</a>
+        </div>
+        <div class="footer-link-group">
+          <strong>Help</strong>
+          <a href="/policies/shipping-policy">Shipping & Delivery</a>
+          <a href="/policies/refund-policy">Returns & Exchanges</a>
+          <a href="/pages/contact">Contact Us</a>
+          <a href="{{ routes.cart_url }}">Cart</a>
+        </div>
+        <div class="footer-link-group">
+          <strong>Company</strong>
+          <a href="/policies/privacy-policy">Privacy Policy</a>
+          <a href="/policies/terms-of-service">Terms of Service</a>
+          <a href="/policies/refund-policy">Refund Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

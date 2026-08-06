@@ -2,7 +2,7 @@
 
 import { createContext, createElement, useContext, type ReactNode } from 'react'
 
-const BrandContext = createContext<boolean>(true)
+const BrandContext = createContext<boolean>(false)
 
 export function BrandProvider({ children, isViHost }: { children: ReactNode; isViHost: boolean }) {
   return createElement(BrandContext.Provider, { value: isViHost }, children)

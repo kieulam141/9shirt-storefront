@@ -6,7 +6,7 @@ import { buildSocialImageUrl, socialImage, SOCIAL_IMAGE_HEIGHT, SOCIAL_IMAGE_WID
 test('builds absolute social image URLs for ad platform scrapers', () => {
   const url = buildSocialImageUrl({
     title: 'Áo Hawaii bóng đá nổi bật',
-    subtitle: 'Chất lụa latin, size S-5XL',
+    subtitle: 'Latin silk, size S-5XL',
     image: 'https://cdn.9tech.cloud/example.png',
     price: '350k',
     lang: 'vi',
@@ -15,7 +15,7 @@ test('builds absolute social image URLs for ad platform scrapers', () => {
 
   assert.equal(parsed.pathname, '/api/og')
   assert.equal(parsed.searchParams.get('title'), 'Áo Hawaii bóng đá nổi bật')
-  assert.equal(parsed.searchParams.get('subtitle'), 'Chất lụa latin, size S-5XL')
+  assert.equal(parsed.searchParams.get('subtitle'), 'Latin silk, size S-5XL')
   assert.equal(parsed.searchParams.get('image'), 'https://cdn.9tech.cloud/example.png')
   assert.equal(parsed.searchParams.get('price'), '350k')
   assert.equal(parsed.searchParams.get('lang'), 'vi')

@@ -10,38 +10,22 @@ test('product facade loads catalog records from JSON-backed source', () => {
   assert.equal(products[0].media.length > 0, true)
 })
 
-const latinSilkPrices: Record<string, number> = {
-  S: 350,
-  M: 350,
-  L: 350,
-  XL: 350,
-  '2XL': 395,
-  '3XL': 395,
-  '4XL': 445,
-  '5XL': 445,
-}
+const fixedShirtPrice = 495
+const fixedShortsPrice = 295
 
-test('sports products use Latin silk size price tiers', () => {
-  const sportsProducts = products.filter((product) => product.niche === 'Sports')
+test('catalog products use 9shirt fixed VND prices', () => {
+  for (const product of products) {
+    const expectedPrice = product.productType === 'Shorts' ? fixedShortsPrice : fixedShirtPrice
+    assert.equal(product.price, expectedPrice)
+    assert.equal(product.materials.every((material) => material.label === 'Lụa Latin'), true)
 
-  assert.equal(sportsProducts.length, 6)
-
-  for (const product of sportsProducts) {
-    assert.deepEqual(product.sizes, Object.keys(latinSilkPrices))
-    assert.equal(product.price, 350)
-    assert.deepEqual(product.materials.map((material: { label: string }) => material.label), ['Chất lụa latin'])
-
-    const pricesBySize = Object.fromEntries(
-      product.variants.map((variant: { size: string; price: number }) => [variant.size, variant.price]),
-    )
-
-    assert.deepEqual(pricesBySize, latinSilkPrices)
+    for (const variant of product.variants) {
+      assert.equal(variant.price, expectedPrice)
+    }
   }
 })
 
-test('formats VND thousand prices without USD symbols', () => {
-  assert.equal(formatPrice(350), '350k')
-  assert.equal(formatPrice(395), '395k')
-  assert.equal(formatPrice(445), '445k')
-  assert.equal(formatPrice(24.9), '$24.90')
+test('formats VND thousand prices', () => {
+  assert.equal(formatPrice(495), '495k')
+  assert.equal(formatPrice(295), '295k')
 })

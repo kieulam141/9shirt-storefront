@@ -63,6 +63,18 @@ export default [
     },
   },
   {
+    files: ['scripts/**/*.mjs'],
+    languageOptions: {
+      globals: {
+        AbortSignal: 'readonly',
+        console: 'readonly',
+        fetch: 'readonly',
+        process: 'readonly',
+        URL: 'readonly',
+      },
+    },
+  },
+  {
     files: ['components/ui/use-mobile.tsx', 'hooks/use-mobile.ts'],
     languageOptions: {
       globals: {

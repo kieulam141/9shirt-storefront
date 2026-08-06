@@ -1,22 +1,16 @@
 'use client'
 
 import { createContext, createElement, useContext, useEffect, useState, type ReactNode } from 'react'
-import { Lang, resolveLang } from '@/lib/i18n'
-import { getDefaultLangForHost } from '@/lib/seo'
+import { Lang } from '@/lib/i18n'
 
-const LangContext = createContext<Lang>('en')
+const LangContext = createContext<Lang>('vi')
 
-export function LangProvider({ children, initialLang = 'en' }: { children: ReactNode; initialLang?: Lang }) {
-  const [lang, setLang] = useState<Lang>(initialLang)
+export function LangProvider({ children }: { children: ReactNode; initialLang?: Lang }) {
+  const [lang, setLang] = useState<Lang>('vi')
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search)
-    const explicitLang = params.get('lang')
-    const nextLang = explicitLang === 'en' || explicitLang === 'vi'
-      ? resolveLang(explicitLang)
-      : getDefaultLangForHost(window.location.hostname)
-    setLang(nextLang)
-    document.documentElement.lang = nextLang
+    setLang('vi')
+    document.documentElement.lang = 'vi'
   }, [])
 
   return createElement(LangContext.Provider, { value: lang }, children)

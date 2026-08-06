@@ -1,11 +1,12 @@
 'use client'
 
 import Image from 'next/image'
-import { LogOut, Save, Search } from 'lucide-react'
-import { useMemo, useState, useTransition } from 'react'
+import { LogOut, Save, Search, Upload } from 'lucide-react'
+import { useCallback, useMemo, useRef, useState, useTransition } from 'react'
 
 import type { Niche, Product, SubNiche } from '@/lib/catalog/types'
 import { formatPrice } from '@/lib/pricing'
+import { useIsViHost } from '@/hooks/use-brand'
 
 import {
   cloneProduct,
@@ -34,12 +35,14 @@ type StatusMessage = {
 } | null
 
 const BADGE_OPTIONS: NonNullable<Product['badge']>[] = ['Best seller', 'Trending', 'Premium Edition']
-const NICHE_OPTIONS: Niche[] = ['Sports', 'Animal', 'Art & Music', 'Vintage']
+const NICHE_OPTIONS: Niche[] = ['Sports', 'Animal', 'Art & Music', 'Vintage', 'Lifestyle', 'Fantasy']
 const SUB_NICHE_OPTIONS: Record<Niche, SubNiche[]> = {
   Sports: ['Football'],
-  Animal: ['Cat', 'Dog', 'Lion', 'Tiger'],
+  Animal: ['Cat', 'Dog', 'Lion', 'Tiger', 'Animal Graphic'],
   'Art & Music': ['Piano', 'Photography'],
   Vintage: ['Train'],
+  Lifestyle: ['Statement / Novelty'],
+  Fantasy: ['Mythology Romance'],
 }
 
 const EMPTY_PRODUCT: Product = {
@@ -101,6 +104,7 @@ function getThumbnailError(value: string): string | undefined {
 }
 
 export default function ProductCmsClient({ products: initialProducts, onSave, onLogout }: ProductCmsClientProps) {
+  const isViHost = useIsViHost()
   const initialProduct = initialProducts[0] ?? EMPTY_PRODUCT
 
   const [productList, setProductList] = useState<Product[]>(() => initialProducts.map((product) => cloneProduct(product)))
@@ -113,6 +117,30 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
   const [statusMessage, setStatusMessage] = useState<StatusMessage>(null)
   const [isSaving, startSaveTransition] = useTransition()
   const [isLoggingOut, startLogoutTransition] = useTransition()
+  const [isUploading, setIsUploading] = useState(false)
+  const fileInputRef = useRef<HTMLInputElement>(null)
+
+  const uploadThumbnail = useCallback(async (file: File) => {
+    setIsUploading(true)
+    setStatusMessage(null)
+    try {
+      const form = new FormData()
+      form.append('file', file)
+      form.append('productId', draft.id || 'new')
+      const res = await fetch('/api/upload-image', { method: 'POST', body: form })
+      const data = await res.json() as { url?: string; error?: string }
+      if (!res.ok || !data.url) {
+        setStatusMessage({ tone: 'error', text: data.error ?? 'Upload failed.' })
+      } else {
+        updateDraft('thumbnail', data.url)
+        setStatusMessage({ tone: 'success', text: 'Ảnh đã upload lên Cloudflare R2 thành công.' })
+      }
+    } catch {
+      setStatusMessage({ tone: 'error', text: 'Network error during upload.' })
+    } finally {
+      setIsUploading(false)
+    }
+  }, [draft.id])
 
   const filteredProducts = useMemo(() => {
     const needle = query.trim().toLowerCase()
@@ -261,7 +289,7 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
           <div className="flex items-start justify-between gap-4">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-[var(--hiwaii-accent)]">
-                Hiwaii CMS
+                {isViHost ? '9Shirt' : 'Hiwaii'} CMS
               </p>
               <h1 className="mt-1 text-3xl font-black uppercase leading-none text-white">
                 Products
@@ -475,19 +503,44 @@ export default function ProductCmsClient({ products: initialProducts, onSave, on
               <label htmlFor="product-thumbnail" className="text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
                 Thumbnail image URL
               </label>
-              <input
-                id="product-thumbnail"
-                value={draft.thumbnail}
-                onChange={(event) => updateDraft('thumbnail', event.currentTarget.value)}
-                aria-invalid={Boolean(thumbnailError)}
-                aria-describedby="product-thumbnail-help"
-                className="min-h-11 w-full rounded-md border border-[var(--hiwaii-border)] bg-slate-950/45 px-3 font-mono text-sm text-white outline-none focus:border-[var(--hiwaii-accent)] focus:ring-2 focus:ring-[var(--hiwaii-accent)]/25 aria-invalid:border-red-400 aria-invalid:focus:border-red-300 aria-invalid:focus:ring-red-400/25"
-              />
+              <div className="flex gap-2">
+                <input
+                  id="product-thumbnail"
+                  value={draft.thumbnail}
+                  onChange={(event) => updateDraft('thumbnail', event.currentTarget.value)}
+                  aria-invalid={Boolean(thumbnailError)}
+                  aria-describedby="product-thumbnail-help"
+                  className="min-h-11 w-full rounded-md border border-[var(--hiwaii-border)] bg-slate-950/45 px-3 font-mono text-sm text-white outline-none focus:border-[var(--hiwaii-accent)] focus:ring-2 focus:ring-[var(--hiwaii-accent)]/25 aria-invalid:border-red-400 aria-invalid:focus:border-red-300 aria-invalid:focus:ring-red-400/25"
+                />
+                {/* Hidden file input */}
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/jpeg,image/png,image/webp,image/gif,image/avif"
+                  className="hidden"
+                  aria-label="Upload thumbnail image"
+                  onChange={(e) => {
+                    const file = e.currentTarget.files?.[0]
+                    if (file) uploadThumbnail(file)
+                    e.currentTarget.value = ''
+                  }}
+                />
+                <button
+                  type="button"
+                  title="Upload to Cloudflare R2"
+                  disabled={isUploading}
+                  onClick={() => fileInputRef.current?.click()}
+                  className="flex min-h-11 shrink-0 items-center gap-1.5 rounded-md border border-[var(--hiwaii-border)] bg-[var(--hiwaii-surface-soft)] px-3 text-xs font-bold uppercase tracking-[0.12em] text-[var(--hiwaii-accent)] transition hover:border-[var(--hiwaii-accent)] hover:bg-[var(--hiwaii-accent)]/10 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  <Upload className="size-3.5" />
+                  {isUploading ? 'Uploading…' : 'Upload'}
+                </button>
+              </div>
               <p
                 id="product-thumbnail-help"
                 className={thumbnailError ? 'text-xs font-semibold text-red-200' : 'text-xs font-semibold text-[var(--hiwaii-text-muted)]'}
               >
-                {thumbnailError ?? 'This single thumbnail is automatically used for homepage, collection, and product display previews.'}
+                {thumbnailError ?? 'Paste URL or click Upload to push image to Cloudflare R2.'}
               </p>
             </div>
 

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { headers } from 'next/headers'
 import CollectionsClient from './CollectionsClient'
-import { buildSocialImageUrl, getBrandConfig, getLangFromSearchParams, getOrigin, languageAlternates, socialImage, toCanonical } from '@/lib/seo'
+import { buildSocialImageUrl, getLangFromSearchParams, languageAlternates, socialImage, toCanonical } from '@/lib/seo'
 import { products } from '@/lib/products'
 
 export async function generateMetadata({
@@ -10,39 +10,29 @@ export async function generateMetadata({
   searchParams: Promise<Record<string, string | string[] | undefined>>
 }): Promise<Metadata> {
   const params = await searchParams
-  const host = (await headers()).get('host')
-  const brand = getBrandConfig(host)
-  const lang = getLangFromSearchParams(params, host)
+  const lang = getLangFromSearchParams(params, (await headers()).get('host'))
 
-  const title = lang === 'vi' ? 'Mua theo phong cách' : 'Shop by Style'
-  const description =
-    lang === 'vi'
-      ? `Lọc theo niche và phong cách để tìm áo Hawaii ${brand.name} phù hợp gu mặc.`
-      : `Explore ${brand.name} lifestyle collections across Sports, Animal, Art & Music, and Vintage niches.`
+  const title = '9shirt | Mua theo phong cách'
+  const description = 'Lọc theo niche và phong cách để tìm áo Hawaii 9shirt phù hợp gu mặc.'
   const socialPreview = buildSocialImageUrl({
-    title: lang === 'vi' ? 'Bộ sưu tập áo Hawaii theo vibe' : 'Shop Hawaiian shirts by lifestyle',
-    subtitle: lang === 'vi'
-      ? 'Sports, Animal, Art & Music, Vintage - xem mẫu thật, chọn size nhanh.'
-      : 'Sports, Animal, Art & Music, Vintage - scan bold designs fast.',
+    title: 'Phong cách 9shirt',
+    subtitle: 'Chọn niche, xem sản phẩm thật và đặt outfit hè theo gu.',
     lang,
-    host,
   })
 
   return {
     title,
     description,
-    keywords: lang === 'vi'
-      ? ['bộ sưu tập áo Hawaii', 'áo Hawaii bóng đá', 'áo Hawaii animal', 'áo Hawaii vintage']
-      : ['Hawaiian shirt collection', 'football Hawaiian shirt', 'animal Hawaiian shirt', 'vintage Hawaiian shirt'],
+    keywords: ['9shirt', 'phong cách áo Hawaii', 'áo đi biển', 'áo họa tiết', 'áo Hawaii theo gu'],
     alternates: {
-      canonical: toCanonical('/collections', lang, host),
-      languages: languageAlternates('/collections', host),
+      canonical: toCanonical('/collections', lang),
+      languages: languageAlternates('/collections'),
     },
     openGraph: {
       title,
       description,
-      url: toCanonical('/collections', lang, host),
-      locale: lang === 'vi' ? 'vi_VN' : 'en_US',
+      url: toCanonical('/collections', lang),
+      locale: 'vi_VN',
       type: 'website',
       images: [socialImage(socialPreview, title)],
     },
@@ -55,20 +45,15 @@ export async function generateMetadata({
   }
 }
 
-export default async function CollectionsPage() {
-  const requestHeaders = await headers()
-  const host = requestHeaders.get('host')
-  const brand = getBrandConfig(host)
-  const origin = getOrigin(host)
-
+export default function CollectionsPage() {
   const itemListJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: `${brand.name} Collections`,
+    name: '9shirt Collections',
     itemListElement: products.map((product, index) => ({
       '@type': 'ListItem',
       position: index + 1,
-      url: `${origin}/product/${product.id}`,
+      url: toCanonical(`/product/${product.id}`, 'vi'),
       name: product.name,
     })),
   }
@@ -77,8 +62,8 @@ export default async function CollectionsPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${origin}/` },
-      { '@type': 'ListItem', position: 2, name: 'Collections', item: `${origin}/collections` },
+      { '@type': 'ListItem', position: 1, name: 'Trang chủ', item: toCanonical('/', 'vi') },
+      { '@type': 'ListItem', position: 2, name: 'Phong cách', item: toCanonical('/collections', 'vi') },
     ],
   }
 

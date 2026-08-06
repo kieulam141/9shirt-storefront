@@ -5,8 +5,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { ProductCard } from '@/components/ProductCard'
+import { displayNiche, displaySubNiche } from '@/lib/display-labels'
 import { i18n, withLang } from '@/lib/i18n'
-import { bundleOffers, bundleTypeGroups, niches, products } from '@/lib/products'
+import { niches, products } from '@/lib/products'
 import { formatPrice } from '@/lib/pricing'
 import { useLang } from '@/hooks/use-lang'
 
@@ -110,10 +111,10 @@ export default function CollectionsClient() {
                   {products.length} {lang === 'vi' ? 'thiết kế' : 'designs'}
                 </span>
                 <span className="inline-flex items-center rounded-full border border-[var(--hiwaii-border)] bg-[#0a1632] px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-[var(--hiwaii-text-secondary)]">
-                  {lang === 'vi' ? 'Lọc theo nghệ thuật' : 'Filter by artwork'}
+                  {lang === 'vi' ? 'Lọc theo mẫu' : 'Filter by design'}
                 </span>
                 <span className="inline-flex items-center rounded-full border border-[var(--hiwaii-border)] bg-[#0a1632] px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-[var(--hiwaii-text-secondary)]">
-                  {lang === 'vi' ? 'Chọn style áo ở PDP' : 'Choose shirt kind on PDP'}
+                  {lang === 'vi' ? 'Chọn size ở trang sản phẩm' : 'Choose size on product page'}
                 </span>
               </div>
             </div>
@@ -124,20 +125,20 @@ export default function CollectionsClient() {
           <div className="grid items-center gap-5 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.16em] text-[var(--hiwaii-accent)]">
-                {lang === 'vi' ? 'Build from art' : 'Build from art'}
+                  Chọn theo gu
               </p>
               <h2 className="mt-2 text-3xl font-black leading-[0.96]">
-                {lang === 'vi' ? 'Lọc artwork trước, dựng mockup sau' : 'Filter artwork first, generate mockup second'}
+                {lang === 'vi' ? 'Lọc mẫu nhanh, mở sản phẩm để đặt hàng' : 'Filter designs quickly, then open a product to order'}
               </h2>
               <p className="mt-3 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">
-                {lang === 'vi' ? 'Chọn niche và sub-niche ở bên trái. Khi đã đúng vibe, mở product studio để đổi kiểu áo, chất liệu và xem clip try-on.' : 'Use niche and sub-niche filters first. Once the vibe matches, open product studio to switch shirt type, material, and watch try-on clips.'}
+                {lang === 'vi' ? 'Chọn niche và sub-niche để tìm mẫu hợp gu. Khi đã thích mẫu nào, mở sản phẩm, chọn size và thêm vào giỏ.' : 'Use niche and sub-niche filters to find the right design. Open a product, choose size, and add to cart.'}
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <Link href={withLang(`/product/${previewArt.id}`, lang)} className="inline-flex min-h-11 items-center rounded-full bg-[var(--hiwaii-accent)] px-6 text-xs font-black uppercase tracking-[0.14em] text-[#071425] transition hover:brightness-105">
-                  {lang === 'vi' ? 'Mở mockup studio' : 'Open mockup studio'}
+                  {lang === 'vi' ? 'Xem sản phẩm' : 'View product'}
                 </Link>
                 <span className="inline-flex min-h-11 items-center rounded-full border border-[var(--hiwaii-border)] px-5 text-xs font-black uppercase tracking-[0.14em] text-[var(--hiwaii-text-secondary)]">
-                  {lang === 'vi' ? 'Bước 3: xem try-on' : 'Step 3: watch try-on'}
+                  {lang === 'vi' ? 'Chọn size rồi đặt hàng' : 'Choose size then order'}
                 </span>
               </div>
             </div>
@@ -155,7 +156,7 @@ export default function CollectionsClient() {
                 <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(3,8,20,0.9),rgba(3,8,20,0.14))]" />
                 <div className="absolute inset-x-0 bottom-0 p-5">
                   <p className="text-xs font-black uppercase tracking-[0.14em] text-[var(--hiwaii-accent)]">
-                    {lang === 'vi' ? 'Carousel artwork' : 'Carousel artwork'}
+                    Mẫu nổi bật
                   </p>
                   <p className="mt-1 text-2xl font-black">{activeBanner.name}</p>
                   <p className="mt-1 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">{activeBanner.hook}</p>
@@ -164,7 +165,7 @@ export default function CollectionsClient() {
               <div className="border-t border-[var(--hiwaii-border)] bg-[#07142e]/95 p-4">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
-                    <p className="text-sm font-black">{activeBanner.niche} / {activeBanner.subNiche}</p>
+                    <p className="text-sm font-black">{displayNiche(activeBanner.niche)} / {displaySubNiche(activeBanner.subNiche)}</p>
                     <p className="text-xs font-semibold text-[var(--hiwaii-text-secondary)]">
                       {lang === 'vi' ? 'Nhấn vào mẫu để chuyển nhanh' : 'Tap a slide for quick focus'}
                     </p>
@@ -224,50 +225,9 @@ export default function CollectionsClient() {
           </div>
         </section>
 
-        <section className="mx-auto mt-8 max-w-[1360px] rounded-2xl border border-[var(--hiwaii-border)] bg-[var(--hiwaii-surface)] p-6">
-          <p className="text-xs font-black uppercase tracking-[0.16em] text-[var(--hiwaii-accent)]">{t.bundleTitle}</p>
-          <p className="mt-2 text-sm font-semibold text-[var(--hiwaii-text-secondary)]">{t.bundleSubtitle}</p>
-          <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
-            {bundleTypeGroups.map((group) => (
-              <article key={group.type} className="rounded-xl border border-[var(--hiwaii-border)] bg-[#0b1736] p-4">
-                <h3 className="text-lg font-black text-[var(--hiwaii-text-primary)]">{group.label}</h3>
-                <p className="mt-1 min-h-10 text-xs font-semibold text-[var(--hiwaii-text-secondary)]">{group.description}</p>
-                <p className="mt-2 text-sm font-black text-[var(--hiwaii-accent)]">{lang === 'vi' ? 'Từ' : 'From'} {formatPrice(group.fromPrice)}</p>
-                <p className="mt-2 text-xs font-semibold text-[var(--hiwaii-text-muted)]">{group.bundleHint}</p>
-              </article>
-            ))}
-          </div>
-
-          <p className="mt-6 text-xs font-black uppercase tracking-[0.16em] text-[var(--hiwaii-accent)]">{t.bundleOfferTitle}</p>
-          <div className="mt-3 grid gap-3 md:grid-cols-3">
-              {bundleOffers.map((offer) => {
-                const savings = Math.round(((offer.compareAtPrice - offer.bundlePrice) / offer.compareAtPrice) * 100)
-                return (
-                  <article key={offer.id} className="relative rounded-xl border border-[var(--hiwaii-border)] bg-[#09142f] p-4 transition hover:border-[var(--hiwaii-accent)]">
-                    <div className="absolute right-4 top-4 rounded-full bg-[var(--hiwaii-accent)] px-2.5 py-0.5 text-[10px] font-black uppercase tracking-[0.1em] text-[#071425]">
-                      -{savings}%
-                    </div>
-                    <h4 className="text-sm font-black text-[var(--hiwaii-text-primary)]">{offer.title}</h4>
-                    <p className="mt-1 text-xs font-semibold text-[var(--hiwaii-text-secondary)]">{offer.types.join(' + ')}</p>
-                    <div className="mt-3 flex items-end gap-2">
-                      <span className="text-2xl font-black text-[var(--hiwaii-accent)]">{formatPrice(offer.bundlePrice)}</span>
-                      <span className="text-xs font-semibold text-[var(--hiwaii-text-muted)] line-through">{formatPrice(offer.compareAtPrice)}</span>
-                    </div>
-                    <Link
-                      href={withLang('/collections?niche=Sports', lang)}
-                      className="mt-3 inline-flex min-h-11 items-center rounded-full border border-[var(--hiwaii-border)] px-4 text-xs font-black uppercase tracking-[0.14em] text-[var(--hiwaii-text-primary)] transition hover:border-[var(--hiwaii-accent)] hover:text-[var(--hiwaii-accent)]"
-                    >
-                      {t.bundleCta}
-                    </Link>
-                  </article>
-                )
-              })}
-          </div>
-        </section>
-
         <div className="mx-auto mt-8 grid max-w-[1360px] gap-8 lg:grid-cols-[290px_1fr]">
           <aside className="h-fit rounded-2xl border border-[var(--hiwaii-border)] bg-[var(--hiwaii-surface)] p-5 lg:sticky lg:top-24">
-            <h2 className="text-sm font-black uppercase tracking-[0.15em] text-[var(--hiwaii-accent)]">Lifestyle tree</h2>
+            <h2 className="text-sm font-black uppercase tracking-[0.15em] text-[var(--hiwaii-accent)]">Cây phong cách</h2>
             <div className="mt-4 space-y-3">
               <button
                 type="button"
@@ -290,7 +250,7 @@ export default function CollectionsClient() {
                     }}
                     className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm font-bold transition ${activeNiche === niche.label ? 'bg-[var(--hiwaii-accent-soft)] text-[var(--hiwaii-text-primary)]' : 'text-[var(--hiwaii-text-secondary)] hover:text-[var(--hiwaii-text-primary)]'}`}
                   >
-                    <span>{NICHE_ICONS[niche.label] ?? '🎨'} {niche.label}</span>
+                    <span>{NICHE_ICONS[niche.label] ?? '🎨'} {displayNiche(niche.label)}</span>
                     <span className="rounded-full bg-[#0a1632] px-2 py-0.5 text-[10px] font-black text-[var(--hiwaii-text-muted)]">{nicheCounts[niche.label] ?? 0}</span>
                   </button>
                   <div className="mt-2 space-y-1">
@@ -304,7 +264,7 @@ export default function CollectionsClient() {
                         }}
                         className={`flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-sm font-semibold transition ${activeSubNiche === sub ? 'bg-[var(--hiwaii-accent-soft)] text-[var(--hiwaii-text-primary)]' : 'text-[var(--hiwaii-text-muted)] hover:text-[var(--hiwaii-text-secondary)]'}`}
                       >
-                        <span>{sub}</span>
+                        <span>{displaySubNiche(sub)}</span>
                         <span className="rounded-full bg-[#0a1632] px-2 py-0.5 text-[10px] font-black text-[var(--hiwaii-text-muted)]">{subNicheCounts[sub] ?? 0}</span>
                       </button>
                     ))}
@@ -323,7 +283,7 @@ export default function CollectionsClient() {
                   <input
                     value={keyword}
                     onChange={(event) => setKeyword(event.target.value)}
-                    placeholder={lang === 'vi' ? 'Tìm theo tên artwork, sub-niche...' : 'Search artwork name or sub-niche...'}
+                    placeholder={lang === 'vi' ? 'Tìm theo tên mẫu, phong cách...' : 'Search design name or style...'}
                     className="min-h-11 w-full rounded-xl border border-[var(--hiwaii-border)] bg-[var(--hiwaii-surface)] pl-9 pr-3 text-sm font-semibold text-[var(--hiwaii-text-primary)] outline-none placeholder:text-[var(--hiwaii-text-muted)] focus:ring-2 focus:ring-[var(--hiwaii-accent)]"
                   />
                 </div>
